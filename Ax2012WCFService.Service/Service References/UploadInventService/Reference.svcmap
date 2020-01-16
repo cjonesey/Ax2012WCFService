@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="09f3a03e-b33e-456e-85cc-38ea4cc24571" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://dickdastardly.oyezstraker.co.uk/MicrosoftDynamicsAXAif60/TecInventService/xppservice.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="xppservice.xsd" MetadataType="Schema" ID="f02120f7-5552-4c05-9fc1-019ee68b96a4" SourceId="1" SourceUrl="http://dickdastardly.oyezstraker.co.uk/MicrosoftDynamicsAXAif60/TecInventService/xppservice.svc?xsd=xsd3" />
+    <MetadataFile FileName="xppservice1.xsd" MetadataType="Schema" ID="5fd38f20-ba60-4690-85b7-3eeb03e35d40" SourceId="1" SourceUrl="http://dickdastardly.oyezstraker.co.uk/MicrosoftDynamicsAXAif60/TecInventService/xppservice.svc?xsd=xsd0" />
+    <MetadataFile FileName="xppservice2.xsd" MetadataType="Schema" ID="59582222-000c-4c47-a6a0-39628ab659d6" SourceId="1" SourceUrl="http://dickdastardly.oyezstraker.co.uk/MicrosoftDynamicsAXAif60/TecInventService/xppservice.svc?xsd=xsd1" />
+    <MetadataFile FileName="xppservice.disco" MetadataType="Disco" ID="bacdc9f0-d6e4-43da-856d-d26d40db9ef4" SourceId="1" SourceUrl="http://dickdastardly.oyezstraker.co.uk/MicrosoftDynamicsAXAif60/TecInventService/xppservice.svc?disco" />
+    <MetadataFile FileName="xppservice.wsdl" MetadataType="Wsdl" ID="578243af-30d7-42a3-a596-3322f3ec489e" SourceId="1" SourceUrl="http://dickdastardly.oyezstraker.co.uk/MicrosoftDynamicsAXAif60/TecInventService/xppservice.svc?wsdl=wsdl1" />
+    <MetadataFile FileName="xppservice3.xsd" MetadataType="Schema" ID="9f1ab1d4-8af2-4048-8c1b-dfdd51e14d69" SourceId="1" SourceUrl="http://dickdastardly.oyezstraker.co.uk/MicrosoftDynamicsAXAif60/TecInventService/xppservice.svc?xsd=xsd5" />
+    <MetadataFile FileName="xppservice4.xsd" MetadataType="Schema" ID="f2e62783-58a5-44d6-8228-748e130f5728" SourceId="1" SourceUrl="http://dickdastardly.oyezstraker.co.uk/MicrosoftDynamicsAXAif60/TecInventService/xppservice.svc?xsd=xsd8" />
+    <MetadataFile FileName="xppservice1.wsdl" MetadataType="Wsdl" ID="f2a53f9d-041e-4965-91fe-397af3c67bb0" SourceId="1" SourceUrl="http://dickdastardly.oyezstraker.co.uk/MicrosoftDynamicsAXAif60/TecInventService/xppservice.svc?wsdl=wsdl0" />
+    <MetadataFile FileName="xppservice5.xsd" MetadataType="Schema" ID="7e2e810a-6831-4df4-8f70-25ade067f85e" SourceId="1" SourceUrl="http://dickdastardly.oyezstraker.co.uk/MicrosoftDynamicsAXAif60/TecInventService/xppservice.svc?xsd=xsd15" />
+    <MetadataFile FileName="xppservice6.xsd" MetadataType="Schema" ID="78d7ab27-7a6a-4167-a899-f7b2c5e9a096" SourceId="1" SourceUrl="http://dickdastardly.oyezstraker.co.uk/MicrosoftDynamicsAXAif60/TecInventService/xppservice.svc?xsd=xsd14" />
+    <MetadataFile FileName="xppservice7.xsd" MetadataType="Schema" ID="f38f61f7-9591-4824-8cde-42d07abd7d7e" SourceId="1" SourceUrl="http://dickdastardly.oyezstraker.co.uk/MicrosoftDynamicsAXAif60/TecInventService/xppservice.svc?xsd=xsd13" />
+    <MetadataFile FileName="xppservice8.xsd" MetadataType="Schema" ID="017a0f1d-db54-48ef-abb9-a40014f197ef" SourceId="1" SourceUrl="http://dickdastardly.oyezstraker.co.uk/MicrosoftDynamicsAXAif60/TecInventService/xppservice.svc?xsd=xsd12" />
+    <MetadataFile FileName="xppservice9.xsd" MetadataType="Schema" ID="142f9cac-f9ca-4ae8-96d7-ef5537ee0a1a" SourceId="1" SourceUrl="http://dickdastardly.oyezstraker.co.uk/MicrosoftDynamicsAXAif60/TecInventService/xppservice.svc?xsd=xsd11" />
+    <MetadataFile FileName="xppservice10.xsd" MetadataType="Schema" ID="d669182a-3cbf-4a8e-84db-21ee77cbbbab" SourceId="1" SourceUrl="http://dickdastardly.oyezstraker.co.uk/MicrosoftDynamicsAXAif60/TecInventService/xppservice.svc?xsd=xsd10" />
+    <MetadataFile FileName="xppservice11.xsd" MetadataType="Schema" ID="680b7588-09ef-4445-9da1-e1b6fa103986" SourceId="1" SourceUrl="http://dickdastardly.oyezstraker.co.uk/MicrosoftDynamicsAXAif60/TecInventService/xppservice.svc?xsd=xsd4" />
+    <MetadataFile FileName="xppservice12.xsd" MetadataType="Schema" ID="1f47af33-31ae-46c6-ac78-ee4b5ec9442b" SourceId="1" SourceUrl="http://dickdastardly.oyezstraker.co.uk/MicrosoftDynamicsAXAif60/TecInventService/xppservice.svc?xsd=xsd9" />
+    <MetadataFile FileName="xppservice13.xsd" MetadataType="Schema" ID="69d91e23-289f-4949-83bb-a1eb383b256b" SourceId="1" SourceUrl="http://dickdastardly.oyezstraker.co.uk/MicrosoftDynamicsAXAif60/TecInventService/xppservice.svc?xsd=xsd2" />
+    <MetadataFile FileName="RoutingService.wsdl" MetadataType="Wsdl" ID="99a048ee-aad3-487c-9a80-c46987ef1935" SourceId="1" SourceUrl="http://dickdastardly.oyezstraker.co.uk/MicrosoftDynamicsAXAif60/TecInventService/xppservice.svc?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

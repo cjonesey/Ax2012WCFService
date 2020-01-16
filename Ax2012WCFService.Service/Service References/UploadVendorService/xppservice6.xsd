@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org" elementFormDefault="qualified" targetNamespace="http://tempuri.org" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://dickdastardly.oyezstraker.co.uk/MicrosoftDynamicsAXAif60/QTQVendService/xppservice.svc?xsd=xsd9" namespace="http://schemas.microsoft.com/dynamics/2008/01/documents/QTQ_STG_Vendor" />
+  <xs:import schemaLocation="http://dickdastardly.oyezstraker.co.uk/MicrosoftDynamicsAXAif60/QTQVendService/xppservice.svc?xsd=xsd3" namespace="http://schemas.microsoft.com/dynamics/2006/02/documents/EntityKeyList" />
+  <xs:import schemaLocation="http://dickdastardly.oyezstraker.co.uk/MicrosoftDynamicsAXAif60/QTQVendService/xppservice.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/dynamics/2011/02/documents/DocumentPaging" />
+  <xs:import schemaLocation="http://dickdastardly.oyezstraker.co.uk/MicrosoftDynamicsAXAif60/QTQVendService/xppservice.svc?xsd=xsd5" namespace="http://schemas.microsoft.com/dynamics/2011/02/documents/EntityKeyPage" />
+  <xs:import schemaLocation="http://dickdastardly.oyezstraker.co.uk/MicrosoftDynamicsAXAif60/QTQVendService/xppservice.svc?xsd=xsd8" namespace="http://schemas.microsoft.com/dynamics/2006/02/documents/QueryCriteria" />
+  <xs:element name="QTQ_STG_VendorServiceCreateRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.microsoft.com/dynamics/2008/01/documents/QTQ_STG_Vendor" minOccurs="0" ref="q1:QTQ_STG_Vendor" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="QTQ_STG_VendorServiceCreateResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.microsoft.com/dynamics/2006/02/documents/EntityKeyList" minOccurs="0" ref="q2:EntityKeyList" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="QTQ_STG_VendorServiceUpdateRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.microsoft.com/dynamics/2006/02/documents/EntityKeyList" minOccurs="0" ref="q3:EntityKeyList" />
+        <xs:element xmlns:q4="http://schemas.microsoft.com/dynamics/2008/01/documents/QTQ_STG_Vendor" minOccurs="0" ref="q4:QTQ_STG_Vendor" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="QTQ_STG_VendorServiceUpdateResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="QTQ_STG_VendorServiceDeleteRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.microsoft.com/dynamics/2006/02/documents/EntityKeyList" minOccurs="0" ref="q5:EntityKeyList" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="QTQ_STG_VendorServiceDeleteResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="QTQ_STG_VendorServiceGetChangedKeysRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://schemas.microsoft.com/dynamics/2011/02/documents/DocumentPaging" minOccurs="0" ref="q6:DocumentPaging" />
+        <xs:element minOccurs="0" name="_changedDateTime" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="QTQ_STG_VendorServiceGetChangedKeysResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q7="http://schemas.microsoft.com/dynamics/2011/02/documents/EntityKeyPage" minOccurs="0" ref="q7:EntityKeyPage" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="QTQ_STG_VendorServiceGetKeysRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q8="http://schemas.microsoft.com/dynamics/2011/02/documents/DocumentPaging" minOccurs="0" ref="q8:DocumentPaging" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="QTQ_STG_VendorServiceGetKeysResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q9="http://schemas.microsoft.com/dynamics/2011/02/documents/EntityKeyPage" minOccurs="0" ref="q9:EntityKeyPage" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="QTQ_STG_VendorServiceReadRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q10="http://schemas.microsoft.com/dynamics/2006/02/documents/EntityKeyList" minOccurs="0" ref="q10:EntityKeyList" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="QTQ_STG_VendorServiceReadResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q11="http://schemas.microsoft.com/dynamics/2008/01/documents/QTQ_STG_Vendor" minOccurs="0" ref="q11:QTQ_STG_Vendor" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="QTQ_STG_VendorServiceFindKeysRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q12="http://schemas.microsoft.com/dynamics/2006/02/documents/QueryCriteria" minOccurs="0" ref="q12:QueryCriteria" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="QTQ_STG_VendorServiceFindKeysResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q13="http://schemas.microsoft.com/dynamics/2006/02/documents/EntityKeyList" minOccurs="0" ref="q13:EntityKeyList" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="QTQ_STG_VendorServiceFindRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q14="http://schemas.microsoft.com/dynamics/2006/02/documents/QueryCriteria" minOccurs="0" ref="q14:QueryCriteria" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="QTQ_STG_VendorServiceFindResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q15="http://schemas.microsoft.com/dynamics/2008/01/documents/QTQ_STG_Vendor" minOccurs="0" ref="q15:QTQ_STG_Vendor" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

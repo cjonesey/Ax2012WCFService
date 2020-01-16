@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="10660b4d-95f1-49a7-8677-1db6d737c734" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://dickdastardly/MicrosoftDynamicsAXAif60/QTQVendService/xppservice.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="xppservice.xsd" MetadataType="Schema" ID="823f0453-5fd0-45ef-9e3d-c19483d9d70c" SourceId="1" SourceUrl="http://dickdastardly.oyezstraker.co.uk/MicrosoftDynamicsAXAif60/QTQVendService/xppservice.svc?xsd=xsd5" />
+    <MetadataFile FileName="xppservice.wsdl" MetadataType="Wsdl" ID="4782da91-9968-4da0-9891-9bdbe5a19b24" SourceId="1" SourceUrl="http://dickdastardly.oyezstraker.co.uk/MicrosoftDynamicsAXAif60/QTQVendService/xppservice.svc?wsdl=wsdl0" />
+    <MetadataFile FileName="xppservice.disco" MetadataType="Disco" ID="e6931a1b-130b-4f67-aaa9-edb50dcbb8a9" SourceId="1" SourceUrl="http://dickdastardly.oyezstraker.co.uk/MicrosoftDynamicsAXAif60/QTQVendService/xppservice.svc?disco" />
+    <MetadataFile FileName="RoutingService.wsdl" MetadataType="Wsdl" ID="fab105c2-56d7-48b7-932d-a2297f895d76" SourceId="1" SourceUrl="http://dickdastardly.oyezstraker.co.uk/MicrosoftDynamicsAXAif60/QTQVendService/xppservice.svc?wsdl" />
+    <MetadataFile FileName="xppservice1.xsd" MetadataType="Schema" ID="b66cba1f-de13-47f7-9ed3-f6eed2d0a261" SourceId="1" SourceUrl="http://dickdastardly.oyezstraker.co.uk/MicrosoftDynamicsAXAif60/QTQVendService/xppservice.svc?xsd=xsd4" />
+    <MetadataFile FileName="xppservice2.xsd" MetadataType="Schema" ID="08fb3f6f-8ff5-41e1-a73c-d6160548a060" SourceId="1" SourceUrl="http://dickdastardly.oyezstraker.co.uk/MicrosoftDynamicsAXAif60/QTQVendService/xppservice.svc?xsd=xsd15" />
+    <MetadataFile FileName="xppservice3.xsd" MetadataType="Schema" ID="2d4f4248-08e8-4c5f-98bc-9f3846835af8" SourceId="1" SourceUrl="http://dickdastardly.oyezstraker.co.uk/MicrosoftDynamicsAXAif60/QTQVendService/xppservice.svc?xsd=xsd14" />
+    <MetadataFile FileName="xppservice4.xsd" MetadataType="Schema" ID="16a68cd7-e842-4b54-b146-fa2207a914d2" SourceId="1" SourceUrl="http://dickdastardly.oyezstraker.co.uk/MicrosoftDynamicsAXAif60/QTQVendService/xppservice.svc?xsd=xsd10" />
+    <MetadataFile FileName="xppservice5.xsd" MetadataType="Schema" ID="6e342fec-f64d-4c06-b4ac-b59c5c37c51a" SourceId="1" SourceUrl="http://dickdastardly.oyezstraker.co.uk/MicrosoftDynamicsAXAif60/QTQVendService/xppservice.svc?xsd=xsd2" />
+    <MetadataFile FileName="xppservice6.xsd" MetadataType="Schema" ID="db11a191-6365-4b47-86be-a3914123fc60" SourceId="1" SourceUrl="http://dickdastardly.oyezstraker.co.uk/MicrosoftDynamicsAXAif60/QTQVendService/xppservice.svc?xsd=xsd11" />
+    <MetadataFile FileName="xppservice1.wsdl" MetadataType="Wsdl" ID="05686137-35e2-4e20-8ba4-75bd39f4ee7c" SourceId="1" SourceUrl="http://dickdastardly.oyezstraker.co.uk/MicrosoftDynamicsAXAif60/QTQVendService/xppservice.svc?wsdl=wsdl1" />
+    <MetadataFile FileName="xppservice7.xsd" MetadataType="Schema" ID="484d9619-e8f7-4873-b5a5-18a0e39fa652" SourceId="1" SourceUrl="http://dickdastardly.oyezstraker.co.uk/MicrosoftDynamicsAXAif60/QTQVendService/xppservice.svc?xsd=xsd3" />
+    <MetadataFile FileName="xppservice8.xsd" MetadataType="Schema" ID="4e9f217b-a465-4727-b254-d9bf8edfac66" SourceId="1" SourceUrl="http://dickdastardly.oyezstraker.co.uk/MicrosoftDynamicsAXAif60/QTQVendService/xppservice.svc?xsd=xsd9" />
+    <MetadataFile FileName="xppservice9.xsd" MetadataType="Schema" ID="6d5a22ba-0ef5-4296-a2d5-d7be70411ad3" SourceId="1" SourceUrl="http://dickdastardly.oyezstraker.co.uk/MicrosoftDynamicsAXAif60/QTQVendService/xppservice.svc?xsd=xsd1" />
+    <MetadataFile FileName="xppservice10.xsd" MetadataType="Schema" ID="fca94004-39b3-447f-9e16-9e1fa1254e5a" SourceId="1" SourceUrl="http://dickdastardly.oyezstraker.co.uk/MicrosoftDynamicsAXAif60/QTQVendService/xppservice.svc?xsd=xsd0" />
+    <MetadataFile FileName="xppservice11.xsd" MetadataType="Schema" ID="31cf2e1a-5071-4002-8ddd-a8090367b285" SourceId="1" SourceUrl="http://dickdastardly.oyezstraker.co.uk/MicrosoftDynamicsAXAif60/QTQVendService/xppservice.svc?xsd=xsd13" />
+    <MetadataFile FileName="xppservice12.xsd" MetadataType="Schema" ID="fe310f40-724c-4453-ad0f-c6eedd5bf926" SourceId="1" SourceUrl="http://dickdastardly.oyezstraker.co.uk/MicrosoftDynamicsAXAif60/QTQVendService/xppservice.svc?xsd=xsd8" />
+    <MetadataFile FileName="xppservice13.xsd" MetadataType="Schema" ID="2f43c1c2-48f8-45a0-9b37-1bfb3150a9c8" SourceId="1" SourceUrl="http://dickdastardly.oyezstraker.co.uk/MicrosoftDynamicsAXAif60/QTQVendService/xppservice.svc?xsd=xsd12" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.microsoft.com/dynamics/2008/01/documents/TEC_STG_Invent" xmlns:st="http://schemas.microsoft.com/dynamics/2008/01/sharedtypes" elementFormDefault="qualified" targetNamespace="http://schemas.microsoft.com/dynamics/2008/01/documents/TEC_STG_Invent" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://dickdastardly.oyezstraker.co.uk/MicrosoftDynamicsAXAif60/TecInventService/xppservice.svc?xsd=xsd10" namespace="http://schemas.microsoft.com/dynamics/2008/01/sharedtypes" />
+  <xs:element name="TEC_STG_Invent" type="tns:AxdTEC_STG_Invent" />
+  <xs:complexType name="AxdTEC_STG_Invent">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ClearNilFieldsOnUpdate" nillable="true" type="st:AxdEnum_boolean" />
+      <xs:element minOccurs="0" name="DocPurpose" nillable="true" type="st:AxdEnum_XMLDocPurpose" />
+      <xs:element minOccurs="0" name="SenderId" nillable="true" type="st:AxdExtType_DataAreaId" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="TEC_STG_InventTable" type="tns:AxdEntity_TEC_STG_InventTable" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="AxdEntity_TEC_STG_InventTable">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="_DocumentHash" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Actioned" nillable="true" type="st:AxdExtType_TEC_Actioned" />
+      <xs:element minOccurs="0" name="Bossf_Group" nillable="true" type="st:AxdEntityKey_TEC_BossGroup" />
+      <xs:element minOccurs="0" name="Bossf_Range" nillable="true" type="st:AxdEntityKey_TEC_BOSSRange" />
+      <xs:element minOccurs="0" name="DeliveryTime" nillable="true" type="st:AxdExtType_LeadTimeDelivery" />
+      <xs:element minOccurs="0" name="Depth" nillable="true" type="st:AxdExtType_InventDepth" />
+      <xs:element minOccurs="0" name="Description_2" nillable="true" type="st:AxdExtType_TEC_Desciption40" />
+      <xs:element minOccurs="0" name="Description_3" nillable="true" type="st:AxdExtType_TEC_Desciption40" />
+      <xs:element minOccurs="0" name="Description_4" nillable="true" type="st:AxdExtType_TEC_Desciption40" />
+      <xs:element minOccurs="0" name="Description_5" nillable="true" type="st:AxdUnion_AxdType_Str_AxdType_ExtCodeValue" />
+      <xs:element minOccurs="0" name="ErrorDate" nillable="true" type="st:AxdExtType_TEC_ErrorDate" />
+      <xs:element minOccurs="0" name="Height" nillable="true" type="st:AxdExtType_InventHeight" />
+      <xs:element minOccurs="0" name="Intracode" nillable="true" type="st:AxdExtType_SysGroup" />
+      <xs:element minOccurs="0" name="ItemGroup" nillable="true" type="st:AxdExtType_SysGroup" />
+      <xs:element minOccurs="1" name="ItemId" type="st:AxdExtType_ItemIdBase" />
+      <xs:element minOccurs="0" name="Manufacturer" nillable="true" type="st:AxdExtType_TEC_MANUFACTURER" />
+      <xs:element minOccurs="0" name="Manufacturer_Prodcode" nillable="true" type="st:AxdExtType_TEC_MANUFACTURER_PRODCODE" />
+      <xs:element minOccurs="0" name="MasterItemId" nillable="true" type="st:AxdExtType_ItemIdBase" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="st:AxdExtType_Name" />
+      <xs:element minOccurs="0" name="NetWeight" nillable="true" type="st:AxdExtType_ItemNetWeight" />
+      <xs:element minOccurs="0" name="NewId" nillable="true" type="st:AxdExtType_ItemIdBase" />
+      <xs:element minOccurs="0" name="OrigCountryId" nillable="true" type="st:AxdExtType_SysGroup" />
+      <xs:element minOccurs="0" name="PaidStock" nillable="true" type="st:AxdExtType_TEC_PAIDSTOCK" />
+      <xs:element minOccurs="0" name="Primaryvendid" nillable="true" type="st:AxdExtType_AccountNum" />
+      <xs:element minOccurs="0" name="Product_Group" nillable="true" type="st:AxdEntityKey_TEC_ProductGroup" />
+      <xs:element minOccurs="0" name="Product_Owner" nillable="true" type="st:AxdExtType_AccountNum" />
+      <xs:element minOccurs="0" name="Product_Range" nillable="true" type="st:AxdEntityKey_TEC_ProductRange" />
+      <xs:element minOccurs="0" name="RecId" nillable="true" type="st:AxdExtType_RecId" />
+      <xs:element minOccurs="0" name="RecVersion" nillable="true" type="st:AxdExtType_RecVersion" />
+      <xs:element minOccurs="0" name="Sell_Price" nillable="true" type="st:AxdExtType_TEC_SELL_PRICE" />
+      <xs:element minOccurs="0" name="Sell_PriceUnit" nillable="true" type="st:AxdExtType_TEC_SELL_PRICEUNIT" />
+      <xs:element minOccurs="0" name="SHELFLIFE" nillable="true" type="st:AxdExtType_TEC_SHELFLIFE" />
+      <xs:element minOccurs="0" name="Special" nillable="true" type="st:AxdExtType_TEC_SPECIAL" />
+      <xs:element minOccurs="0" name="StagingID" nillable="true" type="st:AxdExtType_TEC_StagingID" />
+      <xs:element minOccurs="0" name="Standard_Cost" nillable="true" type="st:AxdExtType_TEC_STANDARD_COST" />
+      <xs:element minOccurs="0" name="StatusBlocked" nillable="true" type="st:AxdExtType_TEC_StatusBlocked" />
+      <xs:element minOccurs="0" name="Stock_Owner" nillable="true" type="st:AxdExtType_AccountNum" />
+      <xs:element minOccurs="0" name="Type" nillable="true" type="st:AxdExtType_TEC_Type" />
+      <xs:element minOccurs="0" name="UNSPSC" nillable="true" type="st:AxdExtType_TEC_UNSPSC" />
+      <xs:element minOccurs="0" name="Vat_Group" nillable="true" type="st:AxdExtType_SysGroup" />
+      <xs:element minOccurs="0" name="Width" nillable="true" type="st:AxdExtType_InventWidth" />
+    </xs:sequence>
+    <xs:attribute fixed="entity" name="class" use="required" />
+    <xs:attribute name="action" type="st:AxdEnum_AxdEntityAction" />
+  </xs:complexType>
+</xs:schema>

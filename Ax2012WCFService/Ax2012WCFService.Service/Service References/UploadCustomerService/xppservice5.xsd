@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org" elementFormDefault="qualified" targetNamespace="http://tempuri.org" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://smurfette.oyezstraker.co.uk:82/MicrosoftDynamicsAXAif60/QTQCustService/xppservice.svc?xsd=xsd4" namespace="http://schemas.microsoft.com/dynamics/2006/02/documents/QueryCriteria" />
+  <xs:import schemaLocation="http://smurfette.oyezstraker.co.uk:82/MicrosoftDynamicsAXAif60/QTQCustService/xppservice.svc?xsd=xsd5" namespace="http://schemas.microsoft.com/dynamics/2008/01/documents/QTQ_STG_Customer" />
+  <xs:import schemaLocation="http://smurfette.oyezstraker.co.uk:82/MicrosoftDynamicsAXAif60/QTQCustService/xppservice.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/dynamics/2006/02/documents/EntityKeyList" />
+  <xs:element name="QTQ_STG_CustomerServiceFindRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.microsoft.com/dynamics/2006/02/documents/QueryCriteria" minOccurs="0" ref="q1:QueryCriteria" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="QTQ_STG_CustomerServiceFindResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.microsoft.com/dynamics/2008/01/documents/QTQ_STG_Customer" minOccurs="0" ref="q2:QTQ_STG_Customer" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="QTQ_STG_CustomerServiceReadRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.microsoft.com/dynamics/2006/02/documents/EntityKeyList" minOccurs="0" ref="q3:EntityKeyList" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="QTQ_STG_CustomerServiceReadResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.microsoft.com/dynamics/2008/01/documents/QTQ_STG_Customer" minOccurs="0" ref="q4:QTQ_STG_Customer" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="QTQ_STG_CustomerServiceUpdateRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.microsoft.com/dynamics/2006/02/documents/EntityKeyList" minOccurs="0" ref="q5:EntityKeyList" />
+        <xs:element xmlns:q6="http://schemas.microsoft.com/dynamics/2008/01/documents/QTQ_STG_Customer" minOccurs="0" ref="q6:QTQ_STG_Customer" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="QTQ_STG_CustomerServiceUpdateResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="QTQ_STG_CustomerServiceCreateRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q7="http://schemas.microsoft.com/dynamics/2008/01/documents/QTQ_STG_Customer" minOccurs="0" ref="q7:QTQ_STG_Customer" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="QTQ_STG_CustomerServiceCreateResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q8="http://schemas.microsoft.com/dynamics/2006/02/documents/EntityKeyList" minOccurs="0" ref="q8:EntityKeyList" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

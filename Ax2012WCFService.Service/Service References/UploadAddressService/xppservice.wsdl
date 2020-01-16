@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://tempuri.org" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://smurfette.oyezstraker.co.uk:82/MicrosoftDynamicsAXAif60/QTQAddrService/xppservice.svc?xsd=xsd11" namespace="http://tempuri.org" />
+      <xsd:import schemaLocation="http://smurfette.oyezstraker.co.uk:82/MicrosoftDynamicsAXAif60/QTQAddrService/xppservice.svc?xsd=xsd12" namespace="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" />
+      <xsd:import schemaLocation="http://smurfette.oyezstraker.co.uk:82/MicrosoftDynamicsAXAif60/QTQAddrService/xppservice.svc?xsd=xsd14" namespace="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" />
+      <xsd:import schemaLocation="http://smurfette.oyezstraker.co.uk:82/MicrosoftDynamicsAXAif60/QTQAddrService/xppservice.svc?xsd=xsd0" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://smurfette.oyezstraker.co.uk:82/MicrosoftDynamicsAXAif60/QTQAddrService/xppservice.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/dynamics/2011/02/documents/DocumentPaging" />
+      <xsd:import schemaLocation="http://smurfette.oyezstraker.co.uk:82/MicrosoftDynamicsAXAif60/QTQAddrService/xppservice.svc?xsd=xsd2" />
+      <xsd:import schemaLocation="http://smurfette.oyezstraker.co.uk:82/MicrosoftDynamicsAXAif60/QTQAddrService/xppservice.svc?xsd=xsd3" namespace="http://schemas.microsoft.com/dynamics/2006/02/documents/EntityKeyList" />
+      <xsd:import schemaLocation="http://smurfette.oyezstraker.co.uk:82/MicrosoftDynamicsAXAif60/QTQAddrService/xppservice.svc?xsd=xsd4" namespace="http://schemas.microsoft.com/dynamics/2006/02/documents/EntityKey" />
+      <xsd:import schemaLocation="http://smurfette.oyezstraker.co.uk:82/MicrosoftDynamicsAXAif60/QTQAddrService/xppservice.svc?xsd=xsd5" namespace="http://schemas.microsoft.com/dynamics/2011/02/documents/EntityKeyPage" />
+      <xsd:import schemaLocation="http://smurfette.oyezstraker.co.uk:82/MicrosoftDynamicsAXAif60/QTQAddrService/xppservice.svc?xsd=xsd8" namespace="http://schemas.microsoft.com/dynamics/2006/02/documents/QueryCriteria" />
+      <xsd:import schemaLocation="http://smurfette.oyezstraker.co.uk:82/MicrosoftDynamicsAXAif60/QTQAddrService/xppservice.svc?xsd=xsd9" namespace="http://schemas.microsoft.com/dynamics/2008/01/documents/QTQ_STG_Address" />
+      <xsd:import schemaLocation="http://smurfette.oyezstraker.co.uk:82/MicrosoftDynamicsAXAif60/QTQAddrService/xppservice.svc?xsd=xsd10" namespace="http://schemas.microsoft.com/dynamics/2008/01/sharedtypes" />
+      <xsd:import schemaLocation="http://smurfette.oyezstraker.co.uk:82/MicrosoftDynamicsAXAif60/QTQAddrService/xppservice.svc?xsd=xsd13" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <xsd:import schemaLocation="http://smurfette.oyezstraker.co.uk:82/MicrosoftDynamicsAXAif60/QTQAddrService/xppservice.svc?xsd=xsd15" namespace="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.AX.Framework.Services" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="QTQ_STG_AddressServiceDeleteRequest">
+    <wsdl:part name="parameters" element="tns:QTQ_STG_AddressServiceDeleteRequest" />
+  </wsdl:message>
+  <wsdl:message name="QTQ_STG_AddressServiceDeleteRequest_Headers">
+    <wsdl:part xmlns:q1="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q1:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="QTQ_STG_AddressServiceDeleteResponse">
+    <wsdl:part name="parameters" element="tns:QTQ_STG_AddressServiceDeleteResponse" />
+  </wsdl:message>
+  <wsdl:message name="QTQ_STG_AddressService_delete_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q2="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q2:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="QTQ_STG_AddressServiceGetKeysRequest">
+    <wsdl:part name="parameters" element="tns:QTQ_STG_AddressServiceGetKeysRequest" />
+  </wsdl:message>
+  <wsdl:message name="QTQ_STG_AddressServiceGetKeysRequest_Headers">
+    <wsdl:part xmlns:q3="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q3:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="QTQ_STG_AddressServiceGetKeysResponse">
+    <wsdl:part name="parameters" element="tns:QTQ_STG_AddressServiceGetKeysResponse" />
+  </wsdl:message>
+  <wsdl:message name="QTQ_STG_AddressService_getKeys_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q4="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q4:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="QTQ_STG_AddressServiceGetChangedKeysRequest">
+    <wsdl:part name="parameters" element="tns:QTQ_STG_AddressServiceGetChangedKeysRequest" />
+  </wsdl:message>
+  <wsdl:message name="QTQ_STG_AddressServiceGetChangedKeysRequest_Headers">
+    <wsdl:part xmlns:q5="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q5:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="QTQ_STG_AddressServiceGetChangedKeysResponse">
+    <wsdl:part name="parameters" element="tns:QTQ_STG_AddressServiceGetChangedKeysResponse" />
+  </wsdl:message>
+  <wsdl:message name="QTQ_STG_AddressService_getChangedKeys_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q6="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q6:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="QTQ_STG_AddressServiceFindKeysRequest">
+    <wsdl:part name="parameters" element="tns:QTQ_STG_AddressServiceFindKeysRequest" />
+  </wsdl:message>
+  <wsdl:message name="QTQ_STG_AddressServiceFindKeysRequest_Headers">
+    <wsdl:part xmlns:q7="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q7:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="QTQ_STG_AddressServiceFindKeysResponse">
+    <wsdl:part name="parameters" element="tns:QTQ_STG_AddressServiceFindKeysResponse" />
+  </wsdl:message>
+  <wsdl:message name="QTQ_STG_AddressService_findKeys_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q8="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q8:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="QTQ_STG_AddressServiceUpdateRequest">
+    <wsdl:part name="parameters" element="tns:QTQ_STG_AddressServiceUpdateRequest" />
+  </wsdl:message>
+  <wsdl:message name="QTQ_STG_AddressServiceUpdateRequest_Headers">
+    <wsdl:part xmlns:q9="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q9:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="QTQ_STG_AddressServiceUpdateResponse">
+    <wsdl:part name="parameters" element="tns:QTQ_STG_AddressServiceUpdateResponse" />
+  </wsdl:message>
+  <wsdl:message name="QTQ_STG_AddressService_update_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q10="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q10:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="QTQ_STG_AddressServiceFindRequest">
+    <wsdl:part name="parameters" element="tns:QTQ_STG_AddressServiceFindRequest" />
+  </wsdl:message>
+  <wsdl:message name="QTQ_STG_AddressServiceFindRequest_Headers">
+    <wsdl:part xmlns:q11="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q11:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="QTQ_STG_AddressServiceFindResponse">
+    <wsdl:part name="parameters" element="tns:QTQ_STG_AddressServiceFindResponse" />
+  </wsdl:message>
+  <wsdl:message name="QTQ_STG_AddressService_find_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q12="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q12:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="QTQ_STG_AddressServiceReadRequest">
+    <wsdl:part name="parameters" element="tns:QTQ_STG_AddressServiceReadRequest" />
+  </wsdl:message>
+  <wsdl:message name="QTQ_STG_AddressServiceReadRequest_Headers">
+    <wsdl:part xmlns:q13="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q13:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="QTQ_STG_AddressServiceReadResponse">
+    <wsdl:part name="parameters" element="tns:QTQ_STG_AddressServiceReadResponse" />
+  </wsdl:message>
+  <wsdl:message name="QTQ_STG_AddressService_read_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q14="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q14:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="QTQ_STG_AddressServiceCreateRequest">
+    <wsdl:part name="parameters" element="tns:QTQ_STG_AddressServiceCreateRequest" />
+  </wsdl:message>
+  <wsdl:message name="QTQ_STG_AddressServiceCreateRequest_Headers">
+    <wsdl:part xmlns:q15="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q15:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="QTQ_STG_AddressServiceCreateResponse">
+    <wsdl:part name="parameters" element="tns:QTQ_STG_AddressServiceCreateResponse" />
+  </wsdl:message>
+  <wsdl:message name="QTQ_STG_AddressService_create_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q16="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q16:AifFault" />
+  </wsdl:message>
+  <wsdl:portType name="QTQ_STG_AddressService">
+    <wsdl:operation name="delete">
+      <wsdl:input wsaw:Action="http://tempuri.org/QTQ_STG_AddressService/delete" name="QTQ_STG_AddressServiceDeleteRequest" message="tns:QTQ_STG_AddressServiceDeleteRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/QTQ_STG_AddressService/deleteResponse" name="QTQ_STG_AddressServiceDeleteResponse" message="tns:QTQ_STG_AddressServiceDeleteResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/QTQ_STG_AddressService/deleteAifFaultFault" name="AifFaultFault" message="tns:QTQ_STG_AddressService_delete_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getKeys">
+      <wsdl:input wsaw:Action="http://tempuri.org/QTQ_STG_AddressService/getKeys" name="QTQ_STG_AddressServiceGetKeysRequest" message="tns:QTQ_STG_AddressServiceGetKeysRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/QTQ_STG_AddressService/getKeysResponse" name="QTQ_STG_AddressServiceGetKeysResponse" message="tns:QTQ_STG_AddressServiceGetKeysResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/QTQ_STG_AddressService/getKeysAifFaultFault" name="AifFaultFault" message="tns:QTQ_STG_AddressService_getKeys_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getChangedKeys">
+      <wsdl:input wsaw:Action="http://tempuri.org/QTQ_STG_AddressService/getChangedKeys" name="QTQ_STG_AddressServiceGetChangedKeysRequest" message="tns:QTQ_STG_AddressServiceGetChangedKeysRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/QTQ_STG_AddressService/getChangedKeysResponse" name="QTQ_STG_AddressServiceGetChangedKeysResponse" message="tns:QTQ_STG_AddressServiceGetChangedKeysResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/QTQ_STG_AddressService/getChangedKeysAifFaultFault" name="AifFaultFault" message="tns:QTQ_STG_AddressService_getChangedKeys_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="findKeys">
+      <wsdl:input wsaw:Action="http://tempuri.org/QTQ_STG_AddressService/findKeys" name="QTQ_STG_AddressServiceFindKeysRequest" message="tns:QTQ_STG_AddressServiceFindKeysRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/QTQ_STG_AddressService/findKeysResponse" name="QTQ_STG_AddressServiceFindKeysResponse" message="tns:QTQ_STG_AddressServiceFindKeysResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/QTQ_STG_AddressService/findKeysAifFaultFault" name="AifFaultFault" message="tns:QTQ_STG_AddressService_findKeys_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="update">
+      <wsdl:input wsaw:Action="http://tempuri.org/QTQ_STG_AddressService/update" name="QTQ_STG_AddressServiceUpdateRequest" message="tns:QTQ_STG_AddressServiceUpdateRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/QTQ_STG_AddressService/updateResponse" name="QTQ_STG_AddressServiceUpdateResponse" message="tns:QTQ_STG_AddressServiceUpdateResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/QTQ_STG_AddressService/updateAifFaultFault" name="AifFaultFault" message="tns:QTQ_STG_AddressService_update_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="find">
+      <wsdl:input wsaw:Action="http://tempuri.org/QTQ_STG_AddressService/find" name="QTQ_STG_AddressServiceFindRequest" message="tns:QTQ_STG_AddressServiceFindRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/QTQ_STG_AddressService/findResponse" name="QTQ_STG_AddressServiceFindResponse" message="tns:QTQ_STG_AddressServiceFindResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/QTQ_STG_AddressService/findAifFaultFault" name="AifFaultFault" message="tns:QTQ_STG_AddressService_find_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="read">
+      <wsdl:input wsaw:Action="http://tempuri.org/QTQ_STG_AddressService/read" name="QTQ_STG_AddressServiceReadRequest" message="tns:QTQ_STG_AddressServiceReadRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/QTQ_STG_AddressService/readResponse" name="QTQ_STG_AddressServiceReadResponse" message="tns:QTQ_STG_AddressServiceReadResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/QTQ_STG_AddressService/readAifFaultFault" name="AifFaultFault" message="tns:QTQ_STG_AddressService_read_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="create">
+      <wsdl:input wsaw:Action="http://tempuri.org/QTQ_STG_AddressService/create" name="QTQ_STG_AddressServiceCreateRequest" message="tns:QTQ_STG_AddressServiceCreateRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/QTQ_STG_AddressService/createResponse" name="QTQ_STG_AddressServiceCreateResponse" message="tns:QTQ_STG_AddressServiceCreateResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/QTQ_STG_AddressService/createAifFaultFault" name="AifFaultFault" message="tns:QTQ_STG_AddressService_create_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>

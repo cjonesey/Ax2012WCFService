@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org" elementFormDefault="qualified" targetNamespace="http://tempuri.org" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://smurfette.oyezstraker.co.uk:82/MicrosoftDynamicsAXAif60/QTQAddrService/xppservice.svc?xsd=xsd3" namespace="http://schemas.microsoft.com/dynamics/2006/02/documents/EntityKeyList" />
+  <xs:import schemaLocation="http://smurfette.oyezstraker.co.uk:82/MicrosoftDynamicsAXAif60/QTQAddrService/xppservice.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/dynamics/2011/02/documents/DocumentPaging" />
+  <xs:import schemaLocation="http://smurfette.oyezstraker.co.uk:82/MicrosoftDynamicsAXAif60/QTQAddrService/xppservice.svc?xsd=xsd5" namespace="http://schemas.microsoft.com/dynamics/2011/02/documents/EntityKeyPage" />
+  <xs:import schemaLocation="http://smurfette.oyezstraker.co.uk:82/MicrosoftDynamicsAXAif60/QTQAddrService/xppservice.svc?xsd=xsd8" namespace="http://schemas.microsoft.com/dynamics/2006/02/documents/QueryCriteria" />
+  <xs:import schemaLocation="http://smurfette.oyezstraker.co.uk:82/MicrosoftDynamicsAXAif60/QTQAddrService/xppservice.svc?xsd=xsd9" namespace="http://schemas.microsoft.com/dynamics/2008/01/documents/QTQ_STG_Address" />
+  <xs:element name="QTQ_STG_AddressServiceDeleteRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.microsoft.com/dynamics/2006/02/documents/EntityKeyList" minOccurs="0" ref="q1:EntityKeyList" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="QTQ_STG_AddressServiceDeleteResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="QTQ_STG_AddressServiceGetKeysRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.microsoft.com/dynamics/2011/02/documents/DocumentPaging" minOccurs="0" ref="q2:DocumentPaging" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="QTQ_STG_AddressServiceGetKeysResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.microsoft.com/dynamics/2011/02/documents/EntityKeyPage" minOccurs="0" ref="q3:EntityKeyPage" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="QTQ_STG_AddressServiceGetChangedKeysRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.microsoft.com/dynamics/2011/02/documents/DocumentPaging" minOccurs="0" ref="q4:DocumentPaging" />
+        <xs:element minOccurs="0" name="_changedDateTime" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="QTQ_STG_AddressServiceGetChangedKeysResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.microsoft.com/dynamics/2011/02/documents/EntityKeyPage" minOccurs="0" ref="q5:EntityKeyPage" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="QTQ_STG_AddressServiceFindKeysRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://schemas.microsoft.com/dynamics/2006/02/documents/QueryCriteria" minOccurs="0" ref="q6:QueryCriteria" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="QTQ_STG_AddressServiceFindKeysResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q7="http://schemas.microsoft.com/dynamics/2006/02/documents/EntityKeyList" minOccurs="0" ref="q7:EntityKeyList" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="QTQ_STG_AddressServiceUpdateRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q8="http://schemas.microsoft.com/dynamics/2006/02/documents/EntityKeyList" minOccurs="0" ref="q8:EntityKeyList" />
+        <xs:element xmlns:q9="http://schemas.microsoft.com/dynamics/2008/01/documents/QTQ_STG_Address" minOccurs="0" ref="q9:QTQ_STG_Address" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="QTQ_STG_AddressServiceUpdateResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="QTQ_STG_AddressServiceFindRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q10="http://schemas.microsoft.com/dynamics/2006/02/documents/QueryCriteria" minOccurs="0" ref="q10:QueryCriteria" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="QTQ_STG_AddressServiceFindResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q11="http://schemas.microsoft.com/dynamics/2008/01/documents/QTQ_STG_Address" minOccurs="0" ref="q11:QTQ_STG_Address" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="QTQ_STG_AddressServiceReadRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q12="http://schemas.microsoft.com/dynamics/2006/02/documents/EntityKeyList" minOccurs="0" ref="q12:EntityKeyList" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="QTQ_STG_AddressServiceReadResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q13="http://schemas.microsoft.com/dynamics/2008/01/documents/QTQ_STG_Address" minOccurs="0" ref="q13:QTQ_STG_Address" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="QTQ_STG_AddressServiceCreateRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q14="http://schemas.microsoft.com/dynamics/2008/01/documents/QTQ_STG_Address" minOccurs="0" ref="q14:QTQ_STG_Address" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="QTQ_STG_AddressServiceCreateResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q15="http://schemas.microsoft.com/dynamics/2006/02/documents/EntityKeyList" minOccurs="0" ref="q15:EntityKeyList" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

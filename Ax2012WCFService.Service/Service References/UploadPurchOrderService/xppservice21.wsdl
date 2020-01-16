@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://tempuri.org" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://smurfette.oyezstraker.co.uk:82/MicrosoftDynamicsAXAif60/TECPurchOrderService/xppservice.svc?xsd=xsd11" namespace="http://tempuri.org" />
+      <xsd:import schemaLocation="http://smurfette.oyezstraker.co.uk:82/MicrosoftDynamicsAXAif60/TECPurchOrderService/xppservice.svc?xsd=xsd12" namespace="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" />
+      <xsd:import schemaLocation="http://smurfette.oyezstraker.co.uk:82/MicrosoftDynamicsAXAif60/TECPurchOrderService/xppservice.svc?xsd=xsd14" namespace="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" />
+      <xsd:import schemaLocation="http://smurfette.oyezstraker.co.uk:82/MicrosoftDynamicsAXAif60/TECPurchOrderService/xppservice.svc?xsd=xsd0" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://smurfette.oyezstraker.co.uk:82/MicrosoftDynamicsAXAif60/TECPurchOrderService/xppservice.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/dynamics/2011/02/documents/DocumentPaging" />
+      <xsd:import schemaLocation="http://smurfette.oyezstraker.co.uk:82/MicrosoftDynamicsAXAif60/TECPurchOrderService/xppservice.svc?xsd=xsd2" />
+      <xsd:import schemaLocation="http://smurfette.oyezstraker.co.uk:82/MicrosoftDynamicsAXAif60/TECPurchOrderService/xppservice.svc?xsd=xsd3" namespace="http://schemas.microsoft.com/dynamics/2006/02/documents/EntityKeyList" />
+      <xsd:import schemaLocation="http://smurfette.oyezstraker.co.uk:82/MicrosoftDynamicsAXAif60/TECPurchOrderService/xppservice.svc?xsd=xsd4" namespace="http://schemas.microsoft.com/dynamics/2006/02/documents/EntityKey" />
+      <xsd:import schemaLocation="http://smurfette.oyezstraker.co.uk:82/MicrosoftDynamicsAXAif60/TECPurchOrderService/xppservice.svc?xsd=xsd5" namespace="http://schemas.microsoft.com/dynamics/2011/02/documents/EntityKeyPage" />
+      <xsd:import schemaLocation="http://smurfette.oyezstraker.co.uk:82/MicrosoftDynamicsAXAif60/TECPurchOrderService/xppservice.svc?xsd=xsd8" namespace="http://schemas.microsoft.com/dynamics/2006/02/documents/QueryCriteria" />
+      <xsd:import schemaLocation="http://smurfette.oyezstraker.co.uk:82/MicrosoftDynamicsAXAif60/TECPurchOrderService/xppservice.svc?xsd=xsd9" namespace="http://schemas.microsoft.com/dynamics/2008/01/documents/TEC_STG_PurchOrder" />
+      <xsd:import schemaLocation="http://smurfette.oyezstraker.co.uk:82/MicrosoftDynamicsAXAif60/TECPurchOrderService/xppservice.svc?xsd=xsd10" namespace="http://schemas.microsoft.com/dynamics/2008/01/sharedtypes" />
+      <xsd:import schemaLocation="http://smurfette.oyezstraker.co.uk:82/MicrosoftDynamicsAXAif60/TECPurchOrderService/xppservice.svc?xsd=xsd13" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <xsd:import schemaLocation="http://smurfette.oyezstraker.co.uk:82/MicrosoftDynamicsAXAif60/TECPurchOrderService/xppservice.svc?xsd=xsd15" namespace="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.AX.Framework.Services" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="TEC_STG_PurchOrderServiceReadRequest">
+    <wsdl:part name="parameters" element="tns:TEC_STG_PurchOrderServiceReadRequest" />
+  </wsdl:message>
+  <wsdl:message name="TEC_STG_PurchOrderServiceReadRequest_Headers">
+    <wsdl:part xmlns:q1="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q1:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="TEC_STG_PurchOrderServiceReadResponse">
+    <wsdl:part name="parameters" element="tns:TEC_STG_PurchOrderServiceReadResponse" />
+  </wsdl:message>
+  <wsdl:message name="TEC_STG_PurchOrderService_read_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q2="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q2:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="TEC_STG_PurchOrderServiceGetChangedKeysRequest">
+    <wsdl:part name="parameters" element="tns:TEC_STG_PurchOrderServiceGetChangedKeysRequest" />
+  </wsdl:message>
+  <wsdl:message name="TEC_STG_PurchOrderServiceGetChangedKeysRequest_Headers">
+    <wsdl:part xmlns:q3="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q3:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="TEC_STG_PurchOrderServiceGetChangedKeysResponse">
+    <wsdl:part name="parameters" element="tns:TEC_STG_PurchOrderServiceGetChangedKeysResponse" />
+  </wsdl:message>
+  <wsdl:message name="TEC_STG_PurchOrderService_getChangedKeys_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q4="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q4:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="TEC_STG_PurchOrderServiceCreateRequest">
+    <wsdl:part name="parameters" element="tns:TEC_STG_PurchOrderServiceCreateRequest" />
+  </wsdl:message>
+  <wsdl:message name="TEC_STG_PurchOrderServiceCreateRequest_Headers">
+    <wsdl:part xmlns:q5="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q5:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="TEC_STG_PurchOrderServiceCreateResponse">
+    <wsdl:part name="parameters" element="tns:TEC_STG_PurchOrderServiceCreateResponse" />
+  </wsdl:message>
+  <wsdl:message name="TEC_STG_PurchOrderService_create_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q6="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q6:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="TEC_STG_PurchOrderServiceGetKeysRequest">
+    <wsdl:part name="parameters" element="tns:TEC_STG_PurchOrderServiceGetKeysRequest" />
+  </wsdl:message>
+  <wsdl:message name="TEC_STG_PurchOrderServiceGetKeysRequest_Headers">
+    <wsdl:part xmlns:q7="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q7:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="TEC_STG_PurchOrderServiceGetKeysResponse">
+    <wsdl:part name="parameters" element="tns:TEC_STG_PurchOrderServiceGetKeysResponse" />
+  </wsdl:message>
+  <wsdl:message name="TEC_STG_PurchOrderService_getKeys_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q8="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q8:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="TEC_STG_PurchOrderServiceUpdateRequest">
+    <wsdl:part name="parameters" element="tns:TEC_STG_PurchOrderServiceUpdateRequest" />
+  </wsdl:message>
+  <wsdl:message name="TEC_STG_PurchOrderServiceUpdateRequest_Headers">
+    <wsdl:part xmlns:q9="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q9:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="TEC_STG_PurchOrderServiceUpdateResponse">
+    <wsdl:part name="parameters" element="tns:TEC_STG_PurchOrderServiceUpdateResponse" />
+  </wsdl:message>
+  <wsdl:message name="TEC_STG_PurchOrderService_update_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q10="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q10:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="TEC_STG_PurchOrderServiceFindKeysRequest">
+    <wsdl:part name="parameters" element="tns:TEC_STG_PurchOrderServiceFindKeysRequest" />
+  </wsdl:message>
+  <wsdl:message name="TEC_STG_PurchOrderServiceFindKeysRequest_Headers">
+    <wsdl:part xmlns:q11="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q11:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="TEC_STG_PurchOrderServiceFindKeysResponse">
+    <wsdl:part name="parameters" element="tns:TEC_STG_PurchOrderServiceFindKeysResponse" />
+  </wsdl:message>
+  <wsdl:message name="TEC_STG_PurchOrderService_findKeys_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q12="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q12:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="TEC_STG_PurchOrderServiceDeleteRequest">
+    <wsdl:part name="parameters" element="tns:TEC_STG_PurchOrderServiceDeleteRequest" />
+  </wsdl:message>
+  <wsdl:message name="TEC_STG_PurchOrderServiceDeleteRequest_Headers">
+    <wsdl:part xmlns:q13="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q13:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="TEC_STG_PurchOrderServiceDeleteResponse">
+    <wsdl:part name="parameters" element="tns:TEC_STG_PurchOrderServiceDeleteResponse" />
+  </wsdl:message>
+  <wsdl:message name="TEC_STG_PurchOrderService_delete_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q14="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q14:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="TEC_STG_PurchOrderServiceFindRequest">
+    <wsdl:part name="parameters" element="tns:TEC_STG_PurchOrderServiceFindRequest" />
+  </wsdl:message>
+  <wsdl:message name="TEC_STG_PurchOrderServiceFindRequest_Headers">
+    <wsdl:part xmlns:q15="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q15:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="TEC_STG_PurchOrderServiceFindResponse">
+    <wsdl:part name="parameters" element="tns:TEC_STG_PurchOrderServiceFindResponse" />
+  </wsdl:message>
+  <wsdl:message name="TEC_STG_PurchOrderService_find_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q16="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q16:AifFault" />
+  </wsdl:message>
+  <wsdl:portType name="TEC_STG_PurchOrderService">
+    <wsdl:operation name="read">
+      <wsdl:input wsaw:Action="http://tempuri.org/TEC_STG_PurchOrderService/read" name="TEC_STG_PurchOrderServiceReadRequest" message="tns:TEC_STG_PurchOrderServiceReadRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/TEC_STG_PurchOrderService/readResponse" name="TEC_STG_PurchOrderServiceReadResponse" message="tns:TEC_STG_PurchOrderServiceReadResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/TEC_STG_PurchOrderService/readAifFaultFault" name="AifFaultFault" message="tns:TEC_STG_PurchOrderService_read_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getChangedKeys">
+      <wsdl:input wsaw:Action="http://tempuri.org/TEC_STG_PurchOrderService/getChangedKeys" name="TEC_STG_PurchOrderServiceGetChangedKeysRequest" message="tns:TEC_STG_PurchOrderServiceGetChangedKeysRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/TEC_STG_PurchOrderService/getChangedKeysResponse" name="TEC_STG_PurchOrderServiceGetChangedKeysResponse" message="tns:TEC_STG_PurchOrderServiceGetChangedKeysResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/TEC_STG_PurchOrderService/getChangedKeysAifFaultFault" name="AifFaultFault" message="tns:TEC_STG_PurchOrderService_getChangedKeys_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="create">
+      <wsdl:input wsaw:Action="http://tempuri.org/TEC_STG_PurchOrderService/create" name="TEC_STG_PurchOrderServiceCreateRequest" message="tns:TEC_STG_PurchOrderServiceCreateRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/TEC_STG_PurchOrderService/createResponse" name="TEC_STG_PurchOrderServiceCreateResponse" message="tns:TEC_STG_PurchOrderServiceCreateResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/TEC_STG_PurchOrderService/createAifFaultFault" name="AifFaultFault" message="tns:TEC_STG_PurchOrderService_create_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getKeys">
+      <wsdl:input wsaw:Action="http://tempuri.org/TEC_STG_PurchOrderService/getKeys" name="TEC_STG_PurchOrderServiceGetKeysRequest" message="tns:TEC_STG_PurchOrderServiceGetKeysRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/TEC_STG_PurchOrderService/getKeysResponse" name="TEC_STG_PurchOrderServiceGetKeysResponse" message="tns:TEC_STG_PurchOrderServiceGetKeysResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/TEC_STG_PurchOrderService/getKeysAifFaultFault" name="AifFaultFault" message="tns:TEC_STG_PurchOrderService_getKeys_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="update">
+      <wsdl:input wsaw:Action="http://tempuri.org/TEC_STG_PurchOrderService/update" name="TEC_STG_PurchOrderServiceUpdateRequest" message="tns:TEC_STG_PurchOrderServiceUpdateRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/TEC_STG_PurchOrderService/updateResponse" name="TEC_STG_PurchOrderServiceUpdateResponse" message="tns:TEC_STG_PurchOrderServiceUpdateResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/TEC_STG_PurchOrderService/updateAifFaultFault" name="AifFaultFault" message="tns:TEC_STG_PurchOrderService_update_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="findKeys">
+      <wsdl:input wsaw:Action="http://tempuri.org/TEC_STG_PurchOrderService/findKeys" name="TEC_STG_PurchOrderServiceFindKeysRequest" message="tns:TEC_STG_PurchOrderServiceFindKeysRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/TEC_STG_PurchOrderService/findKeysResponse" name="TEC_STG_PurchOrderServiceFindKeysResponse" message="tns:TEC_STG_PurchOrderServiceFindKeysResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/TEC_STG_PurchOrderService/findKeysAifFaultFault" name="AifFaultFault" message="tns:TEC_STG_PurchOrderService_findKeys_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="delete">
+      <wsdl:input wsaw:Action="http://tempuri.org/TEC_STG_PurchOrderService/delete" name="TEC_STG_PurchOrderServiceDeleteRequest" message="tns:TEC_STG_PurchOrderServiceDeleteRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/TEC_STG_PurchOrderService/deleteResponse" name="TEC_STG_PurchOrderServiceDeleteResponse" message="tns:TEC_STG_PurchOrderServiceDeleteResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/TEC_STG_PurchOrderService/deleteAifFaultFault" name="AifFaultFault" message="tns:TEC_STG_PurchOrderService_delete_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="find">
+      <wsdl:input wsaw:Action="http://tempuri.org/TEC_STG_PurchOrderService/find" name="TEC_STG_PurchOrderServiceFindRequest" message="tns:TEC_STG_PurchOrderServiceFindRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/TEC_STG_PurchOrderService/findResponse" name="TEC_STG_PurchOrderServiceFindResponse" message="tns:TEC_STG_PurchOrderServiceFindResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/TEC_STG_PurchOrderService/findAifFaultFault" name="AifFaultFault" message="tns:TEC_STG_PurchOrderService_find_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>

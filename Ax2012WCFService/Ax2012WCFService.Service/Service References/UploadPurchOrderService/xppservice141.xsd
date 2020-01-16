@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.microsoft.com/dynamics/2008/01/documents/TEC_STG_PurchOrder" xmlns:st="http://schemas.microsoft.com/dynamics/2008/01/sharedtypes" elementFormDefault="qualified" targetNamespace="http://schemas.microsoft.com/dynamics/2008/01/documents/TEC_STG_PurchOrder" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://smurfette.oyezstraker.co.uk:82/MicrosoftDynamicsAXAif60/TECPurchOrderService/xppservice.svc?xsd=xsd10" namespace="http://schemas.microsoft.com/dynamics/2008/01/sharedtypes" />
+  <xs:element name="TEC_STG_PurchOrder" type="tns:AxdTEC_STG_PurchOrder" />
+  <xs:complexType name="AxdTEC_STG_PurchOrder">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ClearNilFieldsOnUpdate" nillable="true" type="st:AxdEnum_boolean" />
+      <xs:element minOccurs="0" name="DocPurpose" nillable="true" type="st:AxdEnum_XMLDocPurpose" />
+      <xs:element minOccurs="0" name="SenderId" nillable="true" type="st:AxdExtType_DataAreaId" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="TEC_STG_PurchTable" type="tns:AxdEntity_TEC_STG_PurchTable" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="AxdEntity_TEC_STG_PurchTable">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="_DocumentHash" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Actioned" nillable="true" type="st:AxdExtType_TEC_Actioned" />
+      <xs:element minOccurs="0" name="Add_City" nillable="true" type="st:AxdExtType_City" />
+      <xs:element minOccurs="0" name="Add_Country" nillable="true" type="st:AxdExtType_TEC_SysGroup30" />
+      <xs:element minOccurs="0" name="Add_Line_1" nillable="true" type="st:AxdExtType_TEC_ADD_LINE50" />
+      <xs:element minOccurs="0" name="Add_Line_2" nillable="true" type="st:AxdExtType_TEC_ADD_LINE50" />
+      <xs:element minOccurs="0" name="Add_Reference" nillable="true" type="st:AxdExtType_TEC_ADD_REFERENCE" />
+      <xs:element minOccurs="0" name="Add_Territory" nillable="true" type="st:AxdExtType_TEC_SysGroup30" />
+      <xs:element minOccurs="0" name="Add_Zipcode" nillable="true" type="st:AxdExtType_SysGroup" />
+      <xs:element minOccurs="0" name="CostOfSales" nillable="true" type="st:AxdExtType_Integer" />
+      <xs:element minOccurs="0" name="DefaultDimension" nillable="true" type="st:AxdType_DimensionAttributeValueSet" />
+      <xs:element minOccurs="0" name="DeliveryDate" nillable="true" type="st:AxdExtType_DlvDate" />
+      <xs:element minOccurs="0" name="DlvAdd_Line_1" nillable="true" type="st:AxdExtType_TEC_ADD_LINE50" />
+      <xs:element minOccurs="0" name="DlvAdd_Line_2" nillable="true" type="st:AxdExtType_TEC_ADD_LINE50" />
+      <xs:element minOccurs="0" name="DlvAdd_Reference" nillable="true" type="st:AxdExtType_TEC_ADD_REFERENCE" />
+      <xs:element minOccurs="0" name="DlvCity" nillable="true" type="st:AxdExtType_City" />
+      <xs:element minOccurs="0" name="DlvCountry" nillable="true" type="st:AxdExtType_TEC_SysGroup30" />
+      <xs:element minOccurs="0" name="DlvName" nillable="true" type="st:AxdExtType_VendName" />
+      <xs:element minOccurs="0" name="DlvTerritory" nillable="true" type="st:AxdExtType_TEC_SysGroup30" />
+      <xs:element minOccurs="0" name="DlvZipcode" nillable="true" type="st:AxdExtType_SysGroup" />
+      <xs:element minOccurs="0" name="ErrorDate" nillable="true" type="st:AxdExtType_TEC_ErrorDate" />
+      <xs:element minOccurs="0" name="EXTERNAL_ORD_ID" nillable="true" type="st:AxdExtType_TEC_EXTERNAL_ORD_ID" />
+      <xs:element minOccurs="0" name="ExtPurchType" nillable="true" type="st:AxdExtType_TEC_ExtPurchType" />
+      <xs:element minOccurs="0" name="InventLocationId" nillable="true" type="st:AxdExtType_PurchInventLocationId" />
+      <xs:element minOccurs="0" name="InventLocationId1" nillable="true" type="st:AxdExtType_PurchInventLocationId" />
+      <xs:element minOccurs="0" name="InventSiteId" nillable="true" type="st:AxdUnion_AxdType_Str_AxdType_ExtCodeValue" />
+      <xs:element minOccurs="0" name="InvoiceDate" nillable="true" type="st:AxdExtType_InvoiceDate" />
+      <xs:element minOccurs="0" name="InvoiceId" nillable="true" type="st:AxdExtType_VendInvoiceId" />
+      <xs:element minOccurs="0" name="NewId" nillable="true" type="st:AxdExtType_TEC_EXTERNAL_ORD_ID" />
+      <xs:element minOccurs="0" name="OperatorCode" nillable="true" type="st:AxdExtType_TEC_OPERATORCODE" />
+      <xs:element minOccurs="0" name="Order_Total_Gross" nillable="true" type="st:AxdExtType_Amount" />
+      <xs:element minOccurs="0" name="Order_Total_Net" nillable="true" type="st:AxdExtType_Amount" />
+      <xs:element minOccurs="0" name="OrderUpdateType" nillable="true" type="st:AxdEnum_TEC_OrderUpdateType" />
+      <xs:element minOccurs="0" name="PostingParmId" nillable="true" type="st:AxdExtType_ParmId" />
+      <xs:element minOccurs="0" name="PurchaseType" nillable="true" type="st:AxdEnum_PurchaseType" />
+      <xs:element minOccurs="0" name="PurchID" nillable="true" type="st:AxdUnion_AxdType_Str_AxdType_ExtCodeValue" />
+      <xs:element minOccurs="0" name="RecId" nillable="true" type="st:AxdExtType_RecId" />
+      <xs:element minOccurs="0" name="RecVersion" nillable="true" type="st:AxdExtType_RecVersion" />
+      <xs:element minOccurs="0" name="Ship_Name" nillable="true" type="st:AxdExtType_Name" />
+      <xs:element minOccurs="0" name="StagingID" nillable="true" type="st:AxdExtType_TEC_StagingID" />
+      <xs:element minOccurs="0" name="StagingInvoiceId" nillable="true" type="st:AxdExtType_TEC_StagingInvoiceId" />
+      <xs:element minOccurs="0" name="Type" nillable="true" type="st:AxdExtType_TEC_Type" />
+      <xs:element minOccurs="0" name="VATAmount" nillable="true" type="st:AxdExtType_TEC_VATAmount" />
+      <xs:element minOccurs="0" name="VendAccount" nillable="true" type="st:AxdUnion_AxdExtType_TEC_VendAccountNoRel_AxdType_ExtCodeValue" />
+      <xs:element minOccurs="0" name="VendorRef" nillable="true" type="st:AxdExtType_VendRef" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="TEC_STG_PurchLine" type="tns:AxdEntity_TEC_STG_PurchLine" />
+    </xs:sequence>
+    <xs:attribute fixed="entity" name="class" use="required" />
+    <xs:attribute name="action" type="st:AxdEnum_AxdEntityAction" />
+  </xs:complexType>
+  <xs:complexType name="AxdEntity_TEC_STG_PurchLine">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Actioned" nillable="true" type="st:AxdExtType_TEC_Actioned" />
+      <xs:element minOccurs="0" name="DefaultDimension" nillable="true" type="st:AxdType_DimensionAttributeValueSet" />
+      <xs:element minOccurs="0" name="DeliveryDate" nillable="true" type="st:AxdExtType_DlvDate" />
+      <xs:element minOccurs="0" name="ErrorDate" nillable="true" type="st:AxdExtType_TEC_ErrorDate" />
+      <xs:element minOccurs="0" name="EXTERNAL_DEL_ID" nillable="true" type="st:AxdExtType_TEC_EXTERNAL_DEL_ID" />
+      <xs:element minOccurs="0" name="EXTERNAL_INV_ID" nillable="true" type="st:AxdExtType_TEC_EXTERNAL_INV_ID" />
+      <xs:element minOccurs="0" name="EXTERNAL_ORD_ID" nillable="true" type="st:AxdExtType_TEC_EXTERNAL_ORD_ID" />
+      <xs:element minOccurs="0" name="InventTransId" nillable="true" type="st:AxdExtType_InventTransId" />
+      <xs:element minOccurs="0" name="InvoicePrice" nillable="true" type="st:AxdExtType_PriceCur" />
+      <xs:element minOccurs="0" name="Itemid" nillable="true" type="st:AxdExtType_ItemIdBase" />
+      <xs:element minOccurs="0" name="LineAmount" nillable="true" type="st:AxdExtType_PurchLineAmount" />
+      <xs:element minOccurs="0" name="LineNum" nillable="true" type="st:AxdExtType_LineNum" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="st:AxdExtType_ItemName" />
+      <xs:element minOccurs="0" name="Newid" nillable="true" type="st:AxdExtType_TEC_EXTERNAL_ORD_ID" />
+      <xs:element minOccurs="0" name="PriceUnit" nillable="true" type="st:AxdExtType_PriceUnit" />
+      <xs:element minOccurs="0" name="ProgressItemId" nillable="true" type="st:AxdExtType_TEC_ProgressItemId" />
+      <xs:element minOccurs="0" name="PurchID" nillable="true" type="st:AxdUnion_AxdType_Str_AxdType_ExtCodeValue" />
+      <xs:element minOccurs="0" name="PurchPrice" nillable="true" type="st:AxdExtType_PurchPrice" />
+      <xs:element minOccurs="0" name="PurchQty" nillable="true" type="st:AxdExtType_PurchQty" />
+      <xs:element minOccurs="0" name="PurchReceivedNow" nillable="true" type="st:AxdExtType_PurchQty" />
+      <xs:element minOccurs="0" name="RecId" nillable="true" type="st:AxdExtType_RecId" />
+      <xs:element minOccurs="0" name="RecVersion" nillable="true" type="st:AxdExtType_RecVersion" />
+      <xs:element minOccurs="0" name="TEC_STG_PurchTable" nillable="true" type="st:AxdUnion_AxdType_Str_AxdType_ExtCodeValue" />
+      <xs:element minOccurs="0" name="Type" nillable="true" type="st:AxdExtType_TEC_Type" />
+      <xs:element minOccurs="0" name="VATLineAmount" nillable="true" type="st:AxdExtType_TEC_VATLineAmount" />
+    </xs:sequence>
+    <xs:attribute fixed="entity" name="class" use="required" />
+    <xs:attribute name="action" type="st:AxdEnum_AxdEntityAction" />
+  </xs:complexType>
+</xs:schema>

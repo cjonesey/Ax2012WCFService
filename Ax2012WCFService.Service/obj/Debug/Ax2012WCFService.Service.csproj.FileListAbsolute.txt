@@ -1,0 +1,44 @@
+C:\Users\Chris JOnes\Source\Workspaces\Workspace\Ax2012WCFService\Ax2012WCFService.Service\bin\Debug\AutoMapper.Net4.dll
+C:\Users\Chris JOnes\Source\Workspaces\Workspace\Ax2012WCFService\Ax2012WCFService.Service\bin\Debug\Ax2012WCFService.Service.dll.config
+C:\Users\Chris JOnes\Source\Workspaces\Workspace\Ax2012WCFService\Ax2012WCFService.Service\bin\Debug\Ax2012WCFService.Service.dll
+C:\Users\Chris JOnes\Source\Workspaces\Workspace\Ax2012WCFService\Ax2012WCFService.Service\bin\Debug\Ax2012WCFService.Service.pdb
+C:\Users\Chris JOnes\Source\Workspaces\Workspace\Ax2012WCFService\Ax2012WCFService.Service\bin\Debug\Ax2012WCFService.Common.dll
+C:\Users\Chris JOnes\Source\Workspaces\Workspace\Ax2012WCFService\Ax2012WCFService.Service\bin\Debug\Ax2012WCFService.DAL.dll
+C:\Users\Chris JOnes\Source\Workspaces\Workspace\Ax2012WCFService\Ax2012WCFService.Service\bin\Debug\Ax2012WCFService.Entities.dll
+C:\Users\Chris JOnes\Source\Workspaces\Workspace\Ax2012WCFService\Ax2012WCFService.Service\bin\Debug\AutoMapper.dll
+C:\Users\Chris JOnes\Source\Workspaces\Workspace\Ax2012WCFService\Ax2012WCFService.Service\bin\Debug\EntityFramework.dll
+C:\Users\Chris JOnes\Source\Workspaces\Workspace\Ax2012WCFService\Ax2012WCFService.Service\bin\Debug\Ax2012WCFService.Common.pdb
+C:\Users\Chris JOnes\Source\Workspaces\Workspace\Ax2012WCFService\Ax2012WCFService.Service\bin\Debug\Ax2012WCFService.DAL.pdb
+C:\Users\Chris JOnes\Source\Workspaces\Workspace\Ax2012WCFService\Ax2012WCFService.Service\bin\Debug\Ax2012WCFService.Entities.pdb
+C:\Users\Chris JOnes\Source\Workspaces\Workspace\Ax2012WCFService\Ax2012WCFService.Service\bin\Debug\AutoMapper.pdb
+C:\Users\Chris JOnes\Source\Workspaces\Workspace\Ax2012WCFService\Ax2012WCFService.Service\bin\Debug\AutoMapper.xml
+C:\Users\Chris JOnes\Source\Workspaces\Workspace\Ax2012WCFService\Ax2012WCFService.Service\bin\Debug\EntityFramework.xml
+C:\Users\Chris JOnes\Source\Workspaces\Workspace\Ax2012WCFService\Ax2012WCFService.Service\obj\Debug\Ax2012WCFService.Service.dll
+C:\Users\Chris JOnes\Source\Workspaces\Workspace\Ax2012WCFService\Ax2012WCFService.Service\obj\Debug\Ax2012WCFService.Service.pdb
+C:\Users\Chris JOnes\Source\Workspaces\Workspace\Ax2012WCFService\Ax2012WCFService.Service\bin\Debug\Ax2012WCFService.Common.dll.config
+C:\Users\Chris JOnes\Source\Workspaces\Workspace\Ax2012WCFService\Ax2012WCFService.Service\bin\Debug\Ax2012WCFService.DAL.dll.config
+C:\Users\Chris JOnes\Source\Workspaces\Workspace\Ax2012WCFService\Ax2012WCFService.Service\obj\Debug\Ax2012WCFService.Service.csprojAssemblyReference.cache
+C:\Users\Chris JOnes\Source\Workspaces\Workspace\Ax2012WCFService\Ax2012WCFService.Service\obj\Debug\Ax2012WCFService.Service.csproj.CoreCompileInputs.cache
+C:\Users\Chris JOnes\Source\Workspaces\Workspace\Ax2012WCFService\Ax2012WCFService.Service\obj\Debug\Ax2012WCFService.Service.csproj.CopyComplete
+C:\Play\Ax2012WCFService\Ax2012WCFService.Service\bin\Debug\AutoMapper.Net4.dll
+C:\Play\Ax2012WCFService\Ax2012WCFService.Service\bin\Debug\Ax2012WCFService.Service.dll.config
+C:\Play\Ax2012WCFService\Ax2012WCFService.Service\bin\Debug\Ax2012WCFService.Service.dll
+C:\Play\Ax2012WCFService\Ax2012WCFService.Service\bin\Debug\Ax2012WCFService.Service.pdb
+C:\Play\Ax2012WCFService\Ax2012WCFService.Service\bin\Debug\Ax2012WCFService.Common.dll
+C:\Play\Ax2012WCFService\Ax2012WCFService.Service\bin\Debug\Ax2012WCFService.DAL.dll
+C:\Play\Ax2012WCFService\Ax2012WCFService.Service\bin\Debug\Ax2012WCFService.Entities.dll
+C:\Play\Ax2012WCFService\Ax2012WCFService.Service\bin\Debug\AutoMapper.dll
+C:\Play\Ax2012WCFService\Ax2012WCFService.Service\bin\Debug\EntityFramework.dll
+C:\Play\Ax2012WCFService\Ax2012WCFService.Service\bin\Debug\Ax2012WCFService.Common.pdb
+C:\Play\Ax2012WCFService\Ax2012WCFService.Service\bin\Debug\Ax2012WCFService.Common.dll.config
+C:\Play\Ax2012WCFService\Ax2012WCFService.Service\bin\Debug\Ax2012WCFService.DAL.pdb
+C:\Play\Ax2012WCFService\Ax2012WCFService.Service\bin\Debug\Ax2012WCFService.DAL.dll.config
+C:\Play\Ax2012WCFService\Ax2012WCFService.Service\bin\Debug\Ax2012WCFService.Entities.pdb
+C:\Play\Ax2012WCFService\Ax2012WCFService.Service\bin\Debug\AutoMapper.pdb
+C:\Play\Ax2012WCFService\Ax2012WCFService.Service\bin\Debug\AutoMapper.xml
+C:\Play\Ax2012WCFService\Ax2012WCFService.Service\bin\Debug\EntityFramework.xml
+C:\Play\Ax2012WCFService\Ax2012WCFService.Service\obj\Debug\Ax2012WCFService.Service.csprojAssemblyReference.cache
+C:\Play\Ax2012WCFService\Ax2012WCFService.Service\obj\Debug\Ax2012WCFService.Service.csproj.CoreCompileInputs.cache
+C:\Play\Ax2012WCFService\Ax2012WCFService.Service\obj\Debug\Ax2012WCFService.Service.csproj.CopyComplete
+C:\Play\Ax2012WCFService\Ax2012WCFService.Service\obj\Debug\Ax2012WCFService.Service.dll
+C:\Play\Ax2012WCFService\Ax2012WCFService.Service\obj\Debug\Ax2012WCFService.Service.pdb

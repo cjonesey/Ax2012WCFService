@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:i0="http://schemas.microsoft.com/netfx/2009/05/routing" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:i1="http://tempuri.org" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="RoutingService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsp:Policy wsu:Id="serviceEndpoint_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <http:NegotiateAuthentication xmlns:http="http://schemas.microsoft.com/ws/06/2004/policy/http" />
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsp:Policy wsu:Id="BasicHttpBinding_QTQ_STG_VendorService_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <http:NegotiateAuthentication xmlns:http="http://schemas.microsoft.com/ws/06/2004/policy/http" />
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsdl:import namespace="http://schemas.microsoft.com/netfx/2009/05/routing" location="http://dickdastardly.oyezstraker.co.uk/MicrosoftDynamicsAXAif60/QTQVendService/xppservice.svc?wsdl=wsdl0" />
+  <wsdl:import namespace="http://tempuri.org" location="http://dickdastardly.oyezstraker.co.uk/MicrosoftDynamicsAXAif60/QTQVendService/xppservice.svc?wsdl=wsdl1" />
+  <wsdl:types />
+  <wsdl:binding name="serviceEndpoint" type="i0:IRequestReplyRouter">
+    <wsp:PolicyReference URI="#serviceEndpoint_policy" />
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+  </wsdl:binding>
+  <wsdl:binding name="BasicHttpBinding_QTQ_STG_VendorService" type="i1:QTQ_STG_VendorService">
+    <wsp:PolicyReference URI="#BasicHttpBinding_QTQ_STG_VendorService_policy" />
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="create">
+      <soap:operation soapAction="http://tempuri.org/QTQ_STG_VendorService/create" style="document" />
+      <wsdl:input name="QTQ_STG_VendorServiceCreateRequest">
+        <soap:header message="i1:QTQ_STG_VendorServiceCreateRequest_Headers" part="context" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="QTQ_STG_VendorServiceCreateResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="AifFaultFault">
+        <soap:fault use="literal" name="AifFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="update">
+      <soap:operation soapAction="http://tempuri.org/QTQ_STG_VendorService/update" style="document" />
+      <wsdl:input name="QTQ_STG_VendorServiceUpdateRequest">
+        <soap:header message="i1:QTQ_STG_VendorServiceUpdateRequest_Headers" part="context" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="QTQ_STG_VendorServiceUpdateResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="AifFaultFault">
+        <soap:fault use="literal" name="AifFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="delete">
+      <soap:operation soapAction="http://tempuri.org/QTQ_STG_VendorService/delete" style="document" />
+      <wsdl:input name="QTQ_STG_VendorServiceDeleteRequest">
+        <soap:header message="i1:QTQ_STG_VendorServiceDeleteRequest_Headers" part="context" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="QTQ_STG_VendorServiceDeleteResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="AifFaultFault">
+        <soap:fault use="literal" name="AifFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getChangedKeys">
+      <soap:operation soapAction="http://tempuri.org/QTQ_STG_VendorService/getChangedKeys" style="document" />
+      <wsdl:input name="QTQ_STG_VendorServiceGetChangedKeysRequest">
+        <soap:header message="i1:QTQ_STG_VendorServiceGetChangedKeysRequest_Headers" part="context" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="QTQ_STG_VendorServiceGetChangedKeysResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="AifFaultFault">
+        <soap:fault use="literal" name="AifFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getKeys">
+      <soap:operation soapAction="http://tempuri.org/QTQ_STG_VendorService/getKeys" style="document" />
+      <wsdl:input name="QTQ_STG_VendorServiceGetKeysRequest">
+        <soap:header message="i1:QTQ_STG_VendorServiceGetKeysRequest_Headers" part="context" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="QTQ_STG_VendorServiceGetKeysResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="AifFaultFault">
+        <soap:fault use="literal" name="AifFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="read">
+      <soap:operation soapAction="http://tempuri.org/QTQ_STG_VendorService/read" style="document" />
+      <wsdl:input name="QTQ_STG_VendorServiceReadRequest">
+        <soap:header message="i1:QTQ_STG_VendorServiceReadRequest_Headers" part="context" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="QTQ_STG_VendorServiceReadResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="AifFaultFault">
+        <soap:fault use="literal" name="AifFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="findKeys">
+      <soap:operation soapAction="http://tempuri.org/QTQ_STG_VendorService/findKeys" style="document" />
+      <wsdl:input name="QTQ_STG_VendorServiceFindKeysRequest">
+        <soap:header message="i1:QTQ_STG_VendorServiceFindKeysRequest_Headers" part="context" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="QTQ_STG_VendorServiceFindKeysResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="AifFaultFault">
+        <soap:fault use="literal" name="AifFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="find">
+      <soap:operation soapAction="http://tempuri.org/QTQ_STG_VendorService/find" style="document" />
+      <wsdl:input name="QTQ_STG_VendorServiceFindRequest">
+        <soap:header message="i1:QTQ_STG_VendorServiceFindRequest_Headers" part="context" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="QTQ_STG_VendorServiceFindResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="AifFaultFault">
+        <soap:fault use="literal" name="AifFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="RoutingService">
+    <wsdl:port name="serviceEndpoint" binding="tns:serviceEndpoint">
+      <soap:address location="http://dickdastardly.oyezstraker.co.uk/MicrosoftDynamicsAXAif60/QTQVendService/xppservice.svc" />
+    </wsdl:port>
+    <wsdl:port name="BasicHttpBinding_QTQ_STG_VendorService" binding="tns:BasicHttpBinding_QTQ_STG_VendorService">
+      <soap:address location="http://dickdastardly.oyezstraker.co.uk/MicrosoftDynamicsAXAif60/QTQVendService/xppservice.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

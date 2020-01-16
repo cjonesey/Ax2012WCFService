@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://tempuri.org" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://dickdastardly.oyezstraker.co.uk/MicrosoftDynamicsAXAif60/QTQSalesInvService/xppservice.svc?xsd=xsd11" namespace="http://tempuri.org" />
+      <xsd:import schemaLocation="http://dickdastardly.oyezstraker.co.uk/MicrosoftDynamicsAXAif60/QTQSalesInvService/xppservice.svc?xsd=xsd12" namespace="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" />
+      <xsd:import schemaLocation="http://dickdastardly.oyezstraker.co.uk/MicrosoftDynamicsAXAif60/QTQSalesInvService/xppservice.svc?xsd=xsd14" namespace="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" />
+      <xsd:import schemaLocation="http://dickdastardly.oyezstraker.co.uk/MicrosoftDynamicsAXAif60/QTQSalesInvService/xppservice.svc?xsd=xsd0" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://dickdastardly.oyezstraker.co.uk/MicrosoftDynamicsAXAif60/QTQSalesInvService/xppservice.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/dynamics/2011/02/documents/DocumentPaging" />
+      <xsd:import schemaLocation="http://dickdastardly.oyezstraker.co.uk/MicrosoftDynamicsAXAif60/QTQSalesInvService/xppservice.svc?xsd=xsd2" />
+      <xsd:import schemaLocation="http://dickdastardly.oyezstraker.co.uk/MicrosoftDynamicsAXAif60/QTQSalesInvService/xppservice.svc?xsd=xsd3" namespace="http://schemas.microsoft.com/dynamics/2006/02/documents/EntityKeyList" />
+      <xsd:import schemaLocation="http://dickdastardly.oyezstraker.co.uk/MicrosoftDynamicsAXAif60/QTQSalesInvService/xppservice.svc?xsd=xsd4" namespace="http://schemas.microsoft.com/dynamics/2006/02/documents/EntityKey" />
+      <xsd:import schemaLocation="http://dickdastardly.oyezstraker.co.uk/MicrosoftDynamicsAXAif60/QTQSalesInvService/xppservice.svc?xsd=xsd5" namespace="http://schemas.microsoft.com/dynamics/2011/02/documents/EntityKeyPage" />
+      <xsd:import schemaLocation="http://dickdastardly.oyezstraker.co.uk/MicrosoftDynamicsAXAif60/QTQSalesInvService/xppservice.svc?xsd=xsd8" namespace="http://schemas.microsoft.com/dynamics/2006/02/documents/QueryCriteria" />
+      <xsd:import schemaLocation="http://dickdastardly.oyezstraker.co.uk/MicrosoftDynamicsAXAif60/QTQSalesInvService/xppservice.svc?xsd=xsd9" namespace="http://schemas.microsoft.com/dynamics/2008/01/documents/QTQ_STG_SalesInvoice" />
+      <xsd:import schemaLocation="http://dickdastardly.oyezstraker.co.uk/MicrosoftDynamicsAXAif60/QTQSalesInvService/xppservice.svc?xsd=xsd10" namespace="http://schemas.microsoft.com/dynamics/2008/01/sharedtypes" />
+      <xsd:import schemaLocation="http://dickdastardly.oyezstraker.co.uk/MicrosoftDynamicsAXAif60/QTQSalesInvService/xppservice.svc?xsd=xsd13" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <xsd:import schemaLocation="http://dickdastardly.oyezstraker.co.uk/MicrosoftDynamicsAXAif60/QTQSalesInvService/xppservice.svc?xsd=xsd15" namespace="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.AX.Framework.Services" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="QTQ_STG_SalesInvoiceServiceFindRequest">
+    <wsdl:part name="parameters" element="tns:QTQ_STG_SalesInvoiceServiceFindRequest" />
+  </wsdl:message>
+  <wsdl:message name="QTQ_STG_SalesInvoiceServiceFindRequest_Headers">
+    <wsdl:part xmlns:q1="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q1:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="QTQ_STG_SalesInvoiceServiceFindResponse">
+    <wsdl:part name="parameters" element="tns:QTQ_STG_SalesInvoiceServiceFindResponse" />
+  </wsdl:message>
+  <wsdl:message name="QTQ_STG_SalesInvoiceService_find_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q2="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q2:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="QTQ_STG_SalesInvoiceServiceGetChangedKeysRequest">
+    <wsdl:part name="parameters" element="tns:QTQ_STG_SalesInvoiceServiceGetChangedKeysRequest" />
+  </wsdl:message>
+  <wsdl:message name="QTQ_STG_SalesInvoiceServiceGetChangedKeysRequest_Headers">
+    <wsdl:part xmlns:q3="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q3:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="QTQ_STG_SalesInvoiceServiceGetChangedKeysResponse">
+    <wsdl:part name="parameters" element="tns:QTQ_STG_SalesInvoiceServiceGetChangedKeysResponse" />
+  </wsdl:message>
+  <wsdl:message name="QTQ_STG_SalesInvoiceService_getChangedKeys_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q4="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q4:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="QTQ_STG_SalesInvoiceServiceUpdateRequest">
+    <wsdl:part name="parameters" element="tns:QTQ_STG_SalesInvoiceServiceUpdateRequest" />
+  </wsdl:message>
+  <wsdl:message name="QTQ_STG_SalesInvoiceServiceUpdateRequest_Headers">
+    <wsdl:part xmlns:q5="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q5:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="QTQ_STG_SalesInvoiceServiceUpdateResponse">
+    <wsdl:part name="parameters" element="tns:QTQ_STG_SalesInvoiceServiceUpdateResponse" />
+  </wsdl:message>
+  <wsdl:message name="QTQ_STG_SalesInvoiceService_update_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q6="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q6:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="QTQ_STG_SalesInvoiceServiceDeleteRequest">
+    <wsdl:part name="parameters" element="tns:QTQ_STG_SalesInvoiceServiceDeleteRequest" />
+  </wsdl:message>
+  <wsdl:message name="QTQ_STG_SalesInvoiceServiceDeleteRequest_Headers">
+    <wsdl:part xmlns:q7="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q7:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="QTQ_STG_SalesInvoiceServiceDeleteResponse">
+    <wsdl:part name="parameters" element="tns:QTQ_STG_SalesInvoiceServiceDeleteResponse" />
+  </wsdl:message>
+  <wsdl:message name="QTQ_STG_SalesInvoiceService_delete_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q8="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q8:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="QTQ_STG_SalesInvoiceServiceGetKeysRequest">
+    <wsdl:part name="parameters" element="tns:QTQ_STG_SalesInvoiceServiceGetKeysRequest" />
+  </wsdl:message>
+  <wsdl:message name="QTQ_STG_SalesInvoiceServiceGetKeysRequest_Headers">
+    <wsdl:part xmlns:q9="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q9:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="QTQ_STG_SalesInvoiceServiceGetKeysResponse">
+    <wsdl:part name="parameters" element="tns:QTQ_STG_SalesInvoiceServiceGetKeysResponse" />
+  </wsdl:message>
+  <wsdl:message name="QTQ_STG_SalesInvoiceService_getKeys_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q10="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q10:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="QTQ_STG_SalesInvoiceServiceReadRequest">
+    <wsdl:part name="parameters" element="tns:QTQ_STG_SalesInvoiceServiceReadRequest" />
+  </wsdl:message>
+  <wsdl:message name="QTQ_STG_SalesInvoiceServiceReadRequest_Headers">
+    <wsdl:part xmlns:q11="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q11:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="QTQ_STG_SalesInvoiceServiceReadResponse">
+    <wsdl:part name="parameters" element="tns:QTQ_STG_SalesInvoiceServiceReadResponse" />
+  </wsdl:message>
+  <wsdl:message name="QTQ_STG_SalesInvoiceService_read_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q12="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q12:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="QTQ_STG_SalesInvoiceServiceFindKeysRequest">
+    <wsdl:part name="parameters" element="tns:QTQ_STG_SalesInvoiceServiceFindKeysRequest" />
+  </wsdl:message>
+  <wsdl:message name="QTQ_STG_SalesInvoiceServiceFindKeysRequest_Headers">
+    <wsdl:part xmlns:q13="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q13:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="QTQ_STG_SalesInvoiceServiceFindKeysResponse">
+    <wsdl:part name="parameters" element="tns:QTQ_STG_SalesInvoiceServiceFindKeysResponse" />
+  </wsdl:message>
+  <wsdl:message name="QTQ_STG_SalesInvoiceService_findKeys_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q14="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q14:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="QTQ_STG_SalesInvoiceServiceCreateRequest">
+    <wsdl:part name="parameters" element="tns:QTQ_STG_SalesInvoiceServiceCreateRequest" />
+  </wsdl:message>
+  <wsdl:message name="QTQ_STG_SalesInvoiceServiceCreateRequest_Headers">
+    <wsdl:part xmlns:q15="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q15:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="QTQ_STG_SalesInvoiceServiceCreateResponse">
+    <wsdl:part name="parameters" element="tns:QTQ_STG_SalesInvoiceServiceCreateResponse" />
+  </wsdl:message>
+  <wsdl:message name="QTQ_STG_SalesInvoiceService_create_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q16="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q16:AifFault" />
+  </wsdl:message>
+  <wsdl:portType name="QTQ_STG_SalesInvoiceService">
+    <wsdl:operation name="find">
+      <wsdl:input wsaw:Action="http://tempuri.org/QTQ_STG_SalesInvoiceService/find" name="QTQ_STG_SalesInvoiceServiceFindRequest" message="tns:QTQ_STG_SalesInvoiceServiceFindRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/QTQ_STG_SalesInvoiceService/findResponse" name="QTQ_STG_SalesInvoiceServiceFindResponse" message="tns:QTQ_STG_SalesInvoiceServiceFindResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/QTQ_STG_SalesInvoiceService/findAifFaultFault" name="AifFaultFault" message="tns:QTQ_STG_SalesInvoiceService_find_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getChangedKeys">
+      <wsdl:input wsaw:Action="http://tempuri.org/QTQ_STG_SalesInvoiceService/getChangedKeys" name="QTQ_STG_SalesInvoiceServiceGetChangedKeysRequest" message="tns:QTQ_STG_SalesInvoiceServiceGetChangedKeysRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/QTQ_STG_SalesInvoiceService/getChangedKeysResponse" name="QTQ_STG_SalesInvoiceServiceGetChangedKeysResponse" message="tns:QTQ_STG_SalesInvoiceServiceGetChangedKeysResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/QTQ_STG_SalesInvoiceService/getChangedKeysAifFaultFault" name="AifFaultFault" message="tns:QTQ_STG_SalesInvoiceService_getChangedKeys_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="update">
+      <wsdl:input wsaw:Action="http://tempuri.org/QTQ_STG_SalesInvoiceService/update" name="QTQ_STG_SalesInvoiceServiceUpdateRequest" message="tns:QTQ_STG_SalesInvoiceServiceUpdateRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/QTQ_STG_SalesInvoiceService/updateResponse" name="QTQ_STG_SalesInvoiceServiceUpdateResponse" message="tns:QTQ_STG_SalesInvoiceServiceUpdateResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/QTQ_STG_SalesInvoiceService/updateAifFaultFault" name="AifFaultFault" message="tns:QTQ_STG_SalesInvoiceService_update_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="delete">
+      <wsdl:input wsaw:Action="http://tempuri.org/QTQ_STG_SalesInvoiceService/delete" name="QTQ_STG_SalesInvoiceServiceDeleteRequest" message="tns:QTQ_STG_SalesInvoiceServiceDeleteRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/QTQ_STG_SalesInvoiceService/deleteResponse" name="QTQ_STG_SalesInvoiceServiceDeleteResponse" message="tns:QTQ_STG_SalesInvoiceServiceDeleteResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/QTQ_STG_SalesInvoiceService/deleteAifFaultFault" name="AifFaultFault" message="tns:QTQ_STG_SalesInvoiceService_delete_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getKeys">
+      <wsdl:input wsaw:Action="http://tempuri.org/QTQ_STG_SalesInvoiceService/getKeys" name="QTQ_STG_SalesInvoiceServiceGetKeysRequest" message="tns:QTQ_STG_SalesInvoiceServiceGetKeysRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/QTQ_STG_SalesInvoiceService/getKeysResponse" name="QTQ_STG_SalesInvoiceServiceGetKeysResponse" message="tns:QTQ_STG_SalesInvoiceServiceGetKeysResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/QTQ_STG_SalesInvoiceService/getKeysAifFaultFault" name="AifFaultFault" message="tns:QTQ_STG_SalesInvoiceService_getKeys_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="read">
+      <wsdl:input wsaw:Action="http://tempuri.org/QTQ_STG_SalesInvoiceService/read" name="QTQ_STG_SalesInvoiceServiceReadRequest" message="tns:QTQ_STG_SalesInvoiceServiceReadRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/QTQ_STG_SalesInvoiceService/readResponse" name="QTQ_STG_SalesInvoiceServiceReadResponse" message="tns:QTQ_STG_SalesInvoiceServiceReadResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/QTQ_STG_SalesInvoiceService/readAifFaultFault" name="AifFaultFault" message="tns:QTQ_STG_SalesInvoiceService_read_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="findKeys">
+      <wsdl:input wsaw:Action="http://tempuri.org/QTQ_STG_SalesInvoiceService/findKeys" name="QTQ_STG_SalesInvoiceServiceFindKeysRequest" message="tns:QTQ_STG_SalesInvoiceServiceFindKeysRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/QTQ_STG_SalesInvoiceService/findKeysResponse" name="QTQ_STG_SalesInvoiceServiceFindKeysResponse" message="tns:QTQ_STG_SalesInvoiceServiceFindKeysResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/QTQ_STG_SalesInvoiceService/findKeysAifFaultFault" name="AifFaultFault" message="tns:QTQ_STG_SalesInvoiceService_findKeys_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="create">
+      <wsdl:input wsaw:Action="http://tempuri.org/QTQ_STG_SalesInvoiceService/create" name="QTQ_STG_SalesInvoiceServiceCreateRequest" message="tns:QTQ_STG_SalesInvoiceServiceCreateRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/QTQ_STG_SalesInvoiceService/createResponse" name="QTQ_STG_SalesInvoiceServiceCreateResponse" message="tns:QTQ_STG_SalesInvoiceServiceCreateResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/QTQ_STG_SalesInvoiceService/createAifFaultFault" name="AifFaultFault" message="tns:QTQ_STG_SalesInvoiceService_create_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>

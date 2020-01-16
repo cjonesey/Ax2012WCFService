@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Ax2012DependenciesModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="Ax2012DependenciesEntities" annotation:LazyLoadingEnabled="true">
+    <FunctionImport Name="spExtractAxPaymentTerms" ReturnType="Collection(Ax2012DependenciesModel.spExtractAxPaymentTerms_Result)">
+      <Parameter Name="DataAreaId" Mode="In" Type="String" />
+    </FunctionImport>
+  </EntityContainer>
+  <ComplexType Name="spExtractAxPaymentTerms_Result">
+    <Property Type="String" Name="AccountNum" Nullable="false" MaxLength="20" />
+    <Property Type="String" Name="PaymTermID" Nullable="false" MaxLength="10" />
+    <Property Type="Int32" Name="PAYMMETHOD" Nullable="true" />
+    <Property Type="Int32" Name="NUMOFMONTHS" Nullable="true" />
+    <Property Type="Int32" Name="NUMOFDAYS" Nullable="true" />
+    <Property Type="String" Name="PAYMMODE" Nullable="false" MaxLength="10" />
+  </ComplexType>
+</Schema>

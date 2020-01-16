@@ -1,0 +1,409 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Ax2012InterfaceModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="AddressChange">
+    <Key>
+      <PropertyRef Name="AddressChangeId" />
+    </Key>
+    <Property Name="AddressChangeId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="StagingId" Type="Guid" Nullable="false" />
+    <Property Name="AccountNum" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="CompanyId" Type="String" MaxLength="3" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="AddressRef" Type="String" MaxLength="4" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Description" Type="String" MaxLength="60" FixedLength="false" Unicode="true" />
+    <Property Name="LocationRole" Type="String" MaxLength="40" FixedLength="false" Unicode="true" />
+    <Property Name="BuildingCompliment" Type="String" MaxLength="60" FixedLength="false" Unicode="true" />
+    <Property Name="City" Type="String" MaxLength="60" FixedLength="false" Unicode="true" />
+    <Property Name="County" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="Street" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="State" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="ZipCode" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="CountryRegionId" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="Comment1" Type="String" MaxLength="60" FixedLength="false" Unicode="true" />
+    <Property Name="Comment2" Type="String" MaxLength="60" FixedLength="false" Unicode="true" />
+    <Property Name="DxReference" Type="String" MaxLength="60" FixedLength="false" Unicode="true" />
+    <Property Name="InvoiceAddressRef" Type="String" MaxLength="4" FixedLength="false" Unicode="true" />
+    <Property Name="InventLocation" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="InventSite" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="ServiceType" Type="Int32" />
+    <Property Name="TheirCode" Type="String" MaxLength="13" FixedLength="false" Unicode="true" />
+    <Property Name="Rep1" Type="String" MaxLength="25" FixedLength="false" Unicode="true" />
+    <Property Name="TaxGroup" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="AccountType" Type="Int32" />
+    <Property Name="TaxgroupInbound" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="InventLocationInbound" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="ServiceLevel" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="VanRoute" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="DistrictName" Type="String" MaxLength="60" FixedLength="false" Unicode="true" />
+    <Property Name="ExtractStatus" Type="Int32" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+    <Property Name="ExtractedDate" Type="DateTime" Precision="3" />
+    <Property Name="InsUpdDel" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="CustChange">
+    <Key>
+      <PropertyRef Name="CustChangeID" />
+    </Key>
+    <Property Name="CustChangeID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="StagingId" Type="Guid" Nullable="false" />
+    <Property Name="AccountNum" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="NameAlias" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="AccountStatement" Type="Int32" Nullable="false" />
+    <Property Name="Currency" Type="String" MaxLength="3" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="CustGroup" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Blocked" Type="Int32" Nullable="false" />
+    <Property Name="CreditMax" Type="Decimal" Precision="32" Scale="16" />
+    <Property Name="MandatoryCreditLimit" Type="Int32" />
+    <Property Name="CreditRating" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="InvoiceAccount" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="VendAccount" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="InventLocation" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="InvoiceAddress" Type="Int32" />
+    <Property Name="OurAccountNum" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="PaymIdType" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="PaymDayId" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="PaymMode" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="PaymTermId" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="SalesGroup" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="TaxGroup" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="VATNum" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="MainContactWorker" Type="String" MaxLength="25" FixedLength="false" Unicode="true" />
+    <Property Name="SalesDistrictId" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="LineOfBusinessId" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="SegmentId" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="SubsegmentId" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="CompanyChainId" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="CustClassificationId" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="INVENTSITEID" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="DiscountRate" Type="Decimal" Precision="32" Scale="16" />
+    <Property Name="DiscountType" Type="Int32" />
+    <Property Name="Tec_PriceBand" Type="Int64" />
+    <Property Name="Tec_MinOrderBreak" Type="Int64" />
+    <Property Name="AllowSplitPack" Type="Int32" />
+    <Property Name="MergeBackOrders" Type="Int32" />
+    <Property Name="MergeDeliveries" Type="Int32" />
+    <Property Name="MergeOrders" Type="Int32" />
+    <Property Name="DELIVERYSEQ" Type="Int32" />
+    <Property Name="DeliverComplete" Type="Int32" />
+    <Property Name="DeliveryPricing" Type="Int32" />
+    <Property Name="OrderNotes" Type="Int32" />
+    <Property Name="CUSTDNS" Type="Int32" />
+    <Property Name="ACKNOWLEDGEMENTS" Type="Int32" />
+    <Property Name="AckFormat" Type="Int32" />
+    <Property Name="AckPricing" Type="Int32" />
+    <Property Name="AckShowAllocation" Type="Int32" />
+    <Property Name="AllowBackorders" Type="Int32" />
+    <Property Name="ApplyCharge" Type="Int32" />
+    <Property Name="MinOrderValue" Type="Int32" />
+    <Property Name="Tec_ChargeCode" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+    <Property Name="ForcedSwitchSell" Type="Int32" />
+    <Property Name="InvoiceSequence" Type="Int32" />
+    <Property Name="InvoiceCompleteOrder" Type="Int32" />
+    <Property Name="Tec_InvoiceGroup" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+    <Property Name="Tec_BillingOptions" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+    <Property Name="FiscalYearEnd" Type="Int32" />
+    <Property Name="CreditCardIndicator" Type="Int32" />
+    <Property Name="WebEnabled" Type="Int32" />
+    <Property Name="Tec_WebSite" Type="Int64" />
+    <Property Name="Msg1" Type="String" MaxLength="40" FixedLength="false" Unicode="true" />
+    <Property Name="Msg2" Type="String" MaxLength="40" FixedLength="false" Unicode="true" />
+    <Property Name="Msg3" Type="String" MaxLength="40" FixedLength="false" Unicode="true" />
+    <Property Name="Msg4" Type="String" MaxLength="40" FixedLength="false" Unicode="true" />
+    <Property Name="Msg5" Type="String" MaxLength="40" FixedLength="false" Unicode="true" />
+    <Property Name="ManualAddress" Type="Int32" />
+    <Property Name="PrintCustomer" Type="Int32" />
+    <Property Name="HouseAccount" Type="Int32" />
+    <Property Name="ExtractStatus" Type="Int32" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+    <Property Name="ExtractedDate" Type="DateTime" Precision="3" />
+    <Property Name="InsUpdDelete" Type="Int32" Nullable="false" />
+    <Property Name="CompanyID" Type="String" MaxLength="3" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="SalesInvoiceJournal">
+    <Key>
+      <PropertyRef Name="SalesInvoiceJournalID" />
+    </Key>
+    <Property Name="SalesInvoiceJournalID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CompanyID" Type="String" MaxLength="4" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Description" Type="String" MaxLength="60" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="JournalType" Type="Int32" Nullable="false" />
+    <Property Name="JournalName" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="AccountType" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="CostCentre" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="OffsetCostCentre" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="OffsetAccountType" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="Txt" Type="String" MaxLength="60" FixedLength="false" Unicode="false" />
+    <Property Name="Invoice" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="DocumentDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="DocumentNum" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Due" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Amount" Type="Decimal" Precision="32" Scale="16" Nullable="false" />
+    <Property Name="CurrencyCode" Type="String" MaxLength="3" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ExchRate" Type="Decimal" Precision="32" Scale="16" Nullable="false" />
+    <Property Name="PaymMode" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="PaymReference" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="PostingProfile" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="TaxGroup" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="TaxCode" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="VatNumJournal" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="TransDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Account" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="OffsetAccount" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="ExtractStatus" Type="Int32" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+    <Property Name="ExtractedDate" Type="DateTime" Precision="3" />
+    <Property Name="StagingId" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="VATAmount" Type="Decimal" Precision="32" Scale="16" />
+  </EntityType>
+  <EntityType Name="VendorChange">
+    <Key>
+      <PropertyRef Name="VendorChangeId" />
+    </Key>
+    <Property Name="VendorChangeId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="AccountNum" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="CreditMax" Type="Decimal" Precision="32" Scale="16" Nullable="false" />
+    <Property Name="Currency" Type="String" MaxLength="3" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="CompanyId" Type="String" MaxLength="4" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="InventSiteId" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="InvoiceAccount" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="NameAlias" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="PaymMode" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="PaymModeInbound" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="StagingId" Type="String" MaxLength="40" FixedLength="false" Unicode="true" />
+    <Property Name="TaxGroup" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="TaxGroupInbound" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="VatNum" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="CreditRating" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="VendGroup" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="PaymSpecInbound" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="PaymSpec" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="PaymSchedInbound" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="PaymSched" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="BankAccount" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="Blocked" Type="Int32" />
+    <Property Name="YourAccountNum" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="LineOfBusinessId" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="SegmentId" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="SubsegmentId" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="PaymdayId" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="CompanyChainId" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="Memo" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="AllowSplitPack" Type="Int32" />
+    <Property Name="Message01" Type="String" MaxLength="60" FixedLength="false" Unicode="true" />
+    <Property Name="Message02" Type="String" MaxLength="60" FixedLength="false" Unicode="true" />
+    <Property Name="Message03" Type="String" MaxLength="60" FixedLength="false" Unicode="true" />
+    <Property Name="Message04" Type="String" MaxLength="60" FixedLength="false" Unicode="true" />
+    <Property Name="Message05" Type="String" MaxLength="60" FixedLength="false" Unicode="true" />
+    <Property Name="MinorderValue" Type="Int32" />
+    <Property Name="SupplierLeadTime" Type="Int32" />
+    <Property Name="TheirCode" Type="String" MaxLength="13" FixedLength="false" Unicode="true" />
+    <Property Name="Internal" Type="Int32" />
+    <Property Name="PrintSupplier" Type="Int32" />
+    <Property Name="ExtractStatus" Type="Int32" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+    <Property Name="ExtractedDate" Type="DateTime" Precision="3" />
+    <Property Name="InsUpdDelete" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="Ax2012InterfaceEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="AddressChanges" EntityType="Self.AddressChange" />
+    <EntitySet Name="CustChanges" EntityType="Self.CustChange" />
+    <EntitySet Name="SalesInvoiceJournals" EntityType="Self.SalesInvoiceJournal" />
+    <EntitySet Name="VendorChanges" EntityType="Self.VendorChange" />
+    <FunctionImport Name="spExtractAxPaymentTerms" ReturnType="Collection(Ax2012InterfaceModel.spExtractAxPaymentTerms_Result)">
+      <Parameter Name="DataAreaId" Mode="In" Type="String" />
+    </FunctionImport>
+    <EntitySet Name="AOMProductChanges" EntityType="Ax2012InterfaceModel.AOMProductChange" />
+    <EntitySet Name="AOMPurchaseDeliveryHeaders" EntityType="Ax2012InterfaceModel.AOMPurchaseDeliveryHeader" />
+    <EntitySet Name="AOMPurchaseDeliveryLines" EntityType="Ax2012InterfaceModel.AOMPurchaseDeliveryLine" />
+    <FunctionImport Name="spUpdateBatchStatus">
+      <Parameter Name="BatchJob" Mode="In" Type="String" />
+      <Parameter Name="CompanyID" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="spUpdateAccountsOnHoldJournal">
+      <Parameter Name="CompanyID" Mode="In" Type="String" />
+    </FunctionImport>
+    <EntitySet Name="PurchaseInvoiceHeaders" EntityType="Ax2012InterfaceModel.PurchaseInvoiceHeader" />
+    <EntitySet Name="PurchaseInvoiceLines" EntityType="Ax2012InterfaceModel.PurchaseInvoiceLine" />
+  </EntityContainer>
+  <ComplexType Name="spExtractAxPaymentTerms_Result">
+    <Property Type="String" Name="AccountNum" Nullable="false" MaxLength="20" />
+    <Property Type="String" Name="PaymTermID" Nullable="false" MaxLength="10" />
+    <Property Type="Int32" Name="PAYMMETHOD" Nullable="true" />
+    <Property Type="Int32" Name="NUMOFMONTHS" Nullable="true" />
+    <Property Type="Int32" Name="NUMOFDAYS" Nullable="true" />
+    <Property Type="String" Name="PAYMMODE" Nullable="false" MaxLength="10" />
+  </ComplexType>
+  <EntityType Name="AOMProductChange">
+    <Key>
+      <PropertyRef Name="ProductChangeID" />
+    </Key>
+    <Property Name="ProductChangeID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ITEMID" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="NAME" Type="String" Nullable="false" MaxLength="60" FixedLength="false" Unicode="true" />
+    <Property Name="WIDTH" Type="Decimal" Nullable="false" Precision="32" Scale="16" />
+    <Property Name="HEIGHT" Type="Decimal" Nullable="false" Precision="32" Scale="16" />
+    <Property Name="DEPTH" Type="Decimal" Nullable="false" Precision="32" Scale="16" />
+    <Property Name="NETWEIGHT" Type="Decimal" Nullable="false" Precision="32" Scale="16" />
+    <Property Name="INTRACODE" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="PRIMARYVENDID" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="ORIGCOUNTRYID" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="STOCK_OWNER" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="VAT_GROUP" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="DESCRIPTION_5" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="DESCRIPTION_4" Type="String" Nullable="false" MaxLength="40" FixedLength="false" Unicode="true" />
+    <Property Name="DESCRIPTION_3" Type="String" Nullable="false" MaxLength="40" FixedLength="false" Unicode="true" />
+    <Property Name="DESCRIPTION_2" Type="String" Nullable="false" MaxLength="40" FixedLength="false" Unicode="true" />
+    <Property Name="PRODUCT_OWNER" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="MANUFACTURER" Type="String" Nullable="false" MaxLength="8" FixedLength="false" Unicode="true" />
+    <Property Name="MANUFACTURER_PRODCODE" Type="String" Nullable="false" MaxLength="13" FixedLength="false" Unicode="true" />
+    <Property Name="DELIVERYTIME" Type="Int32" Nullable="false" />
+    <Property Name="STANDARD_COST" Type="Decimal" Nullable="false" Precision="32" Scale="16" />
+    <Property Name="SPECIAL" Type="Int32" Nullable="false" />
+    <Property Name="SELL_PRICEUNIT" Type="Decimal" Nullable="false" Precision="32" Scale="16" />
+    <Property Name="SELL_PRICE" Type="Decimal" Nullable="false" Precision="32" Scale="16" />
+    <Property Name="PAIDSTOCK" Type="Int32" Nullable="false" />
+    <Property Name="ITEMGROUP" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="TYPE" Type="Int32" Nullable="false" />
+    <Property Name="UNSPSC" Type="String" Nullable="false" MaxLength="8" FixedLength="false" Unicode="true" />
+    <Property Name="SHELFLIFE" Type="Int32" Nullable="false" />
+    <Property Name="STATUSBLOCKED" Type="String" Nullable="false" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="BOSSF_GROUP" Type="Int64" Nullable="false" />
+    <Property Name="BOSSF_RANGE" Type="Int64" Nullable="false" />
+    <Property Name="PRODUCT_RANGE" Type="Int64" Nullable="false" />
+    <Property Name="PRODUCT_GROUP" Type="Int64" Nullable="false" />
+    <Property Name="MASTERITEMID" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="DATAAREAID" Type="String" Nullable="false" MaxLength="4" FixedLength="false" Unicode="true" />
+    <Property Name="PARTITION" Type="Int64" Nullable="false" />
+    <Property Name="ExtractStatus" Type="Byte" Nullable="false" />
+    <Property Name="InsUpdDelete" Type="Int32" />
+  </EntityType>
+  <EntityType Name="AOMPurchaseDeliveryHeader">
+    <Key>
+      <PropertyRef Name="AOMPurchaseDeliveryHeaderID" />
+    </Key>
+    <Property Name="AOMPurchaseDeliveryHeaderID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="EXTERNAL_ORD_ID" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="EXTERNAL_DEL_ID" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="VENDACCOUNT" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="ADD_REFERENCE" Type="String" MaxLength="4" FixedLength="false" Unicode="true" />
+    <Property Name="ADD_LINE_1" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ADD_LINE_2" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ADD_CITY" Type="String" MaxLength="40" FixedLength="false" Unicode="true" />
+    <Property Name="ADD_TERRITORY" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="ADD_COUNTRY" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="ADD_ZIPCODE" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="VENDORREF" Type="String" MaxLength="60" FixedLength="false" Unicode="true" />
+    <Property Name="DELIVERYDATE" Type="DateTime" Precision="3" />
+    <Property Name="INVENTLOCATIONID" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="TYPE" Type="Int32" />
+    <Property Name="SHIP_NAME" Type="String" MaxLength="60" FixedLength="false" Unicode="true" />
+    <Property Name="COSTOFSALES" Type="Int32" />
+    <Property Name="DLVNAME" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="DLVADD_LINE_1" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DLVADD_LINE_2" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DLVCITY" Type="String" MaxLength="40" FixedLength="false" Unicode="true" />
+    <Property Name="DLVTERRITORY" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="DLVCOUNTRY" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="DLVZIPCODE" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="EXTPURCHTYPE" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="OPERATORCODE" Type="String" MaxLength="5" FixedLength="false" Unicode="true" />
+    <Property Name="ORDERUPDATETYPE" Type="Int32" />
+    <Property Name="DIMENSION" Type="Int64" />
+    <Property Name="INVENTSITEID" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="PURCHASETYPE" Type="Int32" />
+    <Property Name="DLVADD_REFERENCE" Type="String" MaxLength="4" FixedLength="false" Unicode="true" />
+    <Property Name="VATAMOUNT" Type="Decimal" Precision="32" Scale="16" />
+    <Property Name="INVOICEID" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="ORDER_TOTAL_NET" Type="Decimal" Precision="32" Scale="16" />
+    <Property Name="ORDER_TOTAL_GROSS" Type="Decimal" Precision="32" Scale="16" />
+    <Property Name="MODIFIEDDATETIME" Type="DateTime" Precision="3" />
+    <Property Name="CREATEDDATETIME" Type="DateTime" Precision="3" />
+    <Property Name="DATAAREAID" Type="String" MaxLength="4" FixedLength="false" Unicode="true" />
+    <Property Name="INVENTLOCATIONID1" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="INVOICEDATE" Type="DateTime" Precision="3" />
+    <Property Name="ExtractStatus" Type="Byte" />
+    <Property Name="HeaderProcessed" Type="Byte" />
+    <Property Name="HeaderSequence" Type="Int16" />
+  </EntityType>
+  <EntityType Name="AOMPurchaseDeliveryLine">
+    <Key>
+      <PropertyRef Name="AOMPurchaseDeliveryLineID" />
+    </Key>
+    <Property Name="AOMPurchaseDeliveryLineID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="AOMPurchaseDeliveryHeaderID" Type="Int32" />
+    <Property Name="EXTERNAL_ORD_ID" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="EXTERNAL_DEL_ID" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="DELIVERYDATE" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="ITEMID" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="LINEAMOUNT" Type="Decimal" Nullable="false" Precision="32" Scale="16" />
+    <Property Name="PURCHPRICE" Type="Decimal" Nullable="false" Precision="32" Scale="16" />
+    <Property Name="PURCHQTY" Type="Decimal" Nullable="false" Precision="32" Scale="16" />
+    <Property Name="TYPE" Type="Int32" Nullable="false" />
+    <Property Name="NAME" Type="String" Nullable="false" MaxLength="60" FixedLength="false" Unicode="true" />
+    <Property Name="PROGRESSITEMID" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="PRICEUNIT" Type="Decimal" Nullable="false" Precision="32" Scale="16" />
+    <Property Name="PURCHRECEIVEDNOW" Type="Decimal" Nullable="false" Precision="32" Scale="16" />
+    <Property Name="DEFAULTDIMENSION" Type="Int64" Nullable="false" />
+    <Property Name="LINENUM" Type="Decimal" Nullable="false" Precision="32" Scale="16" />
+    <Property Name="INVENTTRANSID" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="EXTERNAL_INV_ID" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="VATLINEAMOUNT" Type="Decimal" Nullable="false" Precision="32" Scale="16" />
+    <Property Name="PURCHID" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="MODIFIEDDATETIME" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="CREATEDDATETIME" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="DATAAREAID" Type="String" Nullable="false" MaxLength="4" FixedLength="false" Unicode="true" />
+    <Property Name="Seq" Type="Int32" />
+  </EntityType>
+  <EntityType Name="PurchaseInvoiceHeader">
+    <Key>
+      <PropertyRef Name="PurchaseInvoiceHeadersID" />
+    </Key>
+    <Property Name="PurchaseInvoiceHeadersID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="EXTERNAL_INV_ID" Type="String" Nullable="false" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="InvoiceDate" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="VENDACCOUNT" Type="String" Nullable="false" MaxLength="8" FixedLength="false" Unicode="false" />
+    <Property Name="EXTERNAL_ORD_ID" Type="String" Nullable="false" MaxLength="21" FixedLength="false" Unicode="false" />
+    <Property Name="EXTERNAL_DEL_ID" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="VATAmount" Type="Decimal" Precision="20" Scale="2" />
+    <Property Name="Order_Total_Net" Type="Decimal" Precision="20" Scale="2" />
+    <Property Name="Order_Total_Gross" Type="Decimal" Precision="20" Scale="2" />
+    <Property Name="VendorRef" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="CreatedDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="BatchIdentifier" Type="Guid" Nullable="false" />
+    <Property Name="ExtractBatchID" Type="Guid" />
+    <Property Name="InvoiceGUID" Type="Guid" Nullable="false" />
+    <Property Name="ExtractedDate" Type="DateTime" Precision="0" />
+    <Property Name="ErrorStatus" Type="Int16" />
+    <Property Name="ExtractStatus" Type="Int16" />
+    <Property Name="OrderVerfied" Type="Int16" />
+    <Property Name="DateAdded" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="InvoiceType" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="CompanyID" Type="String" MaxLength="3" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="PurchaseInvoiceLine">
+    <Key>
+      <PropertyRef Name="PurchaseInvoiceLinesID" />
+    </Key>
+    <Property Name="PurchaseInvoiceLinesID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="EXTERNAL_ORD_ID" Type="String" Nullable="false" MaxLength="41" FixedLength="false" Unicode="false" />
+    <Property Name="ItemID" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="Name" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="InvoiceLineNum" Type="Int32" Nullable="false" />
+    <Property Name="EXTERNAL_DEL_ID" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="PurchPrice" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="PurchQty" Type="Int32" Nullable="false" />
+    <Property Name="LineNum" Type="Int32" Nullable="false" />
+    <Property Name="LINE_TOTAL_EX_VAT" Type="Decimal" Precision="20" Scale="2" />
+    <Property Name="PurchReceivedNow" Type="Decimal" Precision="20" Scale="2" />
+    <Property Name="VATAmount" Type="Decimal" Precision="20" Scale="2" />
+    <Property Name="InvoiceDate" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="EXTERNAL_INV_ID" Type="String" Nullable="false" MaxLength="40" FixedLength="true" Unicode="false" />
+    <Property Name="PriceUnit" Type="Int16" Nullable="false" />
+    <Property Name="CREATEDDATE" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="VendAccount" Type="String" Nullable="false" MaxLength="8" FixedLength="false" Unicode="false" />
+    <Property Name="InvoiceGUID" Type="Guid" Nullable="false" />
+    <Property Name="BatchIdentifier" Type="Guid" Nullable="false" />
+    <Property Name="CompanyID" Type="String" Nullable="false" MaxLength="3" FixedLength="false" Unicode="false" />
+  </EntityType>
+</Schema>

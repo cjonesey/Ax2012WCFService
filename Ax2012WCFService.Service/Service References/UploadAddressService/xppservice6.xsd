@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.microsoft.com/dynamics/2008/01/documents/QTQ_STG_Address" xmlns:st="http://schemas.microsoft.com/dynamics/2008/01/sharedtypes" elementFormDefault="qualified" targetNamespace="http://schemas.microsoft.com/dynamics/2008/01/documents/QTQ_STG_Address" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://smurfette.oyezstraker.co.uk:82/MicrosoftDynamicsAXAif60/QTQAddrService/xppservice.svc?xsd=xsd10" namespace="http://schemas.microsoft.com/dynamics/2008/01/sharedtypes" />
+  <xs:element name="QTQ_STG_Address" type="tns:AxdQTQ_STG_Address" />
+  <xs:complexType name="AxdQTQ_STG_Address">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ClearNilFieldsOnUpdate" nillable="true" type="st:AxdEnum_boolean" />
+      <xs:element minOccurs="0" name="DocPurpose" nillable="true" type="st:AxdEnum_XMLDocPurpose" />
+      <xs:element minOccurs="0" name="SenderId" nillable="true" type="st:AxdExtType_DataAreaId" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="STG_AddrTable" type="tns:AxdEntity_STG_AddrTable" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="AxdEntity_STG_AddrTable">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="_DocumentHash" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RecId" nillable="true" type="st:AxdExtType_RecId" />
+      <xs:element minOccurs="0" name="RecVersion" nillable="true" type="st:AxdExtType_RecVersion" />
+      <xs:element minOccurs="0" name="AccountNum" nillable="true" type="st:AxdExtType_QTQ_STG_AccountNum" />
+      <xs:element minOccurs="0" name="AccountType" nillable="true" type="st:AxdEnum_QTQ_STG_AccountType" />
+      <xs:element minOccurs="0" name="ActionType" nillable="true" type="st:AxdEnum_QTQ_STG_ActionType" />
+      <xs:element minOccurs="0" name="AddressRef" nillable="true" type="st:AxdExtType_TEC_AddressRefType" />
+      <xs:element minOccurs="0" name="BuildingCompliment" nillable="true" type="st:AxdExtType_LogisticsAddressBuildingCompliment" />
+      <xs:element minOccurs="0" name="City" nillable="true" type="st:AxdExtType_LogisticsAddressCity" />
+      <xs:element minOccurs="0" name="Comment1" nillable="true" type="st:AxdExtType_Description" />
+      <xs:element minOccurs="0" name="Comment2" nillable="true" type="st:AxdExtType_Description" />
+      <xs:element minOccurs="0" name="CountryRegionId" nillable="true" type="st:AxdExtType_LogisticsAddressCountryRegionId" />
+      <xs:element minOccurs="0" name="County" nillable="true" type="st:AxdExtType_LogisticsAddressCountyId" />
+      <xs:element minOccurs="0" name="Description" nillable="true" type="st:AxdExtType_Description" />
+      <xs:element minOccurs="0" name="DestinationDataAreaId" nillable="true" type="st:AxdExtType_DataAreaId" />
+      <xs:element minOccurs="0" name="DistrictName" nillable="true" type="st:AxdExtType_LogisticsAddressDistrictName" />
+      <xs:element minOccurs="0" name="DxReference" nillable="true" type="st:AxdExtType_Name" />
+      <xs:element minOccurs="0" name="InventLocation" nillable="true" type="st:AxdExtType_InventLocationId" />
+      <xs:element minOccurs="0" name="InventLocationInbound" nillable="true" type="st:AxdExtType_QTQ_STG_InventLocationInbound" />
+      <xs:element minOccurs="0" name="InventSite" nillable="true" type="st:AxdExtType_InventSiteId" />
+      <xs:element minOccurs="0" name="InvoiceAddressRef" nillable="true" type="st:AxdExtType_TEC_AddressRefType" />
+      <xs:element minOccurs="0" name="LocationRole" nillable="true" type="st:AxdExtType_QTQ_STG_LocationRole" />
+      <xs:element minOccurs="0" name="ProcessedDate" nillable="true" type="st:AxdExtType_TransDate" />
+      <xs:element minOccurs="0" name="ProcessedTime" nillable="true" type="st:AxdExtType_TimeOfDay" />
+      <xs:element minOccurs="0" name="Rep1" nillable="true" type="st:AxdExtType_TEC_RepCodType" />
+      <xs:element minOccurs="0" name="ServiceLevel" nillable="true" type="st:AxdExtType_TEC_BaseGroupID" />
+      <xs:element minOccurs="0" name="ServiceType" nillable="true" type="st:AxdEnum_TEC_ServiceType" />
+      <xs:element minOccurs="0" name="StagingID" nillable="true" type="st:AxdExtType_TEC_StagingID" />
+      <xs:element minOccurs="0" name="State" nillable="true" type="st:AxdExtType_LogisticsAddressStateId" />
+      <xs:element minOccurs="0" name="Status" nillable="true" type="st:AxdEnum_QTQ_STG_Status" />
+      <xs:element minOccurs="0" name="Street" nillable="true" type="st:AxdExtType_LogisticsAddressStreet" />
+      <xs:element minOccurs="0" name="TaxGroup" nillable="true" type="st:AxdExtType_TaxGroup" />
+      <xs:element minOccurs="0" name="TaxGroupInbound" nillable="true" type="st:AxdExtType_QTQ_STG_TaxGroupInbound" />
+      <xs:element minOccurs="0" name="TheirCode" nillable="true" type="st:AxdExtType_TheirCode" />
+      <xs:element minOccurs="0" name="VanRoute" nillable="true" type="st:AxdExtType_TEC_BaseGroupID" />
+      <xs:element minOccurs="0" name="ZipCode" nillable="true" type="st:AxdExtType_LogisticsAddressZipCodeId" />
+    </xs:sequence>
+    <xs:attribute fixed="entity" name="class" use="required" />
+    <xs:attribute name="action" type="st:AxdEnum_AxdEntityAction" />
+  </xs:complexType>
+</xs:schema>

@@ -1,0 +1,10 @@
+C:\Users\Chris JOnes\Source\Workspaces\Workspace\Ax2012WCFService\Ax2012WCFService\Ax2012WCFService.Entities\bin\Debug\AutoMapper.Net4.dll
+C:\Users\Chris JOnes\Source\Workspaces\Workspace\Ax2012WCFService\Ax2012WCFService\Ax2012WCFService.Entities\bin\Debug\Ax2012WCFService.Entities.dll
+C:\Users\Chris JOnes\Source\Workspaces\Workspace\Ax2012WCFService\Ax2012WCFService\Ax2012WCFService.Entities\bin\Debug\Ax2012WCFService.Entities.pdb
+C:\Users\Chris JOnes\Source\Workspaces\Workspace\Ax2012WCFService\Ax2012WCFService\Ax2012WCFService.Entities\bin\Debug\AutoMapper.dll
+C:\Users\Chris JOnes\Source\Workspaces\Workspace\Ax2012WCFService\Ax2012WCFService\Ax2012WCFService.Entities\bin\Debug\AutoMapper.pdb
+C:\Users\Chris JOnes\Source\Workspaces\Workspace\Ax2012WCFService\Ax2012WCFService\Ax2012WCFService.Entities\bin\Debug\AutoMapper.xml
+C:\Users\Chris JOnes\Source\Workspaces\Workspace\Ax2012WCFService\Ax2012WCFService\Ax2012WCFService.Entities\bin\Debug\AutoMapper.Net4.pdb
+C:\Users\Chris JOnes\Source\Workspaces\Workspace\Ax2012WCFService\Ax2012WCFService\Ax2012WCFService.Entities\obj\Debug\Ax2012WCFService.Entities.csprojResolveAssemblyReference.cache
+C:\Users\Chris JOnes\Source\Workspaces\Workspace\Ax2012WCFService\Ax2012WCFService\Ax2012WCFService.Entities\obj\Debug\Ax2012WCFService.Entities.dll
+C:\Users\Chris JOnes\Source\Workspaces\Workspace\Ax2012WCFService\Ax2012WCFService\Ax2012WCFService.Entities\obj\Debug\Ax2012WCFService.Entities.pdb

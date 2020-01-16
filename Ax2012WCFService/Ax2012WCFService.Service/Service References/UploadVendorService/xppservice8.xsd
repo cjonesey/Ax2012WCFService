@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.microsoft.com/dynamics/2008/01/documents/QTQ_STG_Vendor" xmlns:st="http://schemas.microsoft.com/dynamics/2008/01/sharedtypes" elementFormDefault="qualified" targetNamespace="http://schemas.microsoft.com/dynamics/2008/01/documents/QTQ_STG_Vendor" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://dickdastardly.oyezstraker.co.uk/MicrosoftDynamicsAXAif60/QTQVendService/xppservice.svc?xsd=xsd10" namespace="http://schemas.microsoft.com/dynamics/2008/01/sharedtypes" />
+  <xs:element name="QTQ_STG_Vendor" type="tns:AxdQTQ_STG_Vendor" />
+  <xs:complexType name="AxdQTQ_STG_Vendor">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ClearNilFieldsOnUpdate" nillable="true" type="st:AxdEnum_boolean" />
+      <xs:element minOccurs="0" name="DocPurpose" nillable="true" type="st:AxdEnum_XMLDocPurpose" />
+      <xs:element minOccurs="0" name="SenderId" nillable="true" type="st:AxdExtType_DataAreaId" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="STG_VendTable" type="tns:AxdEntity_STG_VendTable" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="AxdEntity_STG_VendTable">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="_DocumentHash" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="AccountNum" nillable="true" type="st:AxdExtType_QTQ_STG_AccountNum" />
+      <xs:element minOccurs="0" name="ActionType" nillable="true" type="st:AxdEnum_QTQ_STG_ActionType" />
+      <xs:element minOccurs="0" name="AllowSplitPack" nillable="true" type="st:AxdEnum_TEC_NoYes" />
+      <xs:element minOccurs="0" name="BankAccount" nillable="true" type="st:AxdExtType_VendBankAccountId" />
+      <xs:element minOccurs="0" name="Blocked" nillable="true" type="st:AxdExtType_VendBlocked" />
+      <xs:element minOccurs="0" name="CompanyChainId" nillable="true" type="st:AxdExtType_smmChainId" />
+      <xs:element minOccurs="0" name="CreditMax" nillable="true" type="st:AxdExtType_VendCreditMaxMST" />
+      <xs:element minOccurs="0" name="CreditRating" nillable="true" type="st:AxdExtType_VendCreditRating" />
+      <xs:element minOccurs="0" name="Currency" nillable="true" type="st:AxdUnion_AxdExtType_CurrencyCode_AxdType_ExtCodeValue" />
+      <xs:element minOccurs="0" name="DestinationDataAreaId" nillable="true" type="st:AxdExtType_DataAreaId" />
+      <xs:element minOccurs="0" name="Internal" nillable="true" type="st:AxdEnum_TEC_NoYes" />
+      <xs:element minOccurs="0" name="InventSiteId" nillable="true" type="st:AxdExtType_InventSiteId" />
+      <xs:element minOccurs="0" name="InvoiceAccount" nillable="true" type="st:AxdExtType_QTQ_STG_InvoiceAccount" />
+      <xs:element minOccurs="0" name="LineOfBusinessId" nillable="true" type="st:AxdExtType_VendLineOfBusinessId" />
+      <xs:element minOccurs="0" name="Memo" nillable="true" type="st:AxdExtType_VendMemo" />
+      <xs:element minOccurs="0" name="Message01" nillable="true" type="st:AxdExtType_Name" />
+      <xs:element minOccurs="0" name="Message02" nillable="true" type="st:AxdExtType_Name" />
+      <xs:element minOccurs="0" name="Message03" nillable="true" type="st:AxdExtType_Name" />
+      <xs:element minOccurs="0" name="Message04" nillable="true" type="st:AxdExtType_Name" />
+      <xs:element minOccurs="0" name="Message05" nillable="true" type="st:AxdExtType_Name" />
+      <xs:element minOccurs="0" name="MinOrderValue" nillable="true" type="st:AxdExtType_Integer" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="st:AxdExtType_VendName" />
+      <xs:element minOccurs="0" name="NameAlias" nillable="true" type="st:AxdExtType_NameAlias" />
+      <xs:element minOccurs="0" name="PaymDayId" nillable="true" type="st:AxdExtType_VendPaymDayId" />
+      <xs:element minOccurs="0" name="PaymMode" nillable="true" type="st:AxdExtType_VendPaymMode" />
+      <xs:element minOccurs="0" name="PaymModeInbound" nillable="true" type="st:AxdExtType_QTQ_STG_PaymModeInbound" />
+      <xs:element minOccurs="0" name="PaymSched" nillable="true" type="st:AxdExtType_VendPaymSchedId" />
+      <xs:element minOccurs="0" name="PaymSchedInbound" nillable="true" type="st:AxdExtType_QTQ_STG_PaymSchedInbound" />
+      <xs:element minOccurs="0" name="PaymSpec" nillable="true" type="st:AxdExtType_PaymSpec" />
+      <xs:element minOccurs="0" name="PaymSpecInbound" nillable="true" type="st:AxdExtType_QTQ_STG_PaymSpecInbound" />
+      <xs:element minOccurs="0" name="PrintSupplier" nillable="true" type="st:AxdEnum_TEC_NoYes" />
+      <xs:element minOccurs="0" name="ProcessedDate" nillable="true" type="st:AxdExtType_TransDate" />
+      <xs:element minOccurs="0" name="ProcessedTime" nillable="true" type="st:AxdExtType_TimeOfDay" />
+      <xs:element minOccurs="0" name="RecId" nillable="true" type="st:AxdExtType_RecId" />
+      <xs:element minOccurs="0" name="RecVersion" nillable="true" type="st:AxdExtType_RecVersion" />
+      <xs:element minOccurs="0" name="SegmentId" nillable="true" type="st:AxdExtType_smmSegmentId" />
+      <xs:element minOccurs="0" name="StagingID" nillable="true" type="st:AxdExtType_TEC_StagingID" />
+      <xs:element minOccurs="0" name="Status" nillable="true" type="st:AxdEnum_QTQ_STG_Status" />
+      <xs:element minOccurs="0" name="SubSegmentId" nillable="true" type="st:AxdExtType_smmSubsegmentId" />
+      <xs:element minOccurs="0" name="SupplierLeadTime" nillable="true" type="st:AxdExtType_Integer" />
+      <xs:element minOccurs="0" name="TaxGroup" nillable="true" type="st:AxdExtType_TaxGroup" />
+      <xs:element minOccurs="0" name="TaxGroupInbound" nillable="true" type="st:AxdExtType_QTQ_STG_TaxGroupInbound" />
+      <xs:element minOccurs="0" name="TheirCode" nillable="true" type="st:AxdExtType_QTQ_TheirCode" />
+      <xs:element minOccurs="0" name="VATNum" nillable="true" type="st:AxdExtType_VATNum" />
+      <xs:element minOccurs="0" name="VendGroup" nillable="true" type="st:AxdExtType_VendGroupId" />
+      <xs:element minOccurs="0" name="YourAccountNum" nillable="true" type="st:AxdExtType_VendAccountExt" />
+    </xs:sequence>
+    <xs:attribute fixed="entity" name="class" use="required" />
+    <xs:attribute name="action" type="st:AxdEnum_AxdEntityAction" />
+  </xs:complexType>
+</xs:schema>

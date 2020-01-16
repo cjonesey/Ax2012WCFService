@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.microsoft.com/dynamics/2008/01/documents/QTQ_STG_Customer" xmlns:st="http://schemas.microsoft.com/dynamics/2008/01/sharedtypes" elementFormDefault="qualified" targetNamespace="http://schemas.microsoft.com/dynamics/2008/01/documents/QTQ_STG_Customer" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://smurfette.oyezstraker.co.uk:82/MicrosoftDynamicsAXAif60/QTQCustService/xppservice.svc?xsd=xsd6" namespace="http://schemas.microsoft.com/dynamics/2008/01/sharedtypes" />
+  <xs:element name="QTQ_STG_Customer" type="tns:AxdQTQ_STG_Customer" />
+  <xs:complexType name="AxdQTQ_STG_Customer">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ClearNilFieldsOnUpdate" nillable="true" type="st:AxdEnum_boolean" />
+      <xs:element minOccurs="0" name="DocPurpose" nillable="true" type="st:AxdEnum_XMLDocPurpose" />
+      <xs:element minOccurs="0" name="SenderId" nillable="true" type="st:AxdExtType_DataAreaId" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="STG_CustTable" type="tns:AxdEntity_STG_CustTable" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="AxdEntity_STG_CustTable">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="_DocumentHash" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RecId" nillable="true" type="st:AxdExtType_RecId" />
+      <xs:element minOccurs="0" name="RecVersion" nillable="true" type="st:AxdExtType_RecVersion" />
+      <xs:element minOccurs="0" name="AccountNum" nillable="true" type="st:AxdExtType_QTQ_STG_AccountNum" />
+      <xs:element minOccurs="0" name="ackFormat" nillable="true" type="st:AxdEnum_TEC_AckFormat" />
+      <xs:element minOccurs="0" name="Acknowledgements" nillable="true" type="st:AxdEnum_TEC_BlankNoYes" />
+      <xs:element minOccurs="0" name="AckPricing" nillable="true" type="st:AxdEnum_TEC_SysNoYes" />
+      <xs:element minOccurs="0" name="AckShowAllocation" nillable="true" type="st:AxdEnum_TEC_SysNoYes" />
+      <xs:element minOccurs="0" name="ActionType" nillable="true" type="st:AxdEnum_QTQ_STG_ActionType" />
+      <xs:element minOccurs="0" name="AllowBackOrders" nillable="true" type="st:AxdEnum_NoYesCombo" />
+      <xs:element minOccurs="0" name="AllowSplitPack" nillable="true" type="st:AxdEnum_NoYesCombo" />
+      <xs:element minOccurs="0" name="ApplyCharge" nillable="true" type="st:AxdEnum_TEC_SysNoYes" />
+      <xs:element minOccurs="0" name="Blocked" nillable="true" type="st:AxdExtType_CustBlocked" />
+      <xs:element minOccurs="0" name="CreditCardIndicator" nillable="true" type="st:AxdEnum_TEC_SysNoYes" />
+      <xs:element minOccurs="0" name="CreditMax" nillable="true" type="st:AxdExtType_CustCreditMaxMST" />
+      <xs:element minOccurs="0" name="Currency" nillable="true" type="st:AxdExtType_CurrencyCode" />
+      <xs:element minOccurs="0" name="CustClassificationId" nillable="true" type="st:AxdExtType_CustClassificationId" />
+      <xs:element minOccurs="0" name="CustDNs" nillable="true" type="st:AxdExtType_NoYesId" />
+      <xs:element minOccurs="0" name="CustGroup" nillable="true" type="st:AxdExtType_CustGroupId" />
+      <xs:element minOccurs="0" name="DealerGroupOrIndependent" nillable="true" type="st:AxdEnum_QTQ_DealerGroupOrIndependent" />
+      <xs:element minOccurs="0" name="DeliverComplete" nillable="true" type="st:AxdEnum_TEC_DeliverComplete" />
+      <xs:element minOccurs="0" name="DeliveryPricing" nillable="true" type="st:AxdEnum_TEC_DeliveryPricing" />
+      <xs:element minOccurs="0" name="DeliverySeq" nillable="true" type="st:AxdEnum_TEC_DeliverySequence" />
+      <xs:element minOccurs="0" name="DestinationDataAreaId" nillable="true" type="st:AxdExtType_DataAreaId" />
+      <xs:element minOccurs="0" name="DiscountRate" nillable="true" type="st:AxdExtType_TEC_Discount_Rate" />
+      <xs:element minOccurs="0" name="Discounttype" nillable="true" type="st:AxdEnum_TEC_DiscountType" />
+      <xs:element minOccurs="0" name="FiscalYearEnd" nillable="true" type="st:AxdExtType_MonthOfYearId" />
+      <xs:element minOccurs="0" name="ForcedSwitchSell" nillable="true" type="st:AxdExtType_NoYesId" />
+      <xs:element minOccurs="0" name="HouseAccount" nillable="true" type="st:AxdExtType_NoYesId" />
+      <xs:element minOccurs="0" name="InventLocation" nillable="true" type="st:AxdExtType_InventLocationId" />
+      <xs:element minOccurs="0" name="InventLocationInbound" nillable="true" type="st:AxdExtType_QTQ_STG_InventLocationInbound" />
+      <xs:element minOccurs="0" name="InventSiteId" nillable="true" type="st:AxdExtType_InventSiteId" />
+      <xs:element minOccurs="0" name="InvoiceAccount" nillable="true" type="st:AxdExtType_QTQ_STG_InvoiceAccount" />
+      <xs:element minOccurs="0" name="InvoiceCompleteOrder" nillable="true" type="st:AxdEnum_TEC_SysNoYes" />
+      <xs:element minOccurs="0" name="InvoiceSequence" nillable="true" type="st:AxdEnum_TEC_InvoiceSequence" />
+      <xs:element minOccurs="0" name="MainContactWorker" nillable="true" type="st:AxdExtType_HcmPersonnelNumberId" />
+      <xs:element minOccurs="0" name="MainContactWorkerInbound" nillable="true" type="st:AxdExtType_QTQ_STG_MainContactWorkerInbound" />
+      <xs:element minOccurs="0" name="MandatoryCreditLimit" nillable="true" type="st:AxdExtType_MandatoryCreditLimit" />
+      <xs:element minOccurs="0" name="ManualAddress" nillable="true" type="st:AxdEnum_TEC_ManualAddress" />
+      <xs:element minOccurs="0" name="MergeBackorders" nillable="true" type="st:AxdEnum_TEC_SysNoYes" />
+      <xs:element minOccurs="0" name="MergeDeliveries" nillable="true" type="st:AxdEnum_TEC_MergeDelivery" />
+      <xs:element minOccurs="0" name="MergeOrders" nillable="true" type="st:AxdEnum_TEC_MergeOrder" />
+      <xs:element minOccurs="0" name="MinOrderValue" nillable="true" type="st:AxdExtType_TEC_MinOrderValue" />
+      <xs:element minOccurs="0" name="Msg1" nillable="true" type="st:AxdExtType_TEC_Msg" />
+      <xs:element minOccurs="0" name="Msg2" nillable="true" type="st:AxdExtType_TEC_Msg" />
+      <xs:element minOccurs="0" name="Msg3" nillable="true" type="st:AxdExtType_TEC_Msg" />
+      <xs:element minOccurs="0" name="Msg4" nillable="true" type="st:AxdExtType_TEC_Msg" />
+      <xs:element minOccurs="0" name="Msg5" nillable="true" type="st:AxdExtType_TEC_Msg" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="st:AxdExtType_CustName" />
+      <xs:element minOccurs="0" name="NameAlias" nillable="true" type="st:AxdExtType_NameAlias" />
+      <xs:element minOccurs="0" name="Ordernotes" nillable="true" type="st:AxdEnum_TEC_SysNoYes" />
+      <xs:element minOccurs="0" name="PaymMode" nillable="true" type="st:AxdExtType_CustPaymMode" />
+      <xs:element minOccurs="0" name="PaymModeInbound" nillable="true" type="st:AxdExtType_QTQ_STG_PaymModeInbound" />
+      <xs:element minOccurs="0" name="PaymTermId" nillable="true" type="st:AxdExtType_PaymTermId" />
+      <xs:element minOccurs="0" name="PaymTermIdInbound" nillable="true" type="st:AxdExtType_QTQ_STG_PaymTermIdInbound" />
+      <xs:element minOccurs="0" name="PrintCustomer" nillable="true" type="st:AxdEnum_TEC_PrintCustomer" />
+      <xs:element minOccurs="0" name="ProcessedDate" nillable="true" type="st:AxdExtType_TransDate" />
+      <xs:element minOccurs="0" name="ProcessedTime" nillable="true" type="st:AxdExtType_TimeOfDay" />
+      <xs:element minOccurs="0" name="SalesDistrictId" nillable="true" type="st:AxdExtType_smmSalesDistrictId" />
+      <xs:element minOccurs="0" name="StagingID" nillable="true" type="st:AxdExtType_TEC_StagingID" />
+      <xs:element minOccurs="0" name="Status" nillable="true" type="st:AxdEnum_QTQ_STG_Status" />
+      <xs:element minOccurs="0" name="TaxGroup" nillable="true" type="st:AxdExtType_TaxGroup" />
+      <xs:element minOccurs="0" name="TaxGroupInbound" nillable="true" type="st:AxdExtType_QTQ_STG_TaxGroupInbound" />
+      <xs:element minOccurs="0" name="TEC_BillingOptions" nillable="true" type="st:AxdExtType_TEC_BaseGroupID" />
+      <xs:element minOccurs="0" name="TEC_ChargeCode" nillable="true" type="st:AxdExtType_TEC_BaseGroupID" />
+      <xs:element minOccurs="0" name="TEC_InvoiceGroup" nillable="true" type="st:AxdExtType_TEC_BaseGroupID" />
+      <xs:element minOccurs="0" name="TEC_MinOrderBreak" nillable="true" type="st:AxdExtType_TEC_BaseGroupID" />
+      <xs:element minOccurs="0" name="TEC_PriceBand" nillable="true" type="st:AxdExtType_TEC_BaseGroupID" />
+      <xs:element minOccurs="0" name="TEC_WebSite" nillable="true" type="st:AxdExtType_TEC_BaseGroupID" />
+      <xs:element minOccurs="0" name="VATNum" nillable="true" type="st:AxdExtType_VATNum" />
+      <xs:element minOccurs="0" name="WebEnabled" nillable="true" type="st:AxdExtType_NoYesId" />
+    </xs:sequence>
+    <xs:attribute fixed="entity" name="class" use="required" />
+    <xs:attribute name="action" type="st:AxdEnum_AxdEntityAction" />
+  </xs:complexType>
+</xs:schema>

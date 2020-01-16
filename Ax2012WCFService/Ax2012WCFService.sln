@@ -1,0 +1,94 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ax2012WCFService", "Ax2012WCFService\Ax2012WCFService.csproj", "{AF8F424D-45B5-442B-93A9-A0D4E648D34E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ax2012WCFService.DAL", "Ax2012WCFService.DAL\Ax2012WCFService.DAL.csproj", "{9E2CCFC9-AF21-4366-A64A-037EAE0FFBFE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ax2012WCFService.Entities", "Ax2012WCFService.Entities\Ax2012WCFService.Entities.csproj", "{959C78E2-B0C2-4B41-9E19-A796937C85DF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ax2012WCFService.Service", "Ax2012WCFService.Service\Ax2012WCFService.Service.csproj", "{06503E65-1D92-4544-9557-B17E5025F248}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ax2012WCFService.UI", "Ax2012WCFService.UI\Ax2012WCFService.UI.csproj", "{41B3CF67-4521-4614-938A-698293FAE94E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ax2012WCFService.Common", "Ax2012WCFService.Common\Ax2012WCFService.Common.csproj", "{2A4DEFE6-0AE2-4D6F-AF82-97888394D8BD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ax2012WCFService.Tests", "Ax2012WCFService.Tests\Ax2012WCFService.Tests.csproj", "{06B78E58-9308-4B9A-8071-99CE77CCDDF8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ax2012WCFService.ConsoleApp", "Ax2012WCFService.ConsoleApp\Ax2012WCFService.ConsoleApp.csproj", "{E21A587B-BBF0-4FA1-9944-D38CC92FE548}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 9
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://officeteamuk.visualstudio.com/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Ax2012WCFService.Common\\Ax2012WCFService.Common.csproj
+		SccProjectName1 = Ax2012WCFService.Common
+		SccLocalPath1 = Ax2012WCFService.Common
+		SccProjectUniqueName2 = Ax2012WCFService.DAL\\Ax2012WCFService.DAL.csproj
+		SccProjectName2 = Ax2012WCFService.DAL
+		SccLocalPath2 = Ax2012WCFService.DAL
+		SccProjectUniqueName3 = Ax2012WCFService.Entities\\Ax2012WCFService.Entities.csproj
+		SccProjectName3 = Ax2012WCFService.Entities
+		SccLocalPath3 = Ax2012WCFService.Entities
+		SccProjectUniqueName4 = Ax2012WCFService.Service\\Ax2012WCFService.Service.csproj
+		SccProjectName4 = Ax2012WCFService.Service
+		SccLocalPath4 = Ax2012WCFService.Service
+		SccProjectUniqueName5 = Ax2012WCFService.Tests\\Ax2012WCFService.Tests.csproj
+		SccProjectName5 = Ax2012WCFService.Tests
+		SccLocalPath5 = Ax2012WCFService.Tests
+		SccProjectUniqueName6 = Ax2012WCFService.UI\\Ax2012WCFService.UI.csproj
+		SccProjectName6 = Ax2012WCFService.UI
+		SccLocalPath6 = Ax2012WCFService.UI
+		SccProjectUniqueName7 = Ax2012WCFService\\Ax2012WCFService.csproj
+		SccProjectName7 = Ax2012WCFService
+		SccLocalPath7 = Ax2012WCFService
+		SccProjectUniqueName8 = Ax2012WCFService.ConsoleApp\\Ax2012WCFService.ConsoleApp.csproj
+		SccProjectName8 = Ax2012WCFService.ConsoleApp
+		SccLocalPath8 = Ax2012WCFService.ConsoleApp
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AF8F424D-45B5-442B-93A9-A0D4E648D34E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF8F424D-45B5-442B-93A9-A0D4E648D34E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF8F424D-45B5-442B-93A9-A0D4E648D34E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF8F424D-45B5-442B-93A9-A0D4E648D34E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9E2CCFC9-AF21-4366-A64A-037EAE0FFBFE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E2CCFC9-AF21-4366-A64A-037EAE0FFBFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E2CCFC9-AF21-4366-A64A-037EAE0FFBFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E2CCFC9-AF21-4366-A64A-037EAE0FFBFE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{959C78E2-B0C2-4B41-9E19-A796937C85DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{959C78E2-B0C2-4B41-9E19-A796937C85DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{959C78E2-B0C2-4B41-9E19-A796937C85DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{959C78E2-B0C2-4B41-9E19-A796937C85DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{06503E65-1D92-4544-9557-B17E5025F248}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{06503E65-1D92-4544-9557-B17E5025F248}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{06503E65-1D92-4544-9557-B17E5025F248}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{06503E65-1D92-4544-9557-B17E5025F248}.Release|Any CPU.Build.0 = Release|Any CPU
+		{41B3CF67-4521-4614-938A-698293FAE94E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{41B3CF67-4521-4614-938A-698293FAE94E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{41B3CF67-4521-4614-938A-698293FAE94E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{41B3CF67-4521-4614-938A-698293FAE94E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2A4DEFE6-0AE2-4D6F-AF82-97888394D8BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A4DEFE6-0AE2-4D6F-AF82-97888394D8BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A4DEFE6-0AE2-4D6F-AF82-97888394D8BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A4DEFE6-0AE2-4D6F-AF82-97888394D8BD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{06B78E58-9308-4B9A-8071-99CE77CCDDF8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{06B78E58-9308-4B9A-8071-99CE77CCDDF8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{06B78E58-9308-4B9A-8071-99CE77CCDDF8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{06B78E58-9308-4B9A-8071-99CE77CCDDF8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E21A587B-BBF0-4FA1-9944-D38CC92FE548}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E21A587B-BBF0-4FA1-9944-D38CC92FE548}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E21A587B-BBF0-4FA1-9944-D38CC92FE548}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E21A587B-BBF0-4FA1-9944-D38CC92FE548}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

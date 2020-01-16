@@ -1,0 +1,26 @@
+C:\Users\Chris JOnes\Source\Workspaces\Workspace\Ax2012WCFService\Ax2012WCFService.Common\bin\Debug\AutoMapper.Net4.dll
+C:\Users\Chris JOnes\Source\Workspaces\Workspace\Ax2012WCFService\Ax2012WCFService.Common\bin\Debug\Ax2012WCFService.Common.dll.config
+C:\Users\Chris JOnes\Source\Workspaces\Workspace\Ax2012WCFService\Ax2012WCFService.Common\bin\Debug\Ax2012WCFService.Common.dll
+C:\Users\Chris JOnes\Source\Workspaces\Workspace\Ax2012WCFService\Ax2012WCFService.Common\bin\Debug\Ax2012WCFService.Common.pdb
+C:\Users\Chris JOnes\Source\Workspaces\Workspace\Ax2012WCFService\Ax2012WCFService.Common\bin\Debug\Ax2012WCFService.Entities.dll
+C:\Users\Chris JOnes\Source\Workspaces\Workspace\Ax2012WCFService\Ax2012WCFService.Common\bin\Debug\Ax2012WCFService.Entities.pdb
+C:\Users\Chris JOnes\Source\Workspaces\Workspace\Ax2012WCFService\Ax2012WCFService.Common\obj\Debug\Ax2012WCFService.Common.Properties.Resources.resources
+C:\Users\Chris JOnes\Source\Workspaces\Workspace\Ax2012WCFService\Ax2012WCFService.Common\obj\Debug\Ax2012WCFService.Common.csproj.GenerateResource.Cache
+C:\Users\Chris JOnes\Source\Workspaces\Workspace\Ax2012WCFService\Ax2012WCFService.Common\obj\Debug\Ax2012WCFService.Common.dll
+C:\Users\Chris JOnes\Source\Workspaces\Workspace\Ax2012WCFService\Ax2012WCFService.Common\obj\Debug\Ax2012WCFService.Common.pdb
+C:\Users\Chris JOnes\Source\Workspaces\Workspace\Ax2012WCFService\Ax2012WCFService.Common\obj\Debug\Ax2012WCFService.Common.csprojAssemblyReference.cache
+C:\Users\Chris JOnes\Source\Workspaces\Workspace\Ax2012WCFService\Ax2012WCFService.Common\obj\Debug\Ax2012WCFService.Common.csproj.CoreCompileInputs.cache
+C:\Users\Chris JOnes\Source\Workspaces\Workspace\Ax2012WCFService\Ax2012WCFService.Common\obj\Debug\Ax2012WCFService.Common.csproj.CopyComplete
+C:\Play\Ax2012WCFService\Ax2012WCFService.Common\bin\Debug\AutoMapper.Net4.dll
+C:\Play\Ax2012WCFService\Ax2012WCFService.Common\bin\Debug\Ax2012WCFService.Common.dll.config
+C:\Play\Ax2012WCFService\Ax2012WCFService.Common\bin\Debug\Ax2012WCFService.Common.dll
+C:\Play\Ax2012WCFService\Ax2012WCFService.Common\bin\Debug\Ax2012WCFService.Common.pdb
+C:\Play\Ax2012WCFService\Ax2012WCFService.Common\bin\Debug\Ax2012WCFService.Entities.dll
+C:\Play\Ax2012WCFService\Ax2012WCFService.Common\bin\Debug\Ax2012WCFService.Entities.pdb
+C:\Play\Ax2012WCFService\Ax2012WCFService.Common\obj\Debug\Ax2012WCFService.Common.csprojAssemblyReference.cache
+C:\Play\Ax2012WCFService\Ax2012WCFService.Common\obj\Debug\Ax2012WCFService.Common.Properties.Resources.resources
+C:\Play\Ax2012WCFService\Ax2012WCFService.Common\obj\Debug\Ax2012WCFService.Common.csproj.GenerateResource.cache
+C:\Play\Ax2012WCFService\Ax2012WCFService.Common\obj\Debug\Ax2012WCFService.Common.csproj.CoreCompileInputs.cache
+C:\Play\Ax2012WCFService\Ax2012WCFService.Common\obj\Debug\Ax2012WCFService.Common.csproj.CopyComplete
+C:\Play\Ax2012WCFService\Ax2012WCFService.Common\obj\Debug\Ax2012WCFService.Common.dll
+C:\Play\Ax2012WCFService\Ax2012WCFService.Common\obj\Debug\Ax2012WCFService.Common.pdb

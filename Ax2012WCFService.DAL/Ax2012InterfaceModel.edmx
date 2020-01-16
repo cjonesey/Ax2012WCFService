@@ -1,0 +1,1236 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="Ax2012InterfaceModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="AddressChange">
+          <Key>
+            <PropertyRef Name="AddressChangeId" />
+          </Key>
+          <Property Name="AddressChangeId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="StagingId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="AccountNum" Type="nvarchar" MaxLength="20" Nullable="false" />
+          <Property Name="CompanyId" Type="nvarchar" MaxLength="3" Nullable="false" />
+          <Property Name="AddressRef" Type="nvarchar" MaxLength="4" Nullable="false" />
+          <Property Name="Description" Type="nvarchar" MaxLength="60" />
+          <Property Name="LocationRole" Type="nvarchar" MaxLength="40" />
+          <Property Name="BuildingCompliment" Type="nvarchar" MaxLength="60" />
+          <Property Name="City" Type="nvarchar" MaxLength="60" />
+          <Property Name="County" Type="nvarchar" MaxLength="30" />
+          <Property Name="Street" Type="nvarchar" MaxLength="250" />
+          <Property Name="State" Type="nvarchar" MaxLength="10" />
+          <Property Name="ZipCode" Type="nvarchar" MaxLength="10" />
+          <Property Name="CountryRegionId" Type="nvarchar" MaxLength="10" />
+          <Property Name="Comment1" Type="nvarchar" MaxLength="60" />
+          <Property Name="Comment2" Type="nvarchar" MaxLength="60" />
+          <Property Name="DxReference" Type="nvarchar" MaxLength="60" />
+          <Property Name="InvoiceAddressRef" Type="nvarchar" MaxLength="4" />
+          <Property Name="InventLocation" Type="nvarchar" MaxLength="10" />
+          <Property Name="InventSite" Type="nvarchar" MaxLength="10" />
+          <Property Name="ServiceType" Type="int" />
+          <Property Name="TheirCode" Type="nvarchar" MaxLength="13" />
+          <Property Name="Rep1" Type="nvarchar" MaxLength="25" />
+          <Property Name="TaxGroup" Type="nvarchar" MaxLength="10" />
+          <Property Name="AccountType" Type="int" />
+          <Property Name="TaxgroupInbound" Type="nvarchar" MaxLength="10" />
+          <Property Name="InventLocationInbound" Type="nvarchar" MaxLength="10" />
+          <Property Name="ServiceLevel" Type="nvarchar" MaxLength="10" />
+          <Property Name="VanRoute" Type="nvarchar" MaxLength="10" />
+          <Property Name="DistrictName" Type="nvarchar" MaxLength="60" />
+          <Property Name="ExtractStatus" Type="int" />
+          <Property Name="CreatedDate" Type="datetime" />
+          <Property Name="ExtractedDate" Type="datetime" />
+          <Property Name="InsUpdDel" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="AOMProductChange">
+          <Key>
+            <PropertyRef Name="ProductChangeID" />
+          </Key>
+          <Property Name="ProductChangeID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ITEMID" Type="nvarchar" MaxLength="20" Nullable="false" />
+          <Property Name="NAME" Type="nvarchar" MaxLength="60" Nullable="false" />
+          <Property Name="WIDTH" Type="numeric" Precision="32" Scale="16" Nullable="false" />
+          <Property Name="HEIGHT" Type="numeric" Precision="32" Scale="16" Nullable="false" />
+          <Property Name="DEPTH" Type="numeric" Precision="32" Scale="16" Nullable="false" />
+          <Property Name="NETWEIGHT" Type="numeric" Precision="32" Scale="16" Nullable="false" />
+          <Property Name="INTRACODE" Type="nvarchar" MaxLength="10" Nullable="false" />
+          <Property Name="PRIMARYVENDID" Type="nvarchar" MaxLength="20" Nullable="false" />
+          <Property Name="ORIGCOUNTRYID" Type="nvarchar" MaxLength="10" Nullable="false" />
+          <Property Name="STOCK_OWNER" Type="nvarchar" MaxLength="20" Nullable="false" />
+          <Property Name="VAT_GROUP" Type="nvarchar" MaxLength="10" Nullable="false" />
+          <Property Name="DESCRIPTION_5" Type="nvarchar" MaxLength="10" Nullable="false" />
+          <Property Name="DESCRIPTION_4" Type="nvarchar" MaxLength="40" Nullable="false" />
+          <Property Name="DESCRIPTION_3" Type="nvarchar" MaxLength="40" Nullable="false" />
+          <Property Name="DESCRIPTION_2" Type="nvarchar" MaxLength="40" Nullable="false" />
+          <Property Name="PRODUCT_OWNER" Type="nvarchar" MaxLength="20" Nullable="false" />
+          <Property Name="MANUFACTURER" Type="nvarchar" MaxLength="8" Nullable="false" />
+          <Property Name="MANUFACTURER_PRODCODE" Type="nvarchar" MaxLength="13" Nullable="false" />
+          <Property Name="DELIVERYTIME" Type="int" Nullable="false" />
+          <Property Name="STANDARD_COST" Type="numeric" Precision="32" Scale="16" Nullable="false" />
+          <Property Name="SPECIAL" Type="int" Nullable="false" />
+          <Property Name="SELL_PRICEUNIT" Type="numeric" Precision="32" Scale="16" Nullable="false" />
+          <Property Name="SELL_PRICE" Type="numeric" Precision="32" Scale="16" Nullable="false" />
+          <Property Name="PAIDSTOCK" Type="int" Nullable="false" />
+          <Property Name="ITEMGROUP" Type="nvarchar" MaxLength="10" Nullable="false" />
+          <Property Name="TYPE" Type="int" Nullable="false" />
+          <Property Name="UNSPSC" Type="nvarchar" MaxLength="8" Nullable="false" />
+          <Property Name="SHELFLIFE" Type="int" Nullable="false" />
+          <Property Name="STATUSBLOCKED" Type="nvarchar" MaxLength="1" Nullable="false" />
+          <Property Name="BOSSF_GROUP" Type="bigint" Nullable="false" />
+          <Property Name="BOSSF_RANGE" Type="bigint" Nullable="false" />
+          <Property Name="PRODUCT_RANGE" Type="bigint" Nullable="false" />
+          <Property Name="PRODUCT_GROUP" Type="bigint" Nullable="false" />
+          <Property Name="MASTERITEMID" Type="nvarchar" MaxLength="20" Nullable="false" />
+          <Property Name="DATAAREAID" Type="nvarchar" MaxLength="4" Nullable="false" />
+          <Property Name="PARTITION" Type="bigint" Nullable="false" />
+          <Property Name="ExtractStatus" Type="tinyint" Nullable="false" />
+          <Property Name="InsUpdDelete" Type="int" />
+        </EntityType>
+        <EntityType Name="AOMPurchaseDeliveryHeader">
+          <Key>
+            <PropertyRef Name="AOMPurchaseDeliveryHeaderID" />
+          </Key>
+          <Property Name="AOMPurchaseDeliveryHeaderID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="EXTERNAL_ORD_ID" Type="nvarchar" MaxLength="20" Nullable="false" />
+          <Property Name="EXTERNAL_DEL_ID" Type="nvarchar" MaxLength="20" Nullable="false" />
+          <Property Name="VENDACCOUNT" Type="nvarchar" MaxLength="20" />
+          <Property Name="ADD_REFERENCE" Type="nvarchar" MaxLength="4" />
+          <Property Name="ADD_LINE_1" Type="nvarchar" MaxLength="50" />
+          <Property Name="ADD_LINE_2" Type="nvarchar" MaxLength="50" />
+          <Property Name="ADD_CITY" Type="nvarchar" MaxLength="40" />
+          <Property Name="ADD_TERRITORY" Type="nvarchar" MaxLength="30" />
+          <Property Name="ADD_COUNTRY" Type="nvarchar" MaxLength="30" />
+          <Property Name="ADD_ZIPCODE" Type="nvarchar" MaxLength="10" />
+          <Property Name="VENDORREF" Type="nvarchar" MaxLength="60" />
+          <Property Name="DELIVERYDATE" Type="datetime" />
+          <Property Name="INVENTLOCATIONID" Type="nvarchar" MaxLength="10" />
+          <Property Name="TYPE" Type="int" />
+          <Property Name="SHIP_NAME" Type="nvarchar" MaxLength="60" />
+          <Property Name="COSTOFSALES" Type="int" />
+          <Property Name="DLVNAME" Type="nvarchar" MaxLength="100" />
+          <Property Name="DLVADD_LINE_1" Type="nvarchar" MaxLength="50" />
+          <Property Name="DLVADD_LINE_2" Type="nvarchar" MaxLength="50" />
+          <Property Name="DLVCITY" Type="nvarchar" MaxLength="40" />
+          <Property Name="DLVTERRITORY" Type="nvarchar" MaxLength="30" />
+          <Property Name="DLVCOUNTRY" Type="nvarchar" MaxLength="30" />
+          <Property Name="DLVZIPCODE" Type="nvarchar" MaxLength="10" />
+          <Property Name="EXTPURCHTYPE" Type="nvarchar" MaxLength="1" />
+          <Property Name="OPERATORCODE" Type="nvarchar" MaxLength="5" />
+          <Property Name="ORDERUPDATETYPE" Type="int" />
+          <Property Name="DIMENSION" Type="bigint" />
+          <Property Name="INVENTSITEID" Type="nvarchar" MaxLength="10" />
+          <Property Name="PURCHASETYPE" Type="int" />
+          <Property Name="DLVADD_REFERENCE" Type="nvarchar" MaxLength="4" />
+          <Property Name="VATAMOUNT" Type="numeric" Precision="32" Scale="16" />
+          <Property Name="INVOICEID" Type="nvarchar" MaxLength="20" />
+          <Property Name="ORDER_TOTAL_NET" Type="numeric" Precision="32" Scale="16" />
+          <Property Name="ORDER_TOTAL_GROSS" Type="numeric" Precision="32" Scale="16" />
+          <Property Name="MODIFIEDDATETIME" Type="datetime" />
+          <Property Name="CREATEDDATETIME" Type="datetime" />
+          <Property Name="DATAAREAID" Type="nvarchar" MaxLength="4" />
+          <Property Name="INVENTLOCATIONID1" Type="nvarchar" MaxLength="10" />
+          <Property Name="INVOICEDATE" Type="datetime" />
+          <Property Name="ExtractStatus" Type="tinyint" />
+          <Property Name="HeaderProcessed" Type="tinyint" />
+          <Property Name="HeaderSequence" Type="smallint" />
+        </EntityType>
+        <EntityType Name="AOMPurchaseDeliveryLine">
+          <Key>
+            <PropertyRef Name="AOMPurchaseDeliveryLineID" />
+          </Key>
+          <Property Name="AOMPurchaseDeliveryLineID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="AOMPurchaseDeliveryHeaderID" Type="int" />
+          <Property Name="EXTERNAL_ORD_ID" Type="nvarchar" MaxLength="20" Nullable="false" />
+          <Property Name="EXTERNAL_DEL_ID" Type="nvarchar" MaxLength="20" Nullable="false" />
+          <Property Name="DELIVERYDATE" Type="datetime" Nullable="false" />
+          <Property Name="ITEMID" Type="nvarchar" MaxLength="20" Nullable="false" />
+          <Property Name="LINEAMOUNT" Type="numeric" Precision="32" Scale="16" Nullable="false" />
+          <Property Name="PURCHPRICE" Type="numeric" Precision="32" Scale="16" Nullable="false" />
+          <Property Name="PURCHQTY" Type="numeric" Precision="32" Scale="16" Nullable="false" />
+          <Property Name="TYPE" Type="int" Nullable="false" />
+          <Property Name="NAME" Type="nvarchar" MaxLength="60" Nullable="false" />
+          <Property Name="PROGRESSITEMID" Type="nvarchar" MaxLength="20" Nullable="false" />
+          <Property Name="PRICEUNIT" Type="numeric" Precision="32" Scale="16" Nullable="false" />
+          <Property Name="PURCHRECEIVEDNOW" Type="numeric" Precision="32" Scale="16" Nullable="false" />
+          <Property Name="DEFAULTDIMENSION" Type="bigint" Nullable="false" />
+          <Property Name="LINENUM" Type="numeric" Precision="32" Scale="16" Nullable="false" />
+          <Property Name="INVENTTRANSID" Type="nvarchar" MaxLength="20" Nullable="false" />
+          <Property Name="EXTERNAL_INV_ID" Type="nvarchar" MaxLength="20" Nullable="false" />
+          <Property Name="VATLINEAMOUNT" Type="numeric" Precision="32" Scale="16" Nullable="false" />
+          <Property Name="PURCHID" Type="nvarchar" MaxLength="20" Nullable="false" />
+          <Property Name="MODIFIEDDATETIME" Type="datetime" Nullable="false" />
+          <Property Name="CREATEDDATETIME" Type="datetime" Nullable="false" />
+          <Property Name="DATAAREAID" Type="nvarchar" MaxLength="4" Nullable="false" />
+          <Property Name="Seq" Type="int" />
+        </EntityType>
+        <EntityType Name="CustChange">
+          <Key>
+            <PropertyRef Name="CustChangeID" />
+          </Key>
+          <Property Name="CustChangeID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="StagingId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="AccountNum" Type="nvarchar" MaxLength="20" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="NameAlias" Type="nvarchar" MaxLength="20" Nullable="false" />
+          <Property Name="AccountStatement" Type="int" Nullable="false" />
+          <Property Name="Currency" Type="nvarchar" MaxLength="3" Nullable="false" />
+          <Property Name="CustGroup" Type="nvarchar" MaxLength="10" Nullable="false" />
+          <Property Name="Blocked" Type="int" Nullable="false" />
+          <Property Name="CreditMax" Type="numeric" Precision="32" Scale="16" />
+          <Property Name="MandatoryCreditLimit" Type="int" />
+          <Property Name="CreditRating" Type="nvarchar" MaxLength="10" />
+          <Property Name="InvoiceAccount" Type="nvarchar" MaxLength="20" />
+          <Property Name="VendAccount" Type="nvarchar" MaxLength="20" />
+          <Property Name="InventLocation" Type="nvarchar" MaxLength="10" />
+          <Property Name="InvoiceAddress" Type="int" />
+          <Property Name="OurAccountNum" Type="nvarchar" MaxLength="20" />
+          <Property Name="PaymIdType" Type="nvarchar" MaxLength="10" />
+          <Property Name="PaymDayId" Type="nvarchar" MaxLength="10" />
+          <Property Name="PaymMode" Type="nvarchar" MaxLength="10" />
+          <Property Name="PaymTermId" Type="nvarchar" MaxLength="10" />
+          <Property Name="SalesGroup" Type="nvarchar" MaxLength="10" />
+          <Property Name="TaxGroup" Type="nvarchar" MaxLength="10" />
+          <Property Name="VATNum" Type="nvarchar" MaxLength="20" />
+          <Property Name="MainContactWorker" Type="nvarchar" MaxLength="25" />
+          <Property Name="SalesDistrictId" Type="nvarchar" MaxLength="20" />
+          <Property Name="LineOfBusinessId" Type="nvarchar" MaxLength="10" />
+          <Property Name="SegmentId" Type="nvarchar" MaxLength="20" />
+          <Property Name="SubsegmentId" Type="nvarchar" MaxLength="20" />
+          <Property Name="CompanyChainId" Type="nvarchar" MaxLength="20" />
+          <Property Name="CustClassificationId" Type="nvarchar" MaxLength="10" />
+          <Property Name="INVENTSITEID" Type="nvarchar" MaxLength="10" />
+          <Property Name="DiscountRate" Type="numeric" Precision="32" Scale="16" />
+          <Property Name="DiscountType" Type="int" />
+          <Property Name="Tec_PriceBand" Type="bigint" />
+          <Property Name="Tec_MinOrderBreak" Type="bigint" />
+          <Property Name="AllowSplitPack" Type="int" />
+          <Property Name="MergeBackOrders" Type="int" />
+          <Property Name="MergeDeliveries" Type="int" />
+          <Property Name="MergeOrders" Type="int" />
+          <Property Name="DELIVERYSEQ" Type="int" />
+          <Property Name="DeliverComplete" Type="int" />
+          <Property Name="DeliveryPricing" Type="int" />
+          <Property Name="OrderNotes" Type="int" />
+          <Property Name="CUSTDNS" Type="int" />
+          <Property Name="ACKNOWLEDGEMENTS" Type="int" />
+          <Property Name="AckFormat" Type="int" />
+          <Property Name="AckPricing" Type="int" />
+          <Property Name="AckShowAllocation" Type="int" />
+          <Property Name="AllowBackorders" Type="int" />
+          <Property Name="ApplyCharge" Type="int" />
+          <Property Name="MinOrderValue" Type="int" />
+          <Property Name="Tec_ChargeCode" Type="varchar" MaxLength="2" />
+          <Property Name="ForcedSwitchSell" Type="int" />
+          <Property Name="InvoiceSequence" Type="int" />
+          <Property Name="InvoiceCompleteOrder" Type="int" />
+          <Property Name="Tec_InvoiceGroup" Type="varchar" MaxLength="2" />
+          <Property Name="Tec_BillingOptions" Type="varchar" MaxLength="2" />
+          <Property Name="FiscalYearEnd" Type="int" />
+          <Property Name="CreditCardIndicator" Type="int" />
+          <Property Name="WebEnabled" Type="int" />
+          <Property Name="Tec_WebSite" Type="bigint" />
+          <Property Name="Msg1" Type="nvarchar" MaxLength="40" />
+          <Property Name="Msg2" Type="nvarchar" MaxLength="40" />
+          <Property Name="Msg3" Type="nvarchar" MaxLength="40" />
+          <Property Name="Msg4" Type="nvarchar" MaxLength="40" />
+          <Property Name="Msg5" Type="nvarchar" MaxLength="40" />
+          <Property Name="ManualAddress" Type="int" />
+          <Property Name="PrintCustomer" Type="int" />
+          <Property Name="HouseAccount" Type="int" />
+          <Property Name="ExtractStatus" Type="int" />
+          <Property Name="CreatedDate" Type="datetime" />
+          <Property Name="ExtractedDate" Type="datetime" />
+          <Property Name="InsUpdDelete" Type="int" Nullable="false" />
+          <Property Name="CompanyID" Type="varchar" MaxLength="3" />
+        </EntityType>
+        <EntityType Name="PurchaseInvoiceHeaders">
+          <Key>
+            <PropertyRef Name="PurchaseInvoiceHeadersID" />
+          </Key>
+          <Property Name="PurchaseInvoiceHeadersID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="EXTERNAL_INV_ID" Type="varchar" MaxLength="40" Nullable="false" />
+          <Property Name="InvoiceDate" Type="smalldatetime" Nullable="false" />
+          <Property Name="VENDACCOUNT" Type="varchar" MaxLength="8" Nullable="false" />
+          <Property Name="EXTERNAL_ORD_ID" Type="varchar" MaxLength="21" Nullable="false" />
+          <Property Name="EXTERNAL_DEL_ID" Type="varchar" MaxLength="40" />
+          <Property Name="VATAmount" Type="decimal" Precision="20" Scale="2" />
+          <Property Name="Order_Total_Net" Type="decimal" Precision="20" Scale="2" />
+          <Property Name="Order_Total_Gross" Type="decimal" Precision="20" Scale="2" />
+          <Property Name="VendorRef" Type="varchar" MaxLength="40" />
+          <Property Name="CreatedDate" Type="datetime" Nullable="false" />
+          <Property Name="BatchIdentifier" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="ExtractBatchID" Type="uniqueidentifier" />
+          <Property Name="InvoiceGUID" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="ExtractedDate" Type="smalldatetime" />
+          <Property Name="ErrorStatus" Type="smallint" />
+          <Property Name="ExtractStatus" Type="smallint" />
+          <Property Name="OrderVerfied" Type="smallint" />
+          <Property Name="DateAdded" Type="smalldatetime" Nullable="false" />
+          <Property Name="InvoiceType" Type="varchar" MaxLength="20" />
+          <Property Name="CompanyID" Type="varchar" MaxLength="3" />
+        </EntityType>
+        <EntityType Name="PurchaseInvoiceLines">
+          <Key>
+            <PropertyRef Name="PurchaseInvoiceLinesID" />
+          </Key>
+          <Property Name="PurchaseInvoiceLinesID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="EXTERNAL_ORD_ID" Type="varchar" MaxLength="41" Nullable="false" />
+          <Property Name="ItemID" Type="varchar" MaxLength="40" />
+          <Property Name="Name" Type="varchar" MaxLength="40" />
+          <Property Name="InvoiceLineNum" Type="int" Nullable="false" />
+          <Property Name="EXTERNAL_DEL_ID" Type="varchar" MaxLength="40" />
+          <Property Name="PurchPrice" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="PurchQty" Type="int" Nullable="false" />
+          <Property Name="LineNum" Type="int" Nullable="false" />
+          <Property Name="LINE_TOTAL_EX_VAT" Type="decimal" Precision="20" Scale="2" />
+          <Property Name="PurchReceivedNow" Type="decimal" Precision="20" Scale="2" />
+          <Property Name="VATAmount" Type="decimal" Precision="20" Scale="2" />
+          <Property Name="InvoiceDate" Type="smalldatetime" Nullable="false" />
+          <Property Name="EXTERNAL_INV_ID" Type="char" MaxLength="40" Nullable="false" />
+          <Property Name="PriceUnit" Type="smallint" Nullable="false" />
+          <Property Name="CREATEDDATE" Type="datetime" Nullable="false" />
+          <Property Name="VendAccount" Type="varchar" MaxLength="8" Nullable="false" />
+          <Property Name="InvoiceGUID" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="BatchIdentifier" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="CompanyID" Type="varchar" MaxLength="3" Nullable="false" />
+        </EntityType>
+        <EntityType Name="SalesInvoiceJournal">
+          <Key>
+            <PropertyRef Name="SalesInvoiceJournalID" />
+          </Key>
+          <Property Name="SalesInvoiceJournalID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="CompanyID" Type="varchar" MaxLength="4" Nullable="false" />
+          <Property Name="Description" Type="varchar" MaxLength="60" Nullable="false" />
+          <Property Name="JournalType" Type="int" Nullable="false" />
+          <Property Name="JournalName" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="AccountType" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="CostCentre" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="OffsetCostCentre" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="OffsetAccountType" Type="varchar" MaxLength="10" />
+          <Property Name="Txt" Type="varchar" MaxLength="60" />
+          <Property Name="Invoice" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="DocumentDate" Type="datetime" Nullable="false" />
+          <Property Name="DocumentNum" Type="varchar" MaxLength="20" />
+          <Property Name="Due" Type="datetime" Nullable="false" />
+          <Property Name="Amount" Type="numeric" Precision="32" Scale="16" Nullable="false" />
+          <Property Name="CurrencyCode" Type="varchar" MaxLength="3" Nullable="false" />
+          <Property Name="ExchRate" Type="numeric" Precision="32" Scale="16" Nullable="false" />
+          <Property Name="PaymMode" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="PaymReference" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="PostingProfile" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="TaxGroup" Type="varchar" MaxLength="10" />
+          <Property Name="TaxCode" Type="varchar" MaxLength="10" />
+          <Property Name="VatNumJournal" Type="varchar" MaxLength="20" />
+          <Property Name="TransDate" Type="datetime" Nullable="false" />
+          <Property Name="Account" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="OffsetAccount" Type="varchar" MaxLength="30" />
+          <Property Name="ExtractStatus" Type="int" />
+          <Property Name="CreatedDate" Type="datetime" />
+          <Property Name="ExtractedDate" Type="datetime" />
+          <Property Name="StagingId" Type="varchar" MaxLength="40" />
+          <Property Name="VATAmount" Type="decimal" Precision="32" Scale="16" />
+        </EntityType>
+        <EntityType Name="VendorChange">
+          <Key>
+            <PropertyRef Name="VendorChangeId" />
+          </Key>
+          <Property Name="VendorChangeId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="AccountNum" Type="nvarchar" MaxLength="20" Nullable="false" />
+          <Property Name="CreditMax" Type="numeric" Precision="32" Scale="16" Nullable="false" />
+          <Property Name="Currency" Type="nvarchar" MaxLength="3" Nullable="false" />
+          <Property Name="CompanyId" Type="nvarchar" MaxLength="4" Nullable="false" />
+          <Property Name="InventSiteId" Type="nvarchar" MaxLength="10" Nullable="false" />
+          <Property Name="InvoiceAccount" Type="nvarchar" MaxLength="20" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="NameAlias" Type="nvarchar" MaxLength="20" Nullable="false" />
+          <Property Name="PaymMode" Type="nvarchar" MaxLength="10" />
+          <Property Name="PaymModeInbound" Type="nvarchar" MaxLength="10" />
+          <Property Name="StagingId" Type="nvarchar" MaxLength="40" />
+          <Property Name="TaxGroup" Type="nvarchar" MaxLength="10" />
+          <Property Name="TaxGroupInbound" Type="nvarchar" MaxLength="10" />
+          <Property Name="VatNum" Type="nvarchar" MaxLength="20" />
+          <Property Name="CreditRating" Type="nvarchar" MaxLength="10" />
+          <Property Name="VendGroup" Type="nvarchar" MaxLength="10" />
+          <Property Name="PaymSpecInbound" Type="nvarchar" MaxLength="10" />
+          <Property Name="PaymSpec" Type="nvarchar" MaxLength="10" />
+          <Property Name="PaymSchedInbound" Type="nvarchar" MaxLength="10" />
+          <Property Name="PaymSched" Type="nvarchar" MaxLength="30" />
+          <Property Name="BankAccount" Type="nvarchar" MaxLength="10" />
+          <Property Name="Blocked" Type="int" />
+          <Property Name="YourAccountNum" Type="nvarchar" MaxLength="20" />
+          <Property Name="LineOfBusinessId" Type="nvarchar" MaxLength="10" />
+          <Property Name="SegmentId" Type="nvarchar" MaxLength="20" />
+          <Property Name="SubsegmentId" Type="nvarchar" MaxLength="20" />
+          <Property Name="PaymdayId" Type="nvarchar" MaxLength="10" />
+          <Property Name="CompanyChainId" Type="nvarchar" MaxLength="20" />
+          <Property Name="Memo" Type="nvarchar(max)" />
+          <Property Name="AllowSplitPack" Type="int" />
+          <Property Name="Message01" Type="nvarchar" MaxLength="60" />
+          <Property Name="Message02" Type="nvarchar" MaxLength="60" />
+          <Property Name="Message03" Type="nvarchar" MaxLength="60" />
+          <Property Name="Message04" Type="nvarchar" MaxLength="60" />
+          <Property Name="Message05" Type="nvarchar" MaxLength="60" />
+          <Property Name="MinorderValue" Type="int" />
+          <Property Name="SupplierLeadTime" Type="int" />
+          <Property Name="TheirCode" Type="nvarchar" MaxLength="13" />
+          <Property Name="Internal" Type="int" />
+          <Property Name="PrintSupplier" Type="int" />
+          <Property Name="ExtractStatus" Type="int" />
+          <Property Name="CreatedDate" Type="datetime" />
+          <Property Name="ExtractedDate" Type="datetime" />
+          <Property Name="InsUpdDelete" Type="int" Nullable="false" />
+        </EntityType>
+        <Function Name="spExtractAxPaymentTerms" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="DataAreaId" Type="varchar" Mode="In" />
+        </Function>
+        <EntityContainer Name="Ax2012InterfaceModelStoreContainer">
+          <EntitySet Name="AddressChange" EntityType="Self.AddressChange" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="AOMProductChange" EntityType="Self.AOMProductChange" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="AOMPurchaseDeliveryHeader" EntityType="Self.AOMPurchaseDeliveryHeader" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="AOMPurchaseDeliveryLine" EntityType="Self.AOMPurchaseDeliveryLine" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="CustChange" EntityType="Self.CustChange" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="PurchaseInvoiceHeaders" EntityType="Self.PurchaseInvoiceHeaders" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="PurchaseInvoiceLines" EntityType="Self.PurchaseInvoiceLines" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="SalesInvoiceJournal" EntityType="Self.SalesInvoiceJournal" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="VendorChange" EntityType="Self.VendorChange" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="Ax2012InterfaceModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="AddressChange">
+          <Key>
+            <PropertyRef Name="AddressChangeId" />
+          </Key>
+          <Property Name="AddressChangeId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="StagingId" Type="Guid" Nullable="false" />
+          <Property Name="AccountNum" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="CompanyId" Type="String" MaxLength="3" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="AddressRef" Type="String" MaxLength="4" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Description" Type="String" MaxLength="60" FixedLength="false" Unicode="true" />
+          <Property Name="LocationRole" Type="String" MaxLength="40" FixedLength="false" Unicode="true" />
+          <Property Name="BuildingCompliment" Type="String" MaxLength="60" FixedLength="false" Unicode="true" />
+          <Property Name="City" Type="String" MaxLength="60" FixedLength="false" Unicode="true" />
+          <Property Name="County" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+          <Property Name="Street" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="State" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="ZipCode" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="CountryRegionId" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="Comment1" Type="String" MaxLength="60" FixedLength="false" Unicode="true" />
+          <Property Name="Comment2" Type="String" MaxLength="60" FixedLength="false" Unicode="true" />
+          <Property Name="DxReference" Type="String" MaxLength="60" FixedLength="false" Unicode="true" />
+          <Property Name="InvoiceAddressRef" Type="String" MaxLength="4" FixedLength="false" Unicode="true" />
+          <Property Name="InventLocation" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="InventSite" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="ServiceType" Type="Int32" />
+          <Property Name="TheirCode" Type="String" MaxLength="13" FixedLength="false" Unicode="true" />
+          <Property Name="Rep1" Type="String" MaxLength="25" FixedLength="false" Unicode="true" />
+          <Property Name="TaxGroup" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="AccountType" Type="Int32" />
+          <Property Name="TaxgroupInbound" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="InventLocationInbound" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="ServiceLevel" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="VanRoute" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="DistrictName" Type="String" MaxLength="60" FixedLength="false" Unicode="true" />
+          <Property Name="ExtractStatus" Type="Int32" />
+          <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+          <Property Name="ExtractedDate" Type="DateTime" Precision="3" />
+          <Property Name="InsUpdDel" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="CustChange">
+          <Key>
+            <PropertyRef Name="CustChangeID" />
+          </Key>
+          <Property Name="CustChangeID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="StagingId" Type="Guid" Nullable="false" />
+          <Property Name="AccountNum" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Name" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="NameAlias" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="AccountStatement" Type="Int32" Nullable="false" />
+          <Property Name="Currency" Type="String" MaxLength="3" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="CustGroup" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Blocked" Type="Int32" Nullable="false" />
+          <Property Name="CreditMax" Type="Decimal" Precision="32" Scale="16" />
+          <Property Name="MandatoryCreditLimit" Type="Int32" />
+          <Property Name="CreditRating" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="InvoiceAccount" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="VendAccount" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="InventLocation" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="InvoiceAddress" Type="Int32" />
+          <Property Name="OurAccountNum" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="PaymIdType" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="PaymDayId" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="PaymMode" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="PaymTermId" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="SalesGroup" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="TaxGroup" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="VATNum" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="MainContactWorker" Type="String" MaxLength="25" FixedLength="false" Unicode="true" />
+          <Property Name="SalesDistrictId" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="LineOfBusinessId" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="SegmentId" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="SubsegmentId" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="CompanyChainId" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="CustClassificationId" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="INVENTSITEID" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="DiscountRate" Type="Decimal" Precision="32" Scale="16" />
+          <Property Name="DiscountType" Type="Int32" />
+          <Property Name="Tec_PriceBand" Type="Int64" />
+          <Property Name="Tec_MinOrderBreak" Type="Int64" />
+          <Property Name="AllowSplitPack" Type="Int32" />
+          <Property Name="MergeBackOrders" Type="Int32" />
+          <Property Name="MergeDeliveries" Type="Int32" />
+          <Property Name="MergeOrders" Type="Int32" />
+          <Property Name="DELIVERYSEQ" Type="Int32" />
+          <Property Name="DeliverComplete" Type="Int32" />
+          <Property Name="DeliveryPricing" Type="Int32" />
+          <Property Name="OrderNotes" Type="Int32" />
+          <Property Name="CUSTDNS" Type="Int32" />
+          <Property Name="ACKNOWLEDGEMENTS" Type="Int32" />
+          <Property Name="AckFormat" Type="Int32" />
+          <Property Name="AckPricing" Type="Int32" />
+          <Property Name="AckShowAllocation" Type="Int32" />
+          <Property Name="AllowBackorders" Type="Int32" />
+          <Property Name="ApplyCharge" Type="Int32" />
+          <Property Name="MinOrderValue" Type="Int32" />
+          <Property Name="Tec_ChargeCode" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+          <Property Name="ForcedSwitchSell" Type="Int32" />
+          <Property Name="InvoiceSequence" Type="Int32" />
+          <Property Name="InvoiceCompleteOrder" Type="Int32" />
+          <Property Name="Tec_InvoiceGroup" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+          <Property Name="Tec_BillingOptions" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+          <Property Name="FiscalYearEnd" Type="Int32" />
+          <Property Name="CreditCardIndicator" Type="Int32" />
+          <Property Name="WebEnabled" Type="Int32" />
+          <Property Name="Tec_WebSite" Type="Int64" />
+          <Property Name="Msg1" Type="String" MaxLength="40" FixedLength="false" Unicode="true" />
+          <Property Name="Msg2" Type="String" MaxLength="40" FixedLength="false" Unicode="true" />
+          <Property Name="Msg3" Type="String" MaxLength="40" FixedLength="false" Unicode="true" />
+          <Property Name="Msg4" Type="String" MaxLength="40" FixedLength="false" Unicode="true" />
+          <Property Name="Msg5" Type="String" MaxLength="40" FixedLength="false" Unicode="true" />
+          <Property Name="ManualAddress" Type="Int32" />
+          <Property Name="PrintCustomer" Type="Int32" />
+          <Property Name="HouseAccount" Type="Int32" />
+          <Property Name="ExtractStatus" Type="Int32" />
+          <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+          <Property Name="ExtractedDate" Type="DateTime" Precision="3" />
+          <Property Name="InsUpdDelete" Type="Int32" Nullable="false" />
+          <Property Name="CompanyID" Type="String" MaxLength="3" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="SalesInvoiceJournal">
+          <Key>
+            <PropertyRef Name="SalesInvoiceJournalID" />
+          </Key>
+          <Property Name="SalesInvoiceJournalID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="CompanyID" Type="String" MaxLength="4" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Description" Type="String" MaxLength="60" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="JournalType" Type="Int32" Nullable="false" />
+          <Property Name="JournalName" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="AccountType" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="CostCentre" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="OffsetCostCentre" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="OffsetAccountType" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="Txt" Type="String" MaxLength="60" FixedLength="false" Unicode="false" />
+          <Property Name="Invoice" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="DocumentDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="DocumentNum" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="Due" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Amount" Type="Decimal" Precision="32" Scale="16" Nullable="false" />
+          <Property Name="CurrencyCode" Type="String" MaxLength="3" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="ExchRate" Type="Decimal" Precision="32" Scale="16" Nullable="false" />
+          <Property Name="PaymMode" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="PaymReference" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="PostingProfile" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="TaxGroup" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="TaxCode" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="VatNumJournal" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="TransDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Account" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="OffsetAccount" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="ExtractStatus" Type="Int32" />
+          <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+          <Property Name="ExtractedDate" Type="DateTime" Precision="3" />
+          <Property Name="StagingId" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+          <Property Name="VATAmount" Type="Decimal" Precision="32" Scale="16" />
+        </EntityType>
+        <EntityType Name="VendorChange">
+          <Key>
+            <PropertyRef Name="VendorChangeId" />
+          </Key>
+          <Property Name="VendorChangeId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="AccountNum" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="CreditMax" Type="Decimal" Precision="32" Scale="16" Nullable="false" />
+          <Property Name="Currency" Type="String" MaxLength="3" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="CompanyId" Type="String" MaxLength="4" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="InventSiteId" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="InvoiceAccount" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Name" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="NameAlias" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="PaymMode" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="PaymModeInbound" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="StagingId" Type="String" MaxLength="40" FixedLength="false" Unicode="true" />
+          <Property Name="TaxGroup" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="TaxGroupInbound" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="VatNum" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="CreditRating" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="VendGroup" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="PaymSpecInbound" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="PaymSpec" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="PaymSchedInbound" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="PaymSched" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+          <Property Name="BankAccount" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="Blocked" Type="Int32" />
+          <Property Name="YourAccountNum" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="LineOfBusinessId" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="SegmentId" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="SubsegmentId" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="PaymdayId" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="CompanyChainId" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="Memo" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="AllowSplitPack" Type="Int32" />
+          <Property Name="Message01" Type="String" MaxLength="60" FixedLength="false" Unicode="true" />
+          <Property Name="Message02" Type="String" MaxLength="60" FixedLength="false" Unicode="true" />
+          <Property Name="Message03" Type="String" MaxLength="60" FixedLength="false" Unicode="true" />
+          <Property Name="Message04" Type="String" MaxLength="60" FixedLength="false" Unicode="true" />
+          <Property Name="Message05" Type="String" MaxLength="60" FixedLength="false" Unicode="true" />
+          <Property Name="MinorderValue" Type="Int32" />
+          <Property Name="SupplierLeadTime" Type="Int32" />
+          <Property Name="TheirCode" Type="String" MaxLength="13" FixedLength="false" Unicode="true" />
+          <Property Name="Internal" Type="Int32" />
+          <Property Name="PrintSupplier" Type="Int32" />
+          <Property Name="ExtractStatus" Type="Int32" />
+          <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+          <Property Name="ExtractedDate" Type="DateTime" Precision="3" />
+          <Property Name="InsUpdDelete" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="Ax2012InterfaceEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="AddressChanges" EntityType="Self.AddressChange" />
+          <EntitySet Name="CustChanges" EntityType="Self.CustChange" />
+          <EntitySet Name="SalesInvoiceJournals" EntityType="Self.SalesInvoiceJournal" />
+          <EntitySet Name="VendorChanges" EntityType="Self.VendorChange" />
+          <FunctionImport Name="spExtractAxPaymentTerms" ReturnType="Collection(Ax2012InterfaceModel.spExtractAxPaymentTerms_Result)">
+          <Parameter Name="DataAreaId" Mode="In" Type="String" />
+          </FunctionImport>
+          <EntitySet Name="AOMProductChanges" EntityType="Ax2012InterfaceModel.AOMProductChange" />
+          <EntitySet Name="AOMPurchaseDeliveryHeaders" EntityType="Ax2012InterfaceModel.AOMPurchaseDeliveryHeader" />
+          <EntitySet Name="AOMPurchaseDeliveryLines" EntityType="Ax2012InterfaceModel.AOMPurchaseDeliveryLine" />
+          <FunctionImport Name="spUpdateBatchStatus">
+            <Parameter Name="BatchJob" Mode="In" Type="String" />
+            <Parameter Name="CompanyID" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="spUpdateAccountsOnHoldJournal">
+            <Parameter Name="CompanyID" Mode="In" Type="String" />
+          </FunctionImport>
+          <EntitySet Name="PurchaseInvoiceHeaders" EntityType="Ax2012InterfaceModel.PurchaseInvoiceHeader" />
+          <EntitySet Name="PurchaseInvoiceLines" EntityType="Ax2012InterfaceModel.PurchaseInvoiceLine" />
+          </EntityContainer>
+        <ComplexType Name="spExtractAxPaymentTerms_Result">
+          <Property Type="String" Name="AccountNum" Nullable="false" MaxLength="20" />
+          <Property Type="String" Name="PaymTermID" Nullable="false" MaxLength="10" />
+          <Property Type="Int32" Name="PAYMMETHOD" Nullable="true" />
+          <Property Type="Int32" Name="NUMOFMONTHS" Nullable="true" />
+          <Property Type="Int32" Name="NUMOFDAYS" Nullable="true" />
+          <Property Type="String" Name="PAYMMODE" Nullable="false" MaxLength="10" />
+        </ComplexType>
+        <EntityType Name="AOMProductChange">
+          <Key>
+            <PropertyRef Name="ProductChangeID" />
+          </Key>
+          <Property Name="ProductChangeID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ITEMID" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="NAME" Type="String" Nullable="false" MaxLength="60" FixedLength="false" Unicode="true" />
+          <Property Name="WIDTH" Type="Decimal" Nullable="false" Precision="32" Scale="16" />
+          <Property Name="HEIGHT" Type="Decimal" Nullable="false" Precision="32" Scale="16" />
+          <Property Name="DEPTH" Type="Decimal" Nullable="false" Precision="32" Scale="16" />
+          <Property Name="NETWEIGHT" Type="Decimal" Nullable="false" Precision="32" Scale="16" />
+          <Property Name="INTRACODE" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="PRIMARYVENDID" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="ORIGCOUNTRYID" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="STOCK_OWNER" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="VAT_GROUP" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="DESCRIPTION_5" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="DESCRIPTION_4" Type="String" Nullable="false" MaxLength="40" FixedLength="false" Unicode="true" />
+          <Property Name="DESCRIPTION_3" Type="String" Nullable="false" MaxLength="40" FixedLength="false" Unicode="true" />
+          <Property Name="DESCRIPTION_2" Type="String" Nullable="false" MaxLength="40" FixedLength="false" Unicode="true" />
+          <Property Name="PRODUCT_OWNER" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="MANUFACTURER" Type="String" Nullable="false" MaxLength="8" FixedLength="false" Unicode="true" />
+          <Property Name="MANUFACTURER_PRODCODE" Type="String" Nullable="false" MaxLength="13" FixedLength="false" Unicode="true" />
+          <Property Name="DELIVERYTIME" Type="Int32" Nullable="false" />
+          <Property Name="STANDARD_COST" Type="Decimal" Nullable="false" Precision="32" Scale="16" />
+          <Property Name="SPECIAL" Type="Int32" Nullable="false" />
+          <Property Name="SELL_PRICEUNIT" Type="Decimal" Nullable="false" Precision="32" Scale="16" />
+          <Property Name="SELL_PRICE" Type="Decimal" Nullable="false" Precision="32" Scale="16" />
+          <Property Name="PAIDSTOCK" Type="Int32" Nullable="false" />
+          <Property Name="ITEMGROUP" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="TYPE" Type="Int32" Nullable="false" />
+          <Property Name="UNSPSC" Type="String" Nullable="false" MaxLength="8" FixedLength="false" Unicode="true" />
+          <Property Name="SHELFLIFE" Type="Int32" Nullable="false" />
+          <Property Name="STATUSBLOCKED" Type="String" Nullable="false" MaxLength="1" FixedLength="false" Unicode="true" />
+          <Property Name="BOSSF_GROUP" Type="Int64" Nullable="false" />
+          <Property Name="BOSSF_RANGE" Type="Int64" Nullable="false" />
+          <Property Name="PRODUCT_RANGE" Type="Int64" Nullable="false" />
+          <Property Name="PRODUCT_GROUP" Type="Int64" Nullable="false" />
+          <Property Name="MASTERITEMID" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="DATAAREAID" Type="String" Nullable="false" MaxLength="4" FixedLength="false" Unicode="true" />
+          <Property Name="PARTITION" Type="Int64" Nullable="false" />
+          <Property Name="ExtractStatus" Type="Byte" Nullable="false" />
+          <Property Name="InsUpdDelete" Type="Int32" />
+        </EntityType>
+        <EntityType Name="AOMPurchaseDeliveryHeader">
+          <Key>
+            <PropertyRef Name="AOMPurchaseDeliveryHeaderID" />
+          </Key>
+          <Property Name="AOMPurchaseDeliveryHeaderID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="EXTERNAL_ORD_ID" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="EXTERNAL_DEL_ID" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="VENDACCOUNT" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="ADD_REFERENCE" Type="String" MaxLength="4" FixedLength="false" Unicode="true" />
+          <Property Name="ADD_LINE_1" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="ADD_LINE_2" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="ADD_CITY" Type="String" MaxLength="40" FixedLength="false" Unicode="true" />
+          <Property Name="ADD_TERRITORY" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+          <Property Name="ADD_COUNTRY" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+          <Property Name="ADD_ZIPCODE" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="VENDORREF" Type="String" MaxLength="60" FixedLength="false" Unicode="true" />
+          <Property Name="DELIVERYDATE" Type="DateTime" Precision="3" />
+          <Property Name="INVENTLOCATIONID" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="TYPE" Type="Int32" />
+          <Property Name="SHIP_NAME" Type="String" MaxLength="60" FixedLength="false" Unicode="true" />
+          <Property Name="COSTOFSALES" Type="Int32" />
+          <Property Name="DLVNAME" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="DLVADD_LINE_1" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="DLVADD_LINE_2" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="DLVCITY" Type="String" MaxLength="40" FixedLength="false" Unicode="true" />
+          <Property Name="DLVTERRITORY" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+          <Property Name="DLVCOUNTRY" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+          <Property Name="DLVZIPCODE" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="EXTPURCHTYPE" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+          <Property Name="OPERATORCODE" Type="String" MaxLength="5" FixedLength="false" Unicode="true" />
+          <Property Name="ORDERUPDATETYPE" Type="Int32" />
+          <Property Name="DIMENSION" Type="Int64" />
+          <Property Name="INVENTSITEID" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="PURCHASETYPE" Type="Int32" />
+          <Property Name="DLVADD_REFERENCE" Type="String" MaxLength="4" FixedLength="false" Unicode="true" />
+          <Property Name="VATAMOUNT" Type="Decimal" Precision="32" Scale="16" />
+          <Property Name="INVOICEID" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="ORDER_TOTAL_NET" Type="Decimal" Precision="32" Scale="16" />
+          <Property Name="ORDER_TOTAL_GROSS" Type="Decimal" Precision="32" Scale="16" />
+          <Property Name="MODIFIEDDATETIME" Type="DateTime" Precision="3" />
+          <Property Name="CREATEDDATETIME" Type="DateTime" Precision="3" />
+          <Property Name="DATAAREAID" Type="String" MaxLength="4" FixedLength="false" Unicode="true" />
+          <Property Name="INVENTLOCATIONID1" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="INVOICEDATE" Type="DateTime" Precision="3" />
+          <Property Name="ExtractStatus" Type="Byte" />
+          <Property Name="HeaderProcessed" Type="Byte" />
+          <Property Name="HeaderSequence" Type="Int16" />
+        </EntityType>
+        <EntityType Name="AOMPurchaseDeliveryLine">
+          <Key>
+            <PropertyRef Name="AOMPurchaseDeliveryLineID" />
+          </Key>
+          <Property Name="AOMPurchaseDeliveryLineID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="AOMPurchaseDeliveryHeaderID" Type="Int32" />
+          <Property Name="EXTERNAL_ORD_ID" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="EXTERNAL_DEL_ID" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="DELIVERYDATE" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="ITEMID" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="LINEAMOUNT" Type="Decimal" Nullable="false" Precision="32" Scale="16" />
+          <Property Name="PURCHPRICE" Type="Decimal" Nullable="false" Precision="32" Scale="16" />
+          <Property Name="PURCHQTY" Type="Decimal" Nullable="false" Precision="32" Scale="16" />
+          <Property Name="TYPE" Type="Int32" Nullable="false" />
+          <Property Name="NAME" Type="String" Nullable="false" MaxLength="60" FixedLength="false" Unicode="true" />
+          <Property Name="PROGRESSITEMID" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="PRICEUNIT" Type="Decimal" Nullable="false" Precision="32" Scale="16" />
+          <Property Name="PURCHRECEIVEDNOW" Type="Decimal" Nullable="false" Precision="32" Scale="16" />
+          <Property Name="DEFAULTDIMENSION" Type="Int64" Nullable="false" />
+          <Property Name="LINENUM" Type="Decimal" Nullable="false" Precision="32" Scale="16" />
+          <Property Name="INVENTTRANSID" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="EXTERNAL_INV_ID" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="VATLINEAMOUNT" Type="Decimal" Nullable="false" Precision="32" Scale="16" />
+          <Property Name="PURCHID" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="MODIFIEDDATETIME" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="CREATEDDATETIME" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="DATAAREAID" Type="String" Nullable="false" MaxLength="4" FixedLength="false" Unicode="true" />
+          <Property Name="Seq" Type="Int32" />
+        </EntityType>
+        <EntityType Name="PurchaseInvoiceHeader">
+          <Key>
+            <PropertyRef Name="PurchaseInvoiceHeadersID" />
+          </Key>
+          <Property Name="PurchaseInvoiceHeadersID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="EXTERNAL_INV_ID" Type="String" Nullable="false" MaxLength="40" FixedLength="false" Unicode="false" />
+          <Property Name="InvoiceDate" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="VENDACCOUNT" Type="String" Nullable="false" MaxLength="8" FixedLength="false" Unicode="false" />
+          <Property Name="EXTERNAL_ORD_ID" Type="String" Nullable="false" MaxLength="21" FixedLength="false" Unicode="false" />
+          <Property Name="EXTERNAL_DEL_ID" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+          <Property Name="VATAmount" Type="Decimal" Precision="20" Scale="2" />
+          <Property Name="Order_Total_Net" Type="Decimal" Precision="20" Scale="2" />
+          <Property Name="Order_Total_Gross" Type="Decimal" Precision="20" Scale="2" />
+          <Property Name="VendorRef" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+          <Property Name="CreatedDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="BatchIdentifier" Type="Guid" Nullable="false" />
+          <Property Name="ExtractBatchID" Type="Guid" />
+          <Property Name="InvoiceGUID" Type="Guid" Nullable="false" />
+          <Property Name="ExtractedDate" Type="DateTime" Precision="0" />
+          <Property Name="ErrorStatus" Type="Int16" />
+          <Property Name="ExtractStatus" Type="Int16" />
+          <Property Name="OrderVerfied" Type="Int16" />
+          <Property Name="DateAdded" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="InvoiceType" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="CompanyID" Type="String" MaxLength="3" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="PurchaseInvoiceLine">
+          <Key>
+            <PropertyRef Name="PurchaseInvoiceLinesID" />
+          </Key>
+          <Property Name="PurchaseInvoiceLinesID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="EXTERNAL_ORD_ID" Type="String" Nullable="false" MaxLength="41" FixedLength="false" Unicode="false" />
+          <Property Name="ItemID" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+          <Property Name="Name" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+          <Property Name="InvoiceLineNum" Type="Int32" Nullable="false" />
+          <Property Name="EXTERNAL_DEL_ID" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+          <Property Name="PurchPrice" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="PurchQty" Type="Int32" Nullable="false" />
+          <Property Name="LineNum" Type="Int32" Nullable="false" />
+          <Property Name="LINE_TOTAL_EX_VAT" Type="Decimal" Precision="20" Scale="2" />
+          <Property Name="PurchReceivedNow" Type="Decimal" Precision="20" Scale="2" />
+          <Property Name="VATAmount" Type="Decimal" Precision="20" Scale="2" />
+          <Property Name="InvoiceDate" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="EXTERNAL_INV_ID" Type="String" Nullable="false" MaxLength="40" FixedLength="true" Unicode="false" />
+          <Property Name="PriceUnit" Type="Int16" Nullable="false" />
+          <Property Name="CREATEDDATE" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="VendAccount" Type="String" Nullable="false" MaxLength="8" FixedLength="false" Unicode="false" />
+          <Property Name="InvoiceGUID" Type="Guid" Nullable="false" />
+          <Property Name="BatchIdentifier" Type="Guid" Nullable="false" />
+          <Property Name="CompanyID" Type="String" Nullable="false" MaxLength="3" FixedLength="false" Unicode="false" />
+        </EntityType>
+        </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="Ax2012InterfaceModelStoreContainer" CdmEntityContainer="Ax2012InterfaceEntities">
+          <EntitySetMapping Name="AddressChanges">
+            <EntityTypeMapping TypeName="Ax2012InterfaceModel.AddressChange">
+              <MappingFragment StoreEntitySet="AddressChange">
+                <ScalarProperty Name="AddressChangeId" ColumnName="AddressChangeId" />
+                <ScalarProperty Name="StagingId" ColumnName="StagingId" />
+                <ScalarProperty Name="AccountNum" ColumnName="AccountNum" />
+                <ScalarProperty Name="CompanyId" ColumnName="CompanyId" />
+                <ScalarProperty Name="AddressRef" ColumnName="AddressRef" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="LocationRole" ColumnName="LocationRole" />
+                <ScalarProperty Name="BuildingCompliment" ColumnName="BuildingCompliment" />
+                <ScalarProperty Name="City" ColumnName="City" />
+                <ScalarProperty Name="County" ColumnName="County" />
+                <ScalarProperty Name="Street" ColumnName="Street" />
+                <ScalarProperty Name="State" ColumnName="State" />
+                <ScalarProperty Name="ZipCode" ColumnName="ZipCode" />
+                <ScalarProperty Name="CountryRegionId" ColumnName="CountryRegionId" />
+                <ScalarProperty Name="Comment1" ColumnName="Comment1" />
+                <ScalarProperty Name="Comment2" ColumnName="Comment2" />
+                <ScalarProperty Name="DxReference" ColumnName="DxReference" />
+                <ScalarProperty Name="InvoiceAddressRef" ColumnName="InvoiceAddressRef" />
+                <ScalarProperty Name="InventLocation" ColumnName="InventLocation" />
+                <ScalarProperty Name="InventSite" ColumnName="InventSite" />
+                <ScalarProperty Name="ServiceType" ColumnName="ServiceType" />
+                <ScalarProperty Name="TheirCode" ColumnName="TheirCode" />
+                <ScalarProperty Name="Rep1" ColumnName="Rep1" />
+                <ScalarProperty Name="TaxGroup" ColumnName="TaxGroup" />
+                <ScalarProperty Name="AccountType" ColumnName="AccountType" />
+                <ScalarProperty Name="TaxgroupInbound" ColumnName="TaxgroupInbound" />
+                <ScalarProperty Name="InventLocationInbound" ColumnName="InventLocationInbound" />
+                <ScalarProperty Name="ServiceLevel" ColumnName="ServiceLevel" />
+                <ScalarProperty Name="VanRoute" ColumnName="VanRoute" />
+                <ScalarProperty Name="DistrictName" ColumnName="DistrictName" />
+                <ScalarProperty Name="ExtractStatus" ColumnName="ExtractStatus" />
+                <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+                <ScalarProperty Name="ExtractedDate" ColumnName="ExtractedDate" />
+                <ScalarProperty Name="InsUpdDel" ColumnName="InsUpdDel" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="CustChanges">
+            <EntityTypeMapping TypeName="Ax2012InterfaceModel.CustChange">
+              <MappingFragment StoreEntitySet="CustChange">
+                <ScalarProperty Name="CustChangeID" ColumnName="CustChangeID" />
+                <ScalarProperty Name="StagingId" ColumnName="StagingId" />
+                <ScalarProperty Name="AccountNum" ColumnName="AccountNum" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="NameAlias" ColumnName="NameAlias" />
+                <ScalarProperty Name="AccountStatement" ColumnName="AccountStatement" />
+                <ScalarProperty Name="Currency" ColumnName="Currency" />
+                <ScalarProperty Name="CustGroup" ColumnName="CustGroup" />
+                <ScalarProperty Name="Blocked" ColumnName="Blocked" />
+                <ScalarProperty Name="CreditMax" ColumnName="CreditMax" />
+                <ScalarProperty Name="MandatoryCreditLimit" ColumnName="MandatoryCreditLimit" />
+                <ScalarProperty Name="CreditRating" ColumnName="CreditRating" />
+                <ScalarProperty Name="InvoiceAccount" ColumnName="InvoiceAccount" />
+                <ScalarProperty Name="VendAccount" ColumnName="VendAccount" />
+                <ScalarProperty Name="InventLocation" ColumnName="InventLocation" />
+                <ScalarProperty Name="InvoiceAddress" ColumnName="InvoiceAddress" />
+                <ScalarProperty Name="OurAccountNum" ColumnName="OurAccountNum" />
+                <ScalarProperty Name="PaymIdType" ColumnName="PaymIdType" />
+                <ScalarProperty Name="PaymDayId" ColumnName="PaymDayId" />
+                <ScalarProperty Name="PaymMode" ColumnName="PaymMode" />
+                <ScalarProperty Name="PaymTermId" ColumnName="PaymTermId" />
+                <ScalarProperty Name="SalesGroup" ColumnName="SalesGroup" />
+                <ScalarProperty Name="TaxGroup" ColumnName="TaxGroup" />
+                <ScalarProperty Name="VATNum" ColumnName="VATNum" />
+                <ScalarProperty Name="MainContactWorker" ColumnName="MainContactWorker" />
+                <ScalarProperty Name="SalesDistrictId" ColumnName="SalesDistrictId" />
+                <ScalarProperty Name="LineOfBusinessId" ColumnName="LineOfBusinessId" />
+                <ScalarProperty Name="SegmentId" ColumnName="SegmentId" />
+                <ScalarProperty Name="SubsegmentId" ColumnName="SubsegmentId" />
+                <ScalarProperty Name="CompanyChainId" ColumnName="CompanyChainId" />
+                <ScalarProperty Name="CustClassificationId" ColumnName="CustClassificationId" />
+                <ScalarProperty Name="INVENTSITEID" ColumnName="INVENTSITEID" />
+                <ScalarProperty Name="DiscountRate" ColumnName="DiscountRate" />
+                <ScalarProperty Name="DiscountType" ColumnName="DiscountType" />
+                <ScalarProperty Name="Tec_PriceBand" ColumnName="Tec_PriceBand" />
+                <ScalarProperty Name="Tec_MinOrderBreak" ColumnName="Tec_MinOrderBreak" />
+                <ScalarProperty Name="AllowSplitPack" ColumnName="AllowSplitPack" />
+                <ScalarProperty Name="MergeBackOrders" ColumnName="MergeBackOrders" />
+                <ScalarProperty Name="MergeDeliveries" ColumnName="MergeDeliveries" />
+                <ScalarProperty Name="MergeOrders" ColumnName="MergeOrders" />
+                <ScalarProperty Name="DELIVERYSEQ" ColumnName="DELIVERYSEQ" />
+                <ScalarProperty Name="DeliverComplete" ColumnName="DeliverComplete" />
+                <ScalarProperty Name="DeliveryPricing" ColumnName="DeliveryPricing" />
+                <ScalarProperty Name="OrderNotes" ColumnName="OrderNotes" />
+                <ScalarProperty Name="CUSTDNS" ColumnName="CUSTDNS" />
+                <ScalarProperty Name="ACKNOWLEDGEMENTS" ColumnName="ACKNOWLEDGEMENTS" />
+                <ScalarProperty Name="AckFormat" ColumnName="AckFormat" />
+                <ScalarProperty Name="AckPricing" ColumnName="AckPricing" />
+                <ScalarProperty Name="AckShowAllocation" ColumnName="AckShowAllocation" />
+                <ScalarProperty Name="AllowBackorders" ColumnName="AllowBackorders" />
+                <ScalarProperty Name="ApplyCharge" ColumnName="ApplyCharge" />
+                <ScalarProperty Name="MinOrderValue" ColumnName="MinOrderValue" />
+                <ScalarProperty Name="Tec_ChargeCode" ColumnName="Tec_ChargeCode" />
+                <ScalarProperty Name="ForcedSwitchSell" ColumnName="ForcedSwitchSell" />
+                <ScalarProperty Name="InvoiceSequence" ColumnName="InvoiceSequence" />
+                <ScalarProperty Name="InvoiceCompleteOrder" ColumnName="InvoiceCompleteOrder" />
+                <ScalarProperty Name="Tec_InvoiceGroup" ColumnName="Tec_InvoiceGroup" />
+                <ScalarProperty Name="Tec_BillingOptions" ColumnName="Tec_BillingOptions" />
+                <ScalarProperty Name="FiscalYearEnd" ColumnName="FiscalYearEnd" />
+                <ScalarProperty Name="CreditCardIndicator" ColumnName="CreditCardIndicator" />
+                <ScalarProperty Name="WebEnabled" ColumnName="WebEnabled" />
+                <ScalarProperty Name="Tec_WebSite" ColumnName="Tec_WebSite" />
+                <ScalarProperty Name="Msg1" ColumnName="Msg1" />
+                <ScalarProperty Name="Msg2" ColumnName="Msg2" />
+                <ScalarProperty Name="Msg3" ColumnName="Msg3" />
+                <ScalarProperty Name="Msg4" ColumnName="Msg4" />
+                <ScalarProperty Name="Msg5" ColumnName="Msg5" />
+                <ScalarProperty Name="ManualAddress" ColumnName="ManualAddress" />
+                <ScalarProperty Name="PrintCustomer" ColumnName="PrintCustomer" />
+                <ScalarProperty Name="HouseAccount" ColumnName="HouseAccount" />
+                <ScalarProperty Name="ExtractStatus" ColumnName="ExtractStatus" />
+                <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+                <ScalarProperty Name="ExtractedDate" ColumnName="ExtractedDate" />
+                <ScalarProperty Name="InsUpdDelete" ColumnName="InsUpdDelete" />
+                <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SalesInvoiceJournals">
+            <EntityTypeMapping TypeName="Ax2012InterfaceModel.SalesInvoiceJournal">
+              <MappingFragment StoreEntitySet="SalesInvoiceJournal">
+                <ScalarProperty Name="SalesInvoiceJournalID" ColumnName="SalesInvoiceJournalID" />
+                <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="JournalType" ColumnName="JournalType" />
+                <ScalarProperty Name="JournalName" ColumnName="JournalName" />
+                <ScalarProperty Name="AccountType" ColumnName="AccountType" />
+                <ScalarProperty Name="CostCentre" ColumnName="CostCentre" />
+                <ScalarProperty Name="OffsetCostCentre" ColumnName="OffsetCostCentre" />
+                <ScalarProperty Name="OffsetAccountType" ColumnName="OffsetAccountType" />
+                <ScalarProperty Name="Txt" ColumnName="Txt" />
+                <ScalarProperty Name="Invoice" ColumnName="Invoice" />
+                <ScalarProperty Name="DocumentDate" ColumnName="DocumentDate" />
+                <ScalarProperty Name="DocumentNum" ColumnName="DocumentNum" />
+                <ScalarProperty Name="Due" ColumnName="Due" />
+                <ScalarProperty Name="Amount" ColumnName="Amount" />
+                <ScalarProperty Name="CurrencyCode" ColumnName="CurrencyCode" />
+                <ScalarProperty Name="ExchRate" ColumnName="ExchRate" />
+                <ScalarProperty Name="PaymMode" ColumnName="PaymMode" />
+                <ScalarProperty Name="PaymReference" ColumnName="PaymReference" />
+                <ScalarProperty Name="PostingProfile" ColumnName="PostingProfile" />
+                <ScalarProperty Name="TaxGroup" ColumnName="TaxGroup" />
+                <ScalarProperty Name="TaxCode" ColumnName="TaxCode" />
+                <ScalarProperty Name="VatNumJournal" ColumnName="VatNumJournal" />
+                <ScalarProperty Name="TransDate" ColumnName="TransDate" />
+                <ScalarProperty Name="Account" ColumnName="Account" />
+                <ScalarProperty Name="OffsetAccount" ColumnName="OffsetAccount" />
+                <ScalarProperty Name="ExtractStatus" ColumnName="ExtractStatus" />
+                <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+                <ScalarProperty Name="ExtractedDate" ColumnName="ExtractedDate" />
+                <ScalarProperty Name="StagingId" ColumnName="StagingId" />
+                <ScalarProperty Name="VATAmount" ColumnName="VATAmount" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="VendorChanges">
+            <EntityTypeMapping TypeName="Ax2012InterfaceModel.VendorChange">
+              <MappingFragment StoreEntitySet="VendorChange">
+                <ScalarProperty Name="VendorChangeId" ColumnName="VendorChangeId" />
+                <ScalarProperty Name="AccountNum" ColumnName="AccountNum" />
+                <ScalarProperty Name="CreditMax" ColumnName="CreditMax" />
+                <ScalarProperty Name="Currency" ColumnName="Currency" />
+                <ScalarProperty Name="CompanyId" ColumnName="CompanyId" />
+                <ScalarProperty Name="InventSiteId" ColumnName="InventSiteId" />
+                <ScalarProperty Name="InvoiceAccount" ColumnName="InvoiceAccount" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="NameAlias" ColumnName="NameAlias" />
+                <ScalarProperty Name="PaymMode" ColumnName="PaymMode" />
+                <ScalarProperty Name="PaymModeInbound" ColumnName="PaymModeInbound" />
+                <ScalarProperty Name="StagingId" ColumnName="StagingId" />
+                <ScalarProperty Name="TaxGroup" ColumnName="TaxGroup" />
+                <ScalarProperty Name="TaxGroupInbound" ColumnName="TaxGroupInbound" />
+                <ScalarProperty Name="VatNum" ColumnName="VatNum" />
+                <ScalarProperty Name="CreditRating" ColumnName="CreditRating" />
+                <ScalarProperty Name="VendGroup" ColumnName="VendGroup" />
+                <ScalarProperty Name="PaymSpecInbound" ColumnName="PaymSpecInbound" />
+                <ScalarProperty Name="PaymSpec" ColumnName="PaymSpec" />
+                <ScalarProperty Name="PaymSchedInbound" ColumnName="PaymSchedInbound" />
+                <ScalarProperty Name="PaymSched" ColumnName="PaymSched" />
+                <ScalarProperty Name="BankAccount" ColumnName="BankAccount" />
+                <ScalarProperty Name="Blocked" ColumnName="Blocked" />
+                <ScalarProperty Name="YourAccountNum" ColumnName="YourAccountNum" />
+                <ScalarProperty Name="LineOfBusinessId" ColumnName="LineOfBusinessId" />
+                <ScalarProperty Name="SegmentId" ColumnName="SegmentId" />
+                <ScalarProperty Name="SubsegmentId" ColumnName="SubsegmentId" />
+                <ScalarProperty Name="PaymdayId" ColumnName="PaymdayId" />
+                <ScalarProperty Name="CompanyChainId" ColumnName="CompanyChainId" />
+                <ScalarProperty Name="Memo" ColumnName="Memo" />
+                <ScalarProperty Name="AllowSplitPack" ColumnName="AllowSplitPack" />
+                <ScalarProperty Name="Message01" ColumnName="Message01" />
+                <ScalarProperty Name="Message02" ColumnName="Message02" />
+                <ScalarProperty Name="Message03" ColumnName="Message03" />
+                <ScalarProperty Name="Message04" ColumnName="Message04" />
+                <ScalarProperty Name="Message05" ColumnName="Message05" />
+                <ScalarProperty Name="MinorderValue" ColumnName="MinorderValue" />
+                <ScalarProperty Name="SupplierLeadTime" ColumnName="SupplierLeadTime" />
+                <ScalarProperty Name="TheirCode" ColumnName="TheirCode" />
+                <ScalarProperty Name="Internal" ColumnName="Internal" />
+                <ScalarProperty Name="PrintSupplier" ColumnName="PrintSupplier" />
+                <ScalarProperty Name="ExtractStatus" ColumnName="ExtractStatus" />
+                <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+                <ScalarProperty Name="ExtractedDate" ColumnName="ExtractedDate" />
+                <ScalarProperty Name="InsUpdDelete" ColumnName="InsUpdDelete" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <FunctionImportMapping FunctionImportName="spExtractAxPaymentTerms" FunctionName="Ax2012InterfaceModel.Store.spExtractAxPaymentTerms">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="Ax2012InterfaceModel.spExtractAxPaymentTerms_Result">
+                <ScalarProperty Name="AccountNum" ColumnName="AccountNum" />
+                <ScalarProperty Name="PaymTermID" ColumnName="PaymTermID" />
+                <ScalarProperty Name="PAYMMETHOD" ColumnName="PAYMMETHOD" />
+                <ScalarProperty Name="NUMOFMONTHS" ColumnName="NUMOFMONTHS" />
+                <ScalarProperty Name="NUMOFDAYS" ColumnName="NUMOFDAYS" />
+                <ScalarProperty Name="PAYMMODE" ColumnName="PAYMMODE" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <EntitySetMapping Name="AOMProductChanges">
+            <EntityTypeMapping TypeName="Ax2012InterfaceModel.AOMProductChange">
+              <MappingFragment StoreEntitySet="AOMProductChange">
+                <ScalarProperty Name="InsUpdDelete" ColumnName="InsUpdDelete" />
+                <ScalarProperty Name="ExtractStatus" ColumnName="ExtractStatus" />
+                <ScalarProperty Name="PARTITION" ColumnName="PARTITION" />
+                <ScalarProperty Name="DATAAREAID" ColumnName="DATAAREAID" />
+                <ScalarProperty Name="MASTERITEMID" ColumnName="MASTERITEMID" />
+                <ScalarProperty Name="PRODUCT_GROUP" ColumnName="PRODUCT_GROUP" />
+                <ScalarProperty Name="PRODUCT_RANGE" ColumnName="PRODUCT_RANGE" />
+                <ScalarProperty Name="BOSSF_RANGE" ColumnName="BOSSF_RANGE" />
+                <ScalarProperty Name="BOSSF_GROUP" ColumnName="BOSSF_GROUP" />
+                <ScalarProperty Name="STATUSBLOCKED" ColumnName="STATUSBLOCKED" />
+                <ScalarProperty Name="SHELFLIFE" ColumnName="SHELFLIFE" />
+                <ScalarProperty Name="UNSPSC" ColumnName="UNSPSC" />
+                <ScalarProperty Name="TYPE" ColumnName="TYPE" />
+                <ScalarProperty Name="ITEMGROUP" ColumnName="ITEMGROUP" />
+                <ScalarProperty Name="PAIDSTOCK" ColumnName="PAIDSTOCK" />
+                <ScalarProperty Name="SELL_PRICE" ColumnName="SELL_PRICE" />
+                <ScalarProperty Name="SELL_PRICEUNIT" ColumnName="SELL_PRICEUNIT" />
+                <ScalarProperty Name="SPECIAL" ColumnName="SPECIAL" />
+                <ScalarProperty Name="STANDARD_COST" ColumnName="STANDARD_COST" />
+                <ScalarProperty Name="DELIVERYTIME" ColumnName="DELIVERYTIME" />
+                <ScalarProperty Name="MANUFACTURER_PRODCODE" ColumnName="MANUFACTURER_PRODCODE" />
+                <ScalarProperty Name="MANUFACTURER" ColumnName="MANUFACTURER" />
+                <ScalarProperty Name="PRODUCT_OWNER" ColumnName="PRODUCT_OWNER" />
+                <ScalarProperty Name="DESCRIPTION_2" ColumnName="DESCRIPTION_2" />
+                <ScalarProperty Name="DESCRIPTION_3" ColumnName="DESCRIPTION_3" />
+                <ScalarProperty Name="DESCRIPTION_4" ColumnName="DESCRIPTION_4" />
+                <ScalarProperty Name="DESCRIPTION_5" ColumnName="DESCRIPTION_5" />
+                <ScalarProperty Name="VAT_GROUP" ColumnName="VAT_GROUP" />
+                <ScalarProperty Name="STOCK_OWNER" ColumnName="STOCK_OWNER" />
+                <ScalarProperty Name="ORIGCOUNTRYID" ColumnName="ORIGCOUNTRYID" />
+                <ScalarProperty Name="PRIMARYVENDID" ColumnName="PRIMARYVENDID" />
+                <ScalarProperty Name="INTRACODE" ColumnName="INTRACODE" />
+                <ScalarProperty Name="NETWEIGHT" ColumnName="NETWEIGHT" />
+                <ScalarProperty Name="DEPTH" ColumnName="DEPTH" />
+                <ScalarProperty Name="HEIGHT" ColumnName="HEIGHT" />
+                <ScalarProperty Name="WIDTH" ColumnName="WIDTH" />
+                <ScalarProperty Name="NAME" ColumnName="NAME" />
+                <ScalarProperty Name="ITEMID" ColumnName="ITEMID" />
+                <ScalarProperty Name="ProductChangeID" ColumnName="ProductChangeID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="AOMPurchaseDeliveryHeaders">
+            <EntityTypeMapping TypeName="Ax2012InterfaceModel.AOMPurchaseDeliveryHeader">
+              <MappingFragment StoreEntitySet="AOMPurchaseDeliveryHeader">
+                <ScalarProperty Name="HeaderSequence" ColumnName="HeaderSequence" />
+                <ScalarProperty Name="HeaderProcessed" ColumnName="HeaderProcessed" />
+                <ScalarProperty Name="ExtractStatus" ColumnName="ExtractStatus" />
+                <ScalarProperty Name="INVOICEDATE" ColumnName="INVOICEDATE" />
+                <ScalarProperty Name="INVENTLOCATIONID1" ColumnName="INVENTLOCATIONID1" />
+                <ScalarProperty Name="DATAAREAID" ColumnName="DATAAREAID" />
+                <ScalarProperty Name="CREATEDDATETIME" ColumnName="CREATEDDATETIME" />
+                <ScalarProperty Name="MODIFIEDDATETIME" ColumnName="MODIFIEDDATETIME" />
+                <ScalarProperty Name="ORDER_TOTAL_GROSS" ColumnName="ORDER_TOTAL_GROSS" />
+                <ScalarProperty Name="ORDER_TOTAL_NET" ColumnName="ORDER_TOTAL_NET" />
+                <ScalarProperty Name="INVOICEID" ColumnName="INVOICEID" />
+                <ScalarProperty Name="VATAMOUNT" ColumnName="VATAMOUNT" />
+                <ScalarProperty Name="DLVADD_REFERENCE" ColumnName="DLVADD_REFERENCE" />
+                <ScalarProperty Name="PURCHASETYPE" ColumnName="PURCHASETYPE" />
+                <ScalarProperty Name="INVENTSITEID" ColumnName="INVENTSITEID" />
+                <ScalarProperty Name="DIMENSION" ColumnName="DIMENSION" />
+                <ScalarProperty Name="ORDERUPDATETYPE" ColumnName="ORDERUPDATETYPE" />
+                <ScalarProperty Name="OPERATORCODE" ColumnName="OPERATORCODE" />
+                <ScalarProperty Name="EXTPURCHTYPE" ColumnName="EXTPURCHTYPE" />
+                <ScalarProperty Name="DLVZIPCODE" ColumnName="DLVZIPCODE" />
+                <ScalarProperty Name="DLVCOUNTRY" ColumnName="DLVCOUNTRY" />
+                <ScalarProperty Name="DLVTERRITORY" ColumnName="DLVTERRITORY" />
+                <ScalarProperty Name="DLVCITY" ColumnName="DLVCITY" />
+                <ScalarProperty Name="DLVADD_LINE_2" ColumnName="DLVADD_LINE_2" />
+                <ScalarProperty Name="DLVADD_LINE_1" ColumnName="DLVADD_LINE_1" />
+                <ScalarProperty Name="DLVNAME" ColumnName="DLVNAME" />
+                <ScalarProperty Name="COSTOFSALES" ColumnName="COSTOFSALES" />
+                <ScalarProperty Name="SHIP_NAME" ColumnName="SHIP_NAME" />
+                <ScalarProperty Name="TYPE" ColumnName="TYPE" />
+                <ScalarProperty Name="INVENTLOCATIONID" ColumnName="INVENTLOCATIONID" />
+                <ScalarProperty Name="DELIVERYDATE" ColumnName="DELIVERYDATE" />
+                <ScalarProperty Name="VENDORREF" ColumnName="VENDORREF" />
+                <ScalarProperty Name="ADD_ZIPCODE" ColumnName="ADD_ZIPCODE" />
+                <ScalarProperty Name="ADD_COUNTRY" ColumnName="ADD_COUNTRY" />
+                <ScalarProperty Name="ADD_TERRITORY" ColumnName="ADD_TERRITORY" />
+                <ScalarProperty Name="ADD_CITY" ColumnName="ADD_CITY" />
+                <ScalarProperty Name="ADD_LINE_2" ColumnName="ADD_LINE_2" />
+                <ScalarProperty Name="ADD_LINE_1" ColumnName="ADD_LINE_1" />
+                <ScalarProperty Name="ADD_REFERENCE" ColumnName="ADD_REFERENCE" />
+                <ScalarProperty Name="VENDACCOUNT" ColumnName="VENDACCOUNT" />
+                <ScalarProperty Name="EXTERNAL_DEL_ID" ColumnName="EXTERNAL_DEL_ID" />
+                <ScalarProperty Name="EXTERNAL_ORD_ID" ColumnName="EXTERNAL_ORD_ID" />
+                <ScalarProperty Name="AOMPurchaseDeliveryHeaderID" ColumnName="AOMPurchaseDeliveryHeaderID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="AOMPurchaseDeliveryLines">
+            <EntityTypeMapping TypeName="Ax2012InterfaceModel.AOMPurchaseDeliveryLine">
+              <MappingFragment StoreEntitySet="AOMPurchaseDeliveryLine">
+                <ScalarProperty Name="Seq" ColumnName="Seq" />
+                <ScalarProperty Name="DATAAREAID" ColumnName="DATAAREAID" />
+                <ScalarProperty Name="CREATEDDATETIME" ColumnName="CREATEDDATETIME" />
+                <ScalarProperty Name="MODIFIEDDATETIME" ColumnName="MODIFIEDDATETIME" />
+                <ScalarProperty Name="PURCHID" ColumnName="PURCHID" />
+                <ScalarProperty Name="VATLINEAMOUNT" ColumnName="VATLINEAMOUNT" />
+                <ScalarProperty Name="EXTERNAL_INV_ID" ColumnName="EXTERNAL_INV_ID" />
+                <ScalarProperty Name="INVENTTRANSID" ColumnName="INVENTTRANSID" />
+                <ScalarProperty Name="LINENUM" ColumnName="LINENUM" />
+                <ScalarProperty Name="DEFAULTDIMENSION" ColumnName="DEFAULTDIMENSION" />
+                <ScalarProperty Name="PURCHRECEIVEDNOW" ColumnName="PURCHRECEIVEDNOW" />
+                <ScalarProperty Name="PRICEUNIT" ColumnName="PRICEUNIT" />
+                <ScalarProperty Name="PROGRESSITEMID" ColumnName="PROGRESSITEMID" />
+                <ScalarProperty Name="NAME" ColumnName="NAME" />
+                <ScalarProperty Name="TYPE" ColumnName="TYPE" />
+                <ScalarProperty Name="PURCHQTY" ColumnName="PURCHQTY" />
+                <ScalarProperty Name="PURCHPRICE" ColumnName="PURCHPRICE" />
+                <ScalarProperty Name="LINEAMOUNT" ColumnName="LINEAMOUNT" />
+                <ScalarProperty Name="ITEMID" ColumnName="ITEMID" />
+                <ScalarProperty Name="DELIVERYDATE" ColumnName="DELIVERYDATE" />
+                <ScalarProperty Name="EXTERNAL_DEL_ID" ColumnName="EXTERNAL_DEL_ID" />
+                <ScalarProperty Name="EXTERNAL_ORD_ID" ColumnName="EXTERNAL_ORD_ID" />
+                <ScalarProperty Name="AOMPurchaseDeliveryHeaderID" ColumnName="AOMPurchaseDeliveryHeaderID" />
+                <ScalarProperty Name="AOMPurchaseDeliveryLineID" ColumnName="AOMPurchaseDeliveryLineID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="PurchaseInvoiceHeaders">
+            <EntityTypeMapping TypeName="Ax2012InterfaceModel.PurchaseInvoiceHeader">
+              <MappingFragment StoreEntitySet="PurchaseInvoiceHeaders">
+                <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+                <ScalarProperty Name="InvoiceType" ColumnName="InvoiceType" />
+                <ScalarProperty Name="DateAdded" ColumnName="DateAdded" />
+                <ScalarProperty Name="OrderVerfied" ColumnName="OrderVerfied" />
+                <ScalarProperty Name="ExtractStatus" ColumnName="ExtractStatus" />
+                <ScalarProperty Name="ErrorStatus" ColumnName="ErrorStatus" />
+                <ScalarProperty Name="ExtractedDate" ColumnName="ExtractedDate" />
+                <ScalarProperty Name="InvoiceGUID" ColumnName="InvoiceGUID" />
+                <ScalarProperty Name="ExtractBatchID" ColumnName="ExtractBatchID" />
+                <ScalarProperty Name="BatchIdentifier" ColumnName="BatchIdentifier" />
+                <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+                <ScalarProperty Name="VendorRef" ColumnName="VendorRef" />
+                <ScalarProperty Name="Order_Total_Gross" ColumnName="Order_Total_Gross" />
+                <ScalarProperty Name="Order_Total_Net" ColumnName="Order_Total_Net" />
+                <ScalarProperty Name="VATAmount" ColumnName="VATAmount" />
+                <ScalarProperty Name="EXTERNAL_DEL_ID" ColumnName="EXTERNAL_DEL_ID" />
+                <ScalarProperty Name="EXTERNAL_ORD_ID" ColumnName="EXTERNAL_ORD_ID" />
+                <ScalarProperty Name="VENDACCOUNT" ColumnName="VENDACCOUNT" />
+                <ScalarProperty Name="InvoiceDate" ColumnName="InvoiceDate" />
+                <ScalarProperty Name="EXTERNAL_INV_ID" ColumnName="EXTERNAL_INV_ID" />
+                <ScalarProperty Name="PurchaseInvoiceHeadersID" ColumnName="PurchaseInvoiceHeadersID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="PurchaseInvoiceLines">
+            <EntityTypeMapping TypeName="Ax2012InterfaceModel.PurchaseInvoiceLine">
+              <MappingFragment StoreEntitySet="PurchaseInvoiceLines">
+                <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+                <ScalarProperty Name="BatchIdentifier" ColumnName="BatchIdentifier" />
+                <ScalarProperty Name="InvoiceGUID" ColumnName="InvoiceGUID" />
+                <ScalarProperty Name="VendAccount" ColumnName="VendAccount" />
+                <ScalarProperty Name="CREATEDDATE" ColumnName="CREATEDDATE" />
+                <ScalarProperty Name="PriceUnit" ColumnName="PriceUnit" />
+                <ScalarProperty Name="EXTERNAL_INV_ID" ColumnName="EXTERNAL_INV_ID" />
+                <ScalarProperty Name="InvoiceDate" ColumnName="InvoiceDate" />
+                <ScalarProperty Name="VATAmount" ColumnName="VATAmount" />
+                <ScalarProperty Name="PurchReceivedNow" ColumnName="PurchReceivedNow" />
+                <ScalarProperty Name="LINE_TOTAL_EX_VAT" ColumnName="LINE_TOTAL_EX_VAT" />
+                <ScalarProperty Name="LineNum" ColumnName="LineNum" />
+                <ScalarProperty Name="PurchQty" ColumnName="PurchQty" />
+                <ScalarProperty Name="PurchPrice" ColumnName="PurchPrice" />
+                <ScalarProperty Name="EXTERNAL_DEL_ID" ColumnName="EXTERNAL_DEL_ID" />
+                <ScalarProperty Name="InvoiceLineNum" ColumnName="InvoiceLineNum" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="ItemID" ColumnName="ItemID" />
+                <ScalarProperty Name="EXTERNAL_ORD_ID" ColumnName="EXTERNAL_ORD_ID" />
+                <ScalarProperty Name="PurchaseInvoiceLinesID" ColumnName="PurchaseInvoiceLinesID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

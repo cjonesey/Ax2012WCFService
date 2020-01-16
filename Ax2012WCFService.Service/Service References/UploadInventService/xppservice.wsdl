@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://tempuri.org" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://dickdastardly.oyezstraker.co.uk/MicrosoftDynamicsAXAif60/TecInventService/xppservice.svc?xsd=xsd11" namespace="http://tempuri.org" />
+      <xsd:import schemaLocation="http://dickdastardly.oyezstraker.co.uk/MicrosoftDynamicsAXAif60/TecInventService/xppservice.svc?xsd=xsd12" namespace="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" />
+      <xsd:import schemaLocation="http://dickdastardly.oyezstraker.co.uk/MicrosoftDynamicsAXAif60/TecInventService/xppservice.svc?xsd=xsd14" namespace="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" />
+      <xsd:import schemaLocation="http://dickdastardly.oyezstraker.co.uk/MicrosoftDynamicsAXAif60/TecInventService/xppservice.svc?xsd=xsd0" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://dickdastardly.oyezstraker.co.uk/MicrosoftDynamicsAXAif60/TecInventService/xppservice.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/dynamics/2011/02/documents/DocumentPaging" />
+      <xsd:import schemaLocation="http://dickdastardly.oyezstraker.co.uk/MicrosoftDynamicsAXAif60/TecInventService/xppservice.svc?xsd=xsd2" />
+      <xsd:import schemaLocation="http://dickdastardly.oyezstraker.co.uk/MicrosoftDynamicsAXAif60/TecInventService/xppservice.svc?xsd=xsd3" namespace="http://schemas.microsoft.com/dynamics/2006/02/documents/EntityKeyList" />
+      <xsd:import schemaLocation="http://dickdastardly.oyezstraker.co.uk/MicrosoftDynamicsAXAif60/TecInventService/xppservice.svc?xsd=xsd4" namespace="http://schemas.microsoft.com/dynamics/2006/02/documents/EntityKey" />
+      <xsd:import schemaLocation="http://dickdastardly.oyezstraker.co.uk/MicrosoftDynamicsAXAif60/TecInventService/xppservice.svc?xsd=xsd5" namespace="http://schemas.microsoft.com/dynamics/2011/02/documents/EntityKeyPage" />
+      <xsd:import schemaLocation="http://dickdastardly.oyezstraker.co.uk/MicrosoftDynamicsAXAif60/TecInventService/xppservice.svc?xsd=xsd8" namespace="http://schemas.microsoft.com/dynamics/2006/02/documents/QueryCriteria" />
+      <xsd:import schemaLocation="http://dickdastardly.oyezstraker.co.uk/MicrosoftDynamicsAXAif60/TecInventService/xppservice.svc?xsd=xsd9" namespace="http://schemas.microsoft.com/dynamics/2008/01/documents/TEC_STG_Invent" />
+      <xsd:import schemaLocation="http://dickdastardly.oyezstraker.co.uk/MicrosoftDynamicsAXAif60/TecInventService/xppservice.svc?xsd=xsd10" namespace="http://schemas.microsoft.com/dynamics/2008/01/sharedtypes" />
+      <xsd:import schemaLocation="http://dickdastardly.oyezstraker.co.uk/MicrosoftDynamicsAXAif60/TecInventService/xppservice.svc?xsd=xsd13" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <xsd:import schemaLocation="http://dickdastardly.oyezstraker.co.uk/MicrosoftDynamicsAXAif60/TecInventService/xppservice.svc?xsd=xsd15" namespace="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.AX.Framework.Services" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="TEC_STG_InventServiceDeleteRequest">
+    <wsdl:part name="parameters" element="tns:TEC_STG_InventServiceDeleteRequest" />
+  </wsdl:message>
+  <wsdl:message name="TEC_STG_InventServiceDeleteRequest_Headers">
+    <wsdl:part xmlns:q1="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q1:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="TEC_STG_InventServiceDeleteResponse">
+    <wsdl:part name="parameters" element="tns:TEC_STG_InventServiceDeleteResponse" />
+  </wsdl:message>
+  <wsdl:message name="TEC_STG_InventService_delete_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q2="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q2:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="TEC_STG_InventServiceUpdateRequest">
+    <wsdl:part name="parameters" element="tns:TEC_STG_InventServiceUpdateRequest" />
+  </wsdl:message>
+  <wsdl:message name="TEC_STG_InventServiceUpdateRequest_Headers">
+    <wsdl:part xmlns:q3="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q3:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="TEC_STG_InventServiceUpdateResponse">
+    <wsdl:part name="parameters" element="tns:TEC_STG_InventServiceUpdateResponse" />
+  </wsdl:message>
+  <wsdl:message name="TEC_STG_InventService_update_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q4="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q4:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="TEC_STG_InventServiceCreateRequest">
+    <wsdl:part name="parameters" element="tns:TEC_STG_InventServiceCreateRequest" />
+  </wsdl:message>
+  <wsdl:message name="TEC_STG_InventServiceCreateRequest_Headers">
+    <wsdl:part xmlns:q5="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q5:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="TEC_STG_InventServiceCreateResponse">
+    <wsdl:part name="parameters" element="tns:TEC_STG_InventServiceCreateResponse" />
+  </wsdl:message>
+  <wsdl:message name="TEC_STG_InventService_create_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q6="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q6:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="TEC_STG_InventServiceFindRequest">
+    <wsdl:part name="parameters" element="tns:TEC_STG_InventServiceFindRequest" />
+  </wsdl:message>
+  <wsdl:message name="TEC_STG_InventServiceFindRequest_Headers">
+    <wsdl:part xmlns:q7="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q7:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="TEC_STG_InventServiceFindResponse">
+    <wsdl:part name="parameters" element="tns:TEC_STG_InventServiceFindResponse" />
+  </wsdl:message>
+  <wsdl:message name="TEC_STG_InventService_find_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q8="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q8:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="TEC_STG_InventServiceReadRequest">
+    <wsdl:part name="parameters" element="tns:TEC_STG_InventServiceReadRequest" />
+  </wsdl:message>
+  <wsdl:message name="TEC_STG_InventServiceReadRequest_Headers">
+    <wsdl:part xmlns:q9="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q9:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="TEC_STG_InventServiceReadResponse">
+    <wsdl:part name="parameters" element="tns:TEC_STG_InventServiceReadResponse" />
+  </wsdl:message>
+  <wsdl:message name="TEC_STG_InventService_read_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q10="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q10:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="TEC_STG_InventServiceGetKeysRequest">
+    <wsdl:part name="parameters" element="tns:TEC_STG_InventServiceGetKeysRequest" />
+  </wsdl:message>
+  <wsdl:message name="TEC_STG_InventServiceGetKeysRequest_Headers">
+    <wsdl:part xmlns:q11="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q11:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="TEC_STG_InventServiceGetKeysResponse">
+    <wsdl:part name="parameters" element="tns:TEC_STG_InventServiceGetKeysResponse" />
+  </wsdl:message>
+  <wsdl:message name="TEC_STG_InventService_getKeys_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q12="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q12:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="TEC_STG_InventServiceFindKeysRequest">
+    <wsdl:part name="parameters" element="tns:TEC_STG_InventServiceFindKeysRequest" />
+  </wsdl:message>
+  <wsdl:message name="TEC_STG_InventServiceFindKeysRequest_Headers">
+    <wsdl:part xmlns:q13="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q13:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="TEC_STG_InventServiceFindKeysResponse">
+    <wsdl:part name="parameters" element="tns:TEC_STG_InventServiceFindKeysResponse" />
+  </wsdl:message>
+  <wsdl:message name="TEC_STG_InventService_findKeys_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q14="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q14:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="TEC_STG_InventServiceGetChangedKeysRequest">
+    <wsdl:part name="parameters" element="tns:TEC_STG_InventServiceGetChangedKeysRequest" />
+  </wsdl:message>
+  <wsdl:message name="TEC_STG_InventServiceGetChangedKeysRequest_Headers">
+    <wsdl:part xmlns:q15="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q15:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="TEC_STG_InventServiceGetChangedKeysResponse">
+    <wsdl:part name="parameters" element="tns:TEC_STG_InventServiceGetChangedKeysResponse" />
+  </wsdl:message>
+  <wsdl:message name="TEC_STG_InventService_getChangedKeys_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q16="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q16:AifFault" />
+  </wsdl:message>
+  <wsdl:portType name="TEC_STG_InventService">
+    <wsdl:operation name="delete">
+      <wsdl:input wsaw:Action="http://tempuri.org/TEC_STG_InventService/delete" name="TEC_STG_InventServiceDeleteRequest" message="tns:TEC_STG_InventServiceDeleteRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/TEC_STG_InventService/deleteResponse" name="TEC_STG_InventServiceDeleteResponse" message="tns:TEC_STG_InventServiceDeleteResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/TEC_STG_InventService/deleteAifFaultFault" name="AifFaultFault" message="tns:TEC_STG_InventService_delete_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="update">
+      <wsdl:input wsaw:Action="http://tempuri.org/TEC_STG_InventService/update" name="TEC_STG_InventServiceUpdateRequest" message="tns:TEC_STG_InventServiceUpdateRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/TEC_STG_InventService/updateResponse" name="TEC_STG_InventServiceUpdateResponse" message="tns:TEC_STG_InventServiceUpdateResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/TEC_STG_InventService/updateAifFaultFault" name="AifFaultFault" message="tns:TEC_STG_InventService_update_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="create">
+      <wsdl:input wsaw:Action="http://tempuri.org/TEC_STG_InventService/create" name="TEC_STG_InventServiceCreateRequest" message="tns:TEC_STG_InventServiceCreateRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/TEC_STG_InventService/createResponse" name="TEC_STG_InventServiceCreateResponse" message="tns:TEC_STG_InventServiceCreateResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/TEC_STG_InventService/createAifFaultFault" name="AifFaultFault" message="tns:TEC_STG_InventService_create_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="find">
+      <wsdl:input wsaw:Action="http://tempuri.org/TEC_STG_InventService/find" name="TEC_STG_InventServiceFindRequest" message="tns:TEC_STG_InventServiceFindRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/TEC_STG_InventService/findResponse" name="TEC_STG_InventServiceFindResponse" message="tns:TEC_STG_InventServiceFindResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/TEC_STG_InventService/findAifFaultFault" name="AifFaultFault" message="tns:TEC_STG_InventService_find_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="read">
+      <wsdl:input wsaw:Action="http://tempuri.org/TEC_STG_InventService/read" name="TEC_STG_InventServiceReadRequest" message="tns:TEC_STG_InventServiceReadRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/TEC_STG_InventService/readResponse" name="TEC_STG_InventServiceReadResponse" message="tns:TEC_STG_InventServiceReadResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/TEC_STG_InventService/readAifFaultFault" name="AifFaultFault" message="tns:TEC_STG_InventService_read_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getKeys">
+      <wsdl:input wsaw:Action="http://tempuri.org/TEC_STG_InventService/getKeys" name="TEC_STG_InventServiceGetKeysRequest" message="tns:TEC_STG_InventServiceGetKeysRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/TEC_STG_InventService/getKeysResponse" name="TEC_STG_InventServiceGetKeysResponse" message="tns:TEC_STG_InventServiceGetKeysResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/TEC_STG_InventService/getKeysAifFaultFault" name="AifFaultFault" message="tns:TEC_STG_InventService_getKeys_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="findKeys">
+      <wsdl:input wsaw:Action="http://tempuri.org/TEC_STG_InventService/findKeys" name="TEC_STG_InventServiceFindKeysRequest" message="tns:TEC_STG_InventServiceFindKeysRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/TEC_STG_InventService/findKeysResponse" name="TEC_STG_InventServiceFindKeysResponse" message="tns:TEC_STG_InventServiceFindKeysResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/TEC_STG_InventService/findKeysAifFaultFault" name="AifFaultFault" message="tns:TEC_STG_InventService_findKeys_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getChangedKeys">
+      <wsdl:input wsaw:Action="http://tempuri.org/TEC_STG_InventService/getChangedKeys" name="TEC_STG_InventServiceGetChangedKeysRequest" message="tns:TEC_STG_InventServiceGetChangedKeysRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/TEC_STG_InventService/getChangedKeysResponse" name="TEC_STG_InventServiceGetChangedKeysResponse" message="tns:TEC_STG_InventServiceGetChangedKeysResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/TEC_STG_InventService/getChangedKeysAifFaultFault" name="AifFaultFault" message="tns:TEC_STG_InventService_getChangedKeys_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>

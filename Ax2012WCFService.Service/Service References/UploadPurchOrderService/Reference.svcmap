@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="3d7edefd-31d4-4735-a594-cb3a1fe4e2e6" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://smurfette.oyezstraker.co.uk:82/MicrosoftDynamicsAXAif60/TecPurchOrderService/xppservice.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="xppservice14.xsd" MetadataType="Schema" ID="05818844-da18-4234-807b-0f9861e80026" SourceId="1" SourceUrl="http://smurfette.oyezstraker.co.uk:82/MicrosoftDynamicsAXAif60/TECPurchOrderService/xppservice.svc?xsd=xsd2" />
+    <MetadataFile FileName="xppservice141.xsd" MetadataType="Schema" ID="fc0aceca-79b8-4ca6-96e9-c0583d1bb001" SourceId="1" SourceUrl="http://smurfette.oyezstraker.co.uk:82/MicrosoftDynamicsAXAif60/TECPurchOrderService/xppservice.svc?xsd=xsd9" />
+    <MetadataFile FileName="xppservice142.xsd" MetadataType="Schema" ID="673e4fab-1b0d-45a0-b69a-01f426cff89b" SourceId="1" SourceUrl="http://smurfette.oyezstraker.co.uk:82/MicrosoftDynamicsAXAif60/TECPurchOrderService/xppservice.svc?xsd=xsd11" />
+    <MetadataFile FileName="xppservice143.xsd" MetadataType="Schema" ID="7120c743-3e63-451d-8f31-682551fde3bc" SourceId="1" SourceUrl="http://smurfette.oyezstraker.co.uk:82/MicrosoftDynamicsAXAif60/TECPurchOrderService/xppservice.svc?xsd=xsd8" />
+    <MetadataFile FileName="xppservice144.xsd" MetadataType="Schema" ID="ae4285d6-09a5-495c-9758-b3ee4ccfe196" SourceId="1" SourceUrl="http://smurfette.oyezstraker.co.uk:82/MicrosoftDynamicsAXAif60/TECPurchOrderService/xppservice.svc?xsd=xsd13" />
+    <MetadataFile FileName="xppservice2.wsdl" MetadataType="Wsdl" ID="b45d3278-57ec-48bb-a9c6-8d0fd6dc7617" SourceId="1" SourceUrl="http://smurfette.oyezstraker.co.uk:82/MicrosoftDynamicsAXAif60/TECPurchOrderService/xppservice.svc?wsdl=wsdl0" />
+    <MetadataFile FileName="xppservice21.wsdl" MetadataType="Wsdl" ID="965b33a7-5fa1-4347-a8ef-5479e2c59db7" SourceId="1" SourceUrl="http://smurfette.oyezstraker.co.uk:82/MicrosoftDynamicsAXAif60/TECPurchOrderService/xppservice.svc?wsdl=wsdl1" />
+    <MetadataFile FileName="xppservice145.xsd" MetadataType="Schema" ID="3dcada81-1e1c-462a-b50a-4905072c36ca" SourceId="1" SourceUrl="http://smurfette.oyezstraker.co.uk:82/MicrosoftDynamicsAXAif60/TECPurchOrderService/xppservice.svc?xsd=xsd3" />
+    <MetadataFile FileName="RoutingService1.wsdl" MetadataType="Wsdl" ID="cfd6e5c9-8a29-4268-8abb-132905a31d68" SourceId="1" SourceUrl="http://smurfette.oyezstraker.co.uk:82/MicrosoftDynamicsAXAif60/TECPurchOrderService/xppservice.svc?wsdl" />
+    <MetadataFile FileName="xppservice146.xsd" MetadataType="Schema" ID="af90ca02-3e76-4f99-9ed0-30ab3621a55c" SourceId="1" SourceUrl="http://smurfette.oyezstraker.co.uk:82/MicrosoftDynamicsAXAif60/TECPurchOrderService/xppservice.svc?xsd=xsd15" />
+    <MetadataFile FileName="xppservice147.xsd" MetadataType="Schema" ID="14fd129e-f958-4a0d-9863-2d1f3bc37093" SourceId="1" SourceUrl="http://smurfette.oyezstraker.co.uk:82/MicrosoftDynamicsAXAif60/TECPurchOrderService/xppservice.svc?xsd=xsd10" />
+    <MetadataFile FileName="xppservice148.xsd" MetadataType="Schema" ID="811b5cc7-adcc-4de8-9866-b84e0fffb8a4" SourceId="1" SourceUrl="http://smurfette.oyezstraker.co.uk:82/MicrosoftDynamicsAXAif60/TECPurchOrderService/xppservice.svc?xsd=xsd1" />
+    <MetadataFile FileName="xppservice149.xsd" MetadataType="Schema" ID="7e28ed99-e132-4305-9c8d-29f2bc6d9267" SourceId="1" SourceUrl="http://smurfette.oyezstraker.co.uk:82/MicrosoftDynamicsAXAif60/TECPurchOrderService/xppservice.svc?xsd=xsd12" />
+    <MetadataFile FileName="xppservice1410.xsd" MetadataType="Schema" ID="e82aec25-ae0b-4118-bed3-b32a1a38dc33" SourceId="1" SourceUrl="http://smurfette.oyezstraker.co.uk:82/MicrosoftDynamicsAXAif60/TECPurchOrderService/xppservice.svc?xsd=xsd4" />
+    <MetadataFile FileName="xppservice1411.xsd" MetadataType="Schema" ID="d44f8b15-2a0d-4436-8515-23dd07eaff7e" SourceId="1" SourceUrl="http://smurfette.oyezstraker.co.uk:82/MicrosoftDynamicsAXAif60/TECPurchOrderService/xppservice.svc?xsd=xsd5" />
+    <MetadataFile FileName="xppservice1412.xsd" MetadataType="Schema" ID="6f147735-73ce-4091-844e-cd6d8acb37a2" SourceId="1" SourceUrl="http://smurfette.oyezstraker.co.uk:82/MicrosoftDynamicsAXAif60/TECPurchOrderService/xppservice.svc?xsd=xsd0" />
+    <MetadataFile FileName="xppservice1.disco" MetadataType="Disco" ID="c01895c5-4af9-4652-88b8-5cb966c811fb" SourceId="1" SourceUrl="http://smurfette.oyezstraker.co.uk:82/MicrosoftDynamicsAXAif60/TECPurchOrderService/xppservice.svc?disco" />
+    <MetadataFile FileName="xppservice1413.xsd" MetadataType="Schema" ID="df13be38-4720-496a-a5e7-675e38ae4a0f" SourceId="1" SourceUrl="http://smurfette.oyezstraker.co.uk:82/MicrosoftDynamicsAXAif60/TECPurchOrderService/xppservice.svc?xsd=xsd14" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

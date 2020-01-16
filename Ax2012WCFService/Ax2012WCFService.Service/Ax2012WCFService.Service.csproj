@@ -1,0 +1,663 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{06503E65-1D92-4544-9557-B17E5025F248}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Ax2012WCFService.Service</RootNamespace>
+    <AssemblyName>Ax2012WCFService.Service</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Service References\UploadAddressService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\UploadCustomerService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\UploadInventService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\UploadPurchOrderService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="SimpleEndpointBehavior.cs" />
+    <Compile Include="UploadAOMInventTable.cs" />
+    <Compile Include="UploadAOMPurchaseDeliveries.cs" />
+    <Compile Include="UploadPurchaseInvoices.cs" />
+    <Compile Include="UploadSalesInvoice.cs" />
+    <Compile Include="UploadVendor.cs" />
+    <Compile Include="UploadAddress.cs" />
+    <Compile Include="UploadCustomer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service References\UploadSalesInvoiceService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\UploadVendorService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\UploadAddressService\Ax2012WCFService.Service.UploadAddressService.AxdQTQ_STG_Address.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\UploadAddressService\Ax2012WCFService.Service.UploadAddressService.EntityKey.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\UploadAddressService\Ax2012WCFService.Service.UploadAddressService.EntityKeyPage.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\UploadAddressService\Ax2012WCFService.Service.UploadAddressService.QTQ_STG_AddressServiceCreateResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\UploadAddressService\Ax2012WCFService.Service.UploadAddressService.QTQ_STG_AddressServiceDeleteResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\UploadAddressService\Ax2012WCFService.Service.UploadAddressService.QTQ_STG_AddressServiceFindKeysResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\UploadAddressService\Ax2012WCFService.Service.UploadAddressService.QTQ_STG_AddressServiceFindResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\UploadAddressService\Ax2012WCFService.Service.UploadAddressService.QTQ_STG_AddressServiceGetChangedKeysResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\UploadAddressService\Ax2012WCFService.Service.UploadAddressService.QTQ_STG_AddressServiceGetKeysResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\UploadAddressService\Ax2012WCFService.Service.UploadAddressService.QTQ_STG_AddressServiceReadResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\UploadAddressService\Ax2012WCFService.Service.UploadAddressService.QTQ_STG_AddressServiceUpdateResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\UploadAddressService\RoutingService.wsdl" />
+    <None Include="Service References\UploadAddressService\xppservice.wsdl" />
+    <None Include="Service References\UploadAddressService\xppservice.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\UploadAddressService\xppservice1.wsdl" />
+    <None Include="Service References\UploadAddressService\xppservice1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\UploadAddressService\xppservice10.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\UploadAddressService\xppservice11.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\UploadAddressService\xppservice12.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\UploadAddressService\xppservice13.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\UploadAddressService\xppservice2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\UploadAddressService\xppservice3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\UploadAddressService\xppservice4.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\UploadAddressService\xppservice5.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\UploadAddressService\xppservice6.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\UploadAddressService\xppservice7.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\UploadAddressService\xppservice8.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\UploadAddressService\xppservice9.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\UploadCustomerService\Ax2012WCFService.Service.UploadCustomerService.AxdQTQ_STG_Customer.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\UploadCustomerService\Ax2012WCFService.Service.UploadCustomerService.EntityKey.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\UploadCustomerService\Ax2012WCFService.Service.UploadCustomerService.QTQ_STG_CustomerServiceCreateResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\UploadCustomerService\Ax2012WCFService.Service.UploadCustomerService.QTQ_STG_CustomerServiceFindResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\UploadCustomerService\Ax2012WCFService.Service.UploadCustomerService.QTQ_STG_CustomerServiceReadResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\UploadCustomerService\Ax2012WCFService.Service.UploadCustomerService.QTQ_STG_CustomerServiceUpdateResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\UploadCustomerService\RoutingService.wsdl" />
+    <None Include="Service References\UploadCustomerService\xppservice.wsdl" />
+    <None Include="Service References\UploadCustomerService\xppservice.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\UploadCustomerService\xppservice1.wsdl" />
+    <None Include="Service References\UploadCustomerService\xppservice1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\UploadCustomerService\xppservice10.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\UploadCustomerService\xppservice11.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\UploadCustomerService\xppservice2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\UploadCustomerService\xppservice3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\UploadCustomerService\xppservice4.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\UploadCustomerService\xppservice5.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\UploadCustomerService\xppservice6.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\UploadCustomerService\xppservice7.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\UploadCustomerService\xppservice8.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\UploadCustomerService\xppservice9.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\UploadInventService\Ax2012WCFService.Service.UploadInventService.AxdTEC_STG_Invent.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\UploadInventService\Ax2012WCFService.Service.UploadInventService.EntityKey.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\UploadInventService\Ax2012WCFService.Service.UploadInventService.EntityKeyPage.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\UploadInventService\Ax2012WCFService.Service.UploadInventService.TEC_STG_InventServiceCreateResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\UploadInventService\Ax2012WCFService.Service.UploadInventService.TEC_STG_InventServiceDeleteResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\UploadInventService\Ax2012WCFService.Service.UploadInventService.TEC_STG_InventServiceFindKeysResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\UploadInventService\Ax2012WCFService.Service.UploadInventService.TEC_STG_InventServiceFindResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\UploadInventService\Ax2012WCFService.Service.UploadInventService.TEC_STG_InventServiceGetChangedKeysResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\UploadInventService\Ax2012WCFService.Service.UploadInventService.TEC_STG_InventServiceGetKeysResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\UploadInventService\Ax2012WCFService.Service.UploadInventService.TEC_STG_InventServiceReadResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\UploadInventService\Ax2012WCFService.Service.UploadInventService.TEC_STG_InventServiceUpdateResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\UploadInventService\RoutingService.wsdl" />
+    <None Include="Service References\UploadInventService\xppservice.wsdl" />
+    <None Include="Service References\UploadInventService\xppservice.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\UploadInventService\xppservice1.wsdl" />
+    <None Include="Service References\UploadInventService\xppservice1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\UploadInventService\xppservice10.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\UploadInventService\xppservice11.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\UploadInventService\xppservice12.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\UploadInventService\xppservice13.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\UploadInventService\xppservice2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\UploadInventService\xppservice3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\UploadInventService\xppservice4.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\UploadInventService\xppservice5.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\UploadInventService\xppservice6.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\UploadInventService\xppservice7.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\UploadInventService\xppservice8.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\UploadInventService\xppservice9.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\UploadPurchOrderService\Ax2012WCFService.Service.UploadPurchOrderService.AxdTEC_STG_PurchOrder.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\UploadPurchOrderService\Ax2012WCFService.Service.UploadPurchOrderService.EntityKey.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\UploadPurchOrderService\Ax2012WCFService.Service.UploadPurchOrderService.EntityKeyPage.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\UploadPurchOrderService\Ax2012WCFService.Service.UploadPurchOrderService.TEC_STG_PurchOrderServiceCreateResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\UploadPurchOrderService\Ax2012WCFService.Service.UploadPurchOrderService.TEC_STG_PurchOrderServiceDeleteResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\UploadPurchOrderService\Ax2012WCFService.Service.UploadPurchOrderService.TEC_STG_PurchOrderServiceFindKeysResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\UploadPurchOrderService\Ax2012WCFService.Service.UploadPurchOrderService.TEC_STG_PurchOrderServiceFindResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\UploadPurchOrderService\Ax2012WCFService.Service.UploadPurchOrderService.TEC_STG_PurchOrderServiceGetChangedKeysResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\UploadPurchOrderService\Ax2012WCFService.Service.UploadPurchOrderService.TEC_STG_PurchOrderServiceGetKeysResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\UploadPurchOrderService\Ax2012WCFService.Service.UploadPurchOrderService.TEC_STG_PurchOrderServiceReadResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\UploadPurchOrderService\Ax2012WCFService.Service.UploadPurchOrderService.TEC_STG_PurchOrderServiceUpdateResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\UploadPurchOrderService\RoutingService1.wsdl" />
+    <None Include="Service References\UploadPurchOrderService\xppservice14.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\UploadPurchOrderService\xppservice141.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\UploadPurchOrderService\xppservice1410.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\UploadPurchOrderService\xppservice1411.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\UploadPurchOrderService\xppservice1412.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\UploadPurchOrderService\xppservice1413.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\UploadPurchOrderService\xppservice142.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\UploadPurchOrderService\xppservice143.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\UploadPurchOrderService\xppservice144.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\UploadPurchOrderService\xppservice145.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\UploadPurchOrderService\xppservice146.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\UploadPurchOrderService\xppservice147.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\UploadPurchOrderService\xppservice148.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\UploadPurchOrderService\xppservice149.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\UploadPurchOrderService\xppservice2.wsdl" />
+    <None Include="Service References\UploadPurchOrderService\xppservice21.wsdl" />
+    <None Include="Service References\UploadSalesInvoiceService\Ax2012WCFService.Service.UploadSalesInvoiceService.AxdQTQ_STG_SalesInvoice.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\UploadSalesInvoiceService\Ax2012WCFService.Service.UploadSalesInvoiceService.EntityKey.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\UploadSalesInvoiceService\Ax2012WCFService.Service.UploadSalesInvoiceService.EntityKeyPage.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\UploadSalesInvoiceService\Ax2012WCFService.Service.UploadSalesInvoiceService.QTQ_STG_SalesInvoiceServiceCreateResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\UploadSalesInvoiceService\Ax2012WCFService.Service.UploadSalesInvoiceService.QTQ_STG_SalesInvoiceServiceDeleteResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\UploadSalesInvoiceService\Ax2012WCFService.Service.UploadSalesInvoiceService.QTQ_STG_SalesInvoiceServiceFindKeysResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\UploadSalesInvoiceService\Ax2012WCFService.Service.UploadSalesInvoiceService.QTQ_STG_SalesInvoiceServiceFindResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\UploadSalesInvoiceService\Ax2012WCFService.Service.UploadSalesInvoiceService.QTQ_STG_SalesInvoiceServiceGetChangedKeysResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\UploadSalesInvoiceService\Ax2012WCFService.Service.UploadSalesInvoiceService.QTQ_STG_SalesInvoiceServiceGetKeysResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\UploadSalesInvoiceService\Ax2012WCFService.Service.UploadSalesInvoiceService.QTQ_STG_SalesInvoiceServiceReadResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\UploadSalesInvoiceService\Ax2012WCFService.Service.UploadSalesInvoiceService.QTQ_STG_SalesInvoiceServiceUpdateResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\UploadSalesInvoiceService\RoutingService.wsdl" />
+    <None Include="Service References\UploadSalesInvoiceService\xppservice.wsdl" />
+    <None Include="Service References\UploadSalesInvoiceService\xppservice.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\UploadSalesInvoiceService\xppservice1.wsdl" />
+    <None Include="Service References\UploadSalesInvoiceService\xppservice1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\UploadSalesInvoiceService\xppservice10.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\UploadSalesInvoiceService\xppservice11.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\UploadSalesInvoiceService\xppservice12.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\UploadSalesInvoiceService\xppservice13.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\UploadSalesInvoiceService\xppservice2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\UploadSalesInvoiceService\xppservice3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\UploadSalesInvoiceService\xppservice4.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\UploadSalesInvoiceService\xppservice5.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\UploadSalesInvoiceService\xppservice6.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\UploadSalesInvoiceService\xppservice7.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\UploadSalesInvoiceService\xppservice8.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\UploadSalesInvoiceService\xppservice9.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\UploadVendorService\Ax2012WCFService.Service.UploadVendorService.AxdQTQ_STG_Vendor.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\UploadVendorService\Ax2012WCFService.Service.UploadVendorService.EntityKey.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\UploadVendorService\Ax2012WCFService.Service.UploadVendorService.EntityKeyPage.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\UploadVendorService\Ax2012WCFService.Service.UploadVendorService.QTQ_STG_VendorServiceCreateResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\UploadVendorService\Ax2012WCFService.Service.UploadVendorService.QTQ_STG_VendorServiceDeleteResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\UploadVendorService\Ax2012WCFService.Service.UploadVendorService.QTQ_STG_VendorServiceFindKeysResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\UploadVendorService\Ax2012WCFService.Service.UploadVendorService.QTQ_STG_VendorServiceFindResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\UploadVendorService\Ax2012WCFService.Service.UploadVendorService.QTQ_STG_VendorServiceGetChangedKeysResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\UploadVendorService\Ax2012WCFService.Service.UploadVendorService.QTQ_STG_VendorServiceGetKeysResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\UploadVendorService\Ax2012WCFService.Service.UploadVendorService.QTQ_STG_VendorServiceReadResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\UploadVendorService\Ax2012WCFService.Service.UploadVendorService.QTQ_STG_VendorServiceUpdateResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\UploadVendorService\RoutingService.wsdl" />
+    <None Include="Service References\UploadVendorService\xppservice.wsdl" />
+    <None Include="Service References\UploadVendorService\xppservice.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\UploadVendorService\xppservice1.wsdl" />
+    <None Include="Service References\UploadVendorService\xppservice1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\UploadVendorService\xppservice10.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\UploadVendorService\xppservice11.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\UploadVendorService\xppservice12.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\UploadVendorService\xppservice13.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\UploadVendorService\xppservice2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\UploadVendorService\xppservice3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\UploadVendorService\xppservice4.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\UploadVendorService\xppservice5.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\UploadVendorService\xppservice6.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\UploadVendorService\xppservice7.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\UploadVendorService\xppservice8.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\UploadVendorService\xppservice9.xsd">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\UploadAddressService\" />
+    <WCFMetadataStorage Include="Service References\UploadCustomerService\" />
+    <WCFMetadataStorage Include="Service References\UploadInventService\" />
+    <WCFMetadataStorage Include="Service References\UploadPurchOrderService\" />
+    <WCFMetadataStorage Include="Service References\UploadSalesInvoiceService\" />
+    <WCFMetadataStorage Include="Service References\UploadVendorService\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\UploadVendorService\xppservice.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\UploadVendorService\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\UploadVendorService\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\UploadVendorService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\UploadSalesInvoiceService\xppservice.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\UploadSalesInvoiceService\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\UploadSalesInvoiceService\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\UploadSalesInvoiceService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Ax2012WCFService.Common\Ax2012WCFService.Common.csproj">
+      <Project>{2a4defe6-0ae2-4d6f-af82-97888394d8bd}</Project>
+      <Name>Ax2012WCFService.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Ax2012WCFService.DAL\Ax2012WCFService.DAL.csproj">
+      <Project>{9e2ccfc9-af21-4366-a64a-037eae0ffbfe}</Project>
+      <Name>Ax2012WCFService.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Ax2012WCFService.Entities\Ax2012WCFService.Entities.csproj">
+      <Project>{959c78e2-b0c2-4b41-9e19-a796937c85df}</Project>
+      <Name>Ax2012WCFService.Entities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\UploadCustomerService\xppservice.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\UploadCustomerService\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\UploadCustomerService\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\UploadCustomerService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\UploadAddressService\xppservice.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\UploadAddressService\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\UploadAddressService\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\UploadAddressService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\UploadPurchOrderService\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\UploadPurchOrderService\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\UploadPurchOrderService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\UploadInventService\xppservice.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\UploadInventService\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\UploadInventService\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\UploadInventService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\UploadPurchOrderService\xppservice1.disco" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

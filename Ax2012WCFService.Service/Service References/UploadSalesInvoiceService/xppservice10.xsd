@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.microsoft.com/dynamics/2008/01/documents/QTQ_STG_SalesInvoice" xmlns:st="http://schemas.microsoft.com/dynamics/2008/01/sharedtypes" elementFormDefault="qualified" targetNamespace="http://schemas.microsoft.com/dynamics/2008/01/documents/QTQ_STG_SalesInvoice" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://dickdastardly.oyezstraker.co.uk/MicrosoftDynamicsAXAif60/QTQSalesInvService/xppservice.svc?xsd=xsd10" namespace="http://schemas.microsoft.com/dynamics/2008/01/sharedtypes" />
+  <xs:element name="QTQ_STG_SalesInvoice" type="tns:AxdQTQ_STG_SalesInvoice" />
+  <xs:complexType name="AxdQTQ_STG_SalesInvoice">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ClearNilFieldsOnUpdate" nillable="true" type="st:AxdEnum_boolean" />
+      <xs:element minOccurs="0" name="DocPurpose" nillable="true" type="st:AxdEnum_XMLDocPurpose" />
+      <xs:element minOccurs="0" name="SenderId" nillable="true" type="st:AxdExtType_DataAreaId" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="STG_SINVTable" type="tns:AxdEntity_STG_SINVTable" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="AxdEntity_STG_SINVTable">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="_DocumentHash" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Account" nillable="true" type="st:AxdExtType_DimensionValue" />
+      <xs:element minOccurs="0" name="AccountType" nillable="true" type="st:AxdEnum_LedgerJournalACType" />
+      <xs:element minOccurs="0" name="Amount" nillable="true" type="st:AxdExtType_AmountCur" />
+      <xs:element minOccurs="0" name="CorrectedTaxAmount" nillable="true" type="st:AxdExtType_TaxAmountJournal" />
+      <xs:element minOccurs="0" name="CostCentre" nillable="true" type="st:AxdExtType_DimensionValue" />
+      <xs:element minOccurs="0" name="CreationProcessedDate" nillable="true" type="st:AxdExtType_TransDate" />
+      <xs:element minOccurs="0" name="CreationProcessedTime" nillable="true" type="st:AxdExtType_TimeOfDay" />
+      <xs:element minOccurs="0" name="CreationStatus" nillable="true" type="st:AxdEnum_QTQ_STG_Status" />
+      <xs:element minOccurs="0" name="CurrencyCode" nillable="true" type="st:AxdUnion_AxdExtType_CurrencyCode_AxdType_ExtCodeValue" />
+      <xs:element minOccurs="0" name="Description" nillable="true" type="st:AxdExtType_Name" />
+      <xs:element minOccurs="0" name="DestinationDataAreaId" nillable="true" type="st:AxdExtType_DataAreaId" />
+      <xs:element minOccurs="0" name="DocumentDate" nillable="true" type="st:AxdExtType_DocumentDate" />
+      <xs:element minOccurs="0" name="DocumentNum" nillable="true" type="st:AxdExtType_DocumentNum" />
+      <xs:element minOccurs="0" name="Due" nillable="true" type="st:AxdExtType_DueDate" />
+      <xs:element minOccurs="0" name="ExchRate" nillable="true" type="st:AxdExtType_ExchRate" />
+      <xs:element minOccurs="0" name="Invoice" nillable="true" type="st:AxdExtType_InvoiceId" />
+      <xs:element minOccurs="0" name="JournalName" nillable="true" type="st:AxdExtType_LedgerJournalNameId" />
+      <xs:element minOccurs="0" name="JournalType" nillable="true" type="st:AxdEnum_LedgerJournalType" />
+      <xs:element minOccurs="0" name="LedgerJournalTableRefRecId" nillable="true" type="st:AxdExtType_RefRecId" />
+      <xs:element minOccurs="0" name="LedgerJournalTransRefRecId" nillable="true" type="st:AxdExtType_RefRecId" />
+      <xs:element minOccurs="0" name="OffsetAccount" nillable="true" type="st:AxdExtType_DimensionValue" />
+      <xs:element minOccurs="0" name="OffsetAccountType" nillable="true" type="st:AxdEnum_LedgerJournalACType" />
+      <xs:element minOccurs="0" name="OffsetCostCentre" nillable="true" type="st:AxdExtType_DimensionValue" />
+      <xs:element minOccurs="0" name="PaymMode" nillable="true" type="st:AxdExtType_PaymMode" />
+      <xs:element minOccurs="0" name="PaymReference" nillable="true" type="st:AxdExtType_PaymReference" />
+      <xs:element minOccurs="0" name="PostingProcessedDate" nillable="true" type="st:AxdExtType_TransDate" />
+      <xs:element minOccurs="0" name="PostingProcessedTime" nillable="true" type="st:AxdExtType_TimeOfDay" />
+      <xs:element minOccurs="0" name="PostingProfile" nillable="true" type="st:AxdExtType_PostingProfile" />
+      <xs:element minOccurs="0" name="PostingStatus" nillable="true" type="st:AxdEnum_QTQ_STG_Status" />
+      <xs:element minOccurs="0" name="RecId" nillable="true" type="st:AxdExtType_RecId" />
+      <xs:element minOccurs="0" name="RecVersion" nillable="true" type="st:AxdExtType_RecVersion" />
+      <xs:element minOccurs="0" name="StagingID" nillable="true" type="st:AxdExtType_TEC_StagingID" />
+      <xs:element minOccurs="0" name="TaxCode" nillable="true" type="st:AxdExtType_TaxCode" />
+      <xs:element minOccurs="0" name="TaxCodeInbound" nillable="true" type="st:AxdExtType_QTQ_STG_TaxCodeInbound" />
+      <xs:element minOccurs="0" name="TaxGroup" nillable="true" type="st:AxdExtType_TaxGroupJournal" />
+      <xs:element minOccurs="0" name="TaxGroupInbound" nillable="true" type="st:AxdExtType_QTQ_STG_TaxGroupInbound" />
+      <xs:element minOccurs="0" name="TransDate" nillable="true" type="st:AxdExtType_TransDate" />
+      <xs:element minOccurs="0" name="Txt" nillable="true" type="st:AxdExtType_LedgerJournalTransTxt" />
+      <xs:element minOccurs="0" name="VATNumJournal" nillable="true" type="st:AxdExtType_VATNumJournal" />
+    </xs:sequence>
+    <xs:attribute fixed="entity" name="class" use="required" />
+    <xs:attribute name="action" type="st:AxdEnum_AxdEntityAction" />
+  </xs:complexType>
+</xs:schema>

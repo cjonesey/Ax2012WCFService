@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="Ax2012DependenciesModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <Function Name="spExtractAxPaymentTerms" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="DataAreaId" Type="varchar" Mode="In" />
+        </Function>
+        <EntityContainer Name="Ax2012DependenciesModelStoreContainer" />
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="Ax2012DependenciesModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="Ax2012DependenciesEntities" annotation:LazyLoadingEnabled="true" >
+          <FunctionImport Name="spExtractAxPaymentTerms" ReturnType="Collection(Ax2012DependenciesModel.spExtractAxPaymentTerms_Result)">
+            <Parameter Name="DataAreaId" Mode="In" Type="String" />
+          </FunctionImport>
+        </EntityContainer>
+        <ComplexType Name="spExtractAxPaymentTerms_Result">
+          <Property Type="String" Name="AccountNum" Nullable="false" MaxLength="20" />
+          <Property Type="String" Name="PaymTermID" Nullable="false" MaxLength="10" />
+          <Property Type="Int32" Name="PAYMMETHOD" Nullable="true" />
+          <Property Type="Int32" Name="NUMOFMONTHS" Nullable="true" />
+          <Property Type="Int32" Name="NUMOFDAYS" Nullable="true" />
+          <Property Type="String" Name="PAYMMODE" Nullable="false" MaxLength="10" />
+        </ComplexType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="Ax2012DependenciesModelStoreContainer" CdmEntityContainer="Ax2012DependenciesEntities" >
+          <FunctionImportMapping FunctionImportName="spExtractAxPaymentTerms" FunctionName="Ax2012DependenciesModel.Store.spExtractAxPaymentTerms">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="Ax2012DependenciesModel.spExtractAxPaymentTerms_Result">
+                <ScalarProperty Name="AccountNum" ColumnName="AccountNum" />
+                <ScalarProperty Name="PaymTermID" ColumnName="PaymTermID" />
+                <ScalarProperty Name="PAYMMETHOD" ColumnName="PAYMMETHOD" />
+                <ScalarProperty Name="NUMOFMONTHS" ColumnName="NUMOFMONTHS" />
+                <ScalarProperty Name="NUMOFDAYS" ColumnName="NUMOFDAYS" />
+                <ScalarProperty Name="PAYMMODE" ColumnName="PAYMMODE" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

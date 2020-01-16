@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Ax2012DependenciesModelStoreContainer" CdmEntityContainer="Ax2012DependenciesEntities">
+    <FunctionImportMapping FunctionImportName="spExtractAxPaymentTerms" FunctionName="Ax2012DependenciesModel.Store.spExtractAxPaymentTerms">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Ax2012DependenciesModel.spExtractAxPaymentTerms_Result">
+          <ScalarProperty Name="AccountNum" ColumnName="AccountNum" />
+          <ScalarProperty Name="PaymTermID" ColumnName="PaymTermID" />
+          <ScalarProperty Name="PAYMMETHOD" ColumnName="PAYMMETHOD" />
+          <ScalarProperty Name="NUMOFMONTHS" ColumnName="NUMOFMONTHS" />
+          <ScalarProperty Name="NUMOFDAYS" ColumnName="NUMOFDAYS" />
+          <ScalarProperty Name="PAYMMODE" ColumnName="PAYMMODE" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+  </EntityContainerMapping>
+</Mapping>
